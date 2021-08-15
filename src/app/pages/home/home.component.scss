@@ -1,0 +1,13 @@
+.bg_image{
+    /* background-image: url('https://chizay.com/wp-content/uploads/2021/08/0002.jpg'); */
+    background-image: url("../../../assets/images/home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}

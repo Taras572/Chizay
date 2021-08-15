@@ -1,0 +1,59 @@
+#navbarNav {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+.logo {
+  width: 95px;
+  height: 94px;
+  margin-top: 2.5px;
+}
+
+.head {
+  width: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  top: 30px;
+}
+
+.dl, ol, ul {
+  margin-top: -20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  height: 99px;
+  margin: 0 auto;
+}
+
+.navbar-brand svg {
+  fill: white;
+}
+
+.navbar-brand svg:hover {
+  fill: #ae8758;
+}
+
+#navbarNav .navbar-nav .nav-link:hover {
+  color: #ae8758;
+}
+
+a {
+  font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .head {
+    top: 0;
+  }
+}
+/*# sourceMappingURL=header.component.css.map */
