@@ -70,14 +70,78 @@ h1, h2, h3, h4, h5, h6 {
 //icon line
 .icon-tilde {
     font-size: .5rem;
+    
 }
-
 .icon {
     display: inline-block;
     width: 1em;
     height: 1em;
     fill: currentColor;
+    margin-bottom: 30px;
+    
 }
 .icon-tilde {
     width: 4.82609em;
+    
+}
+
+//About Us pages
+.aboutUs{
+    display: flex;
+    margin: 0;
+} 
+.block{
+    width: 50%;
+    margin: 15px;
+    text-align: center;
+}
+.block img{
+    width: 100%;
+    margin: 12px 0;
+}
+.block h2{
+    margin: 30px 0 15px;
+}
+.block p{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 25px;
+}
+.block .bolt_text{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.block ul{
+    text-align: left;
+    padding-left: 1rem;
+}
+//btn text
+.btn-def.black {
+    color: #323232;
+    border: .0625rem solid #323232;
+    text-decoration: none;
+}
+.btn_muzeum{
+    margin-top: 20px;
+    text-align: left;
+}
+.btn-def.black:hover {
+    color: #ae8758;
+    border: .0625rem solid #ae8758;;
+}
+//icon text
+.icon_text{
+    display: flex;
+    height: 137px;
+    margin: 20px 0;
+    justify-content:space-evenly;
+    text-align: center;
+}
+.icon_text svg{
+    margin-bottom: 8px;
+    height: 60px;
+    fill: #ae8758;
+    
 }
