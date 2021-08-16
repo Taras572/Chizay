@@ -17,6 +17,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 1230px;
   margin: 0 auto;
   font-family: "Open Sans",sans-serif;
+  overflow: hidden;
 }
 
 .head {
@@ -126,10 +127,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
-.block .title_history {
-  margin-top: 30px;
-}
-
 .block ul {
   text-align: left;
   padding-left: 1rem;
@@ -167,5 +164,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 8px;
   height: 60px;
   fill: #ae8758;
+}
+
+@media (max-width: 767px) {
+  .aboutUs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .block {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+  }
+  .btn_muzeum {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=information.component.css.map */
