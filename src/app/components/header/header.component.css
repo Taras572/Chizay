@@ -16,6 +16,7 @@
   transition: 1s;
   position: absolute;
   top: 30px;
+  font-family: "Open Sans",sans-serif;
 }
 
 .dl, ol, ul {
@@ -27,6 +28,11 @@
   max-width: 1230px;
   height: 99px;
   margin: 0 auto;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 .navbar-brand svg {
@@ -41,13 +47,27 @@
   color: #ae8758;
 }
 
+#navbarNav .navbar-nav .nav-link {
+  color: white;
+}
+
 a {
   font-size: 14px;
+}
+
+.head_scroll {
+  position: fixed;
+  top: 0;
+  background: rgba(50, 50, 50, 0.9);
 }
 
 @media (max-width: 991px) {
   a {
     font-size: 13px;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
   }
 }
 
