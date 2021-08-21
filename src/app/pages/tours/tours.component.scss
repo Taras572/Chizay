@@ -168,8 +168,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .transport:hover{
-    height: auto;
-    height: 200px;
+    height: 200px; 
 }
 .plane_text, .bus_text , .train_text , .car_text{
     padding-right: 40px;
@@ -310,6 +309,11 @@ address, dl, hr, ol, p, ul {
     flex-wrap: wrap;
     margin-right: -.9375rem;
     margin-left: -.9375rem;
+}
+//hover
+.btn-def:hover {
+    border-color: #c09560;
+    color: #c09560;
 }
 
 

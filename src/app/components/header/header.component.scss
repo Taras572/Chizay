@@ -50,6 +50,7 @@ a{
     position: fixed;
     top: 0;
     background: rgba(50,50,50,.9);
+    z-index: 999;
   } 
 
 @media( max-width: 991px){
