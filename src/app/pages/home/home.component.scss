@@ -263,6 +263,16 @@ h1, h2, h3, h4, h5, h6 {
     .muzeum_reverse{
         flex-direction: column-reverse;
     }
+    .baner-links {
+        flex-wrap: wrap;
+        width: 100%;
+        min-width: auto;
+        justify-content: center;
+    }
+    .baner-links a {
+        max-width: 100%;
+        margin: .3125rem;
+    }
 
 }
 @media(max-width: 622px ){

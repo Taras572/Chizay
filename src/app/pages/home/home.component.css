@@ -255,9 +255,98 @@ h1, h2, h3, h4, h5, h6 {
   color: #c09560;
 }
 
+.hall-preview__image {
+  background-image: url("../../../assets/images/muzeum.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.hall-preview__image2 {
+  background-image: url("../../../assets/images/academi.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.block_muzeum {
+  padding: 0 30px;
+}
+
+.hall-preview__text--description {
+  font-size: .75rem;
+  line-height: 1.25rem;
+  margin-bottom: 0;
+}
+
+.hall-preview__text {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.read-more-btn {
+  color: black;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.muzeum_reverse {
+  margin-bottom: 40px;
+}
+
+.icon-tilde {
+  font-size: .5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 30px;
+}
+
+.icon-tilde {
+  width: 4.82609em;
+}
+
 @media (max-width: 768px) {
   .block_reverse {
     display: block;
+  }
+  .hall-preview__image, .hall-preview__image2 {
+    height: 350px;
+  }
+  .muzeum_reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .baner-links {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    min-width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .baner-links a {
+    max-width: 100%;
+    margin: .3125rem;
+  }
+}
+
+@media (max-width: 622px) {
+  .hall-preview__image, .hall-preview__image2 {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hall-preview__image, .hall-preview__image2 {
+    height: 200px;
   }
 }
 /*# sourceMappingURL=home.component.css.map */
