@@ -1,1 +1,164 @@
-/* No CSS *//*# sourceMappingURL=contacts.component.css.map */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia",sans-serif;
+}
+
+.block-contact {
+  width: 100%;
+  margin-top: 100px;
+  padding: 20px;
+}
+
+.block-contact hr {
+  width: 85%;
+  margin-left: 15%;
+}
+
+.container-content {
+  max-width: 1230px;
+  min-height: 361px;
+  padding-bottom: 5px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #ae8758;
+}
+
+.block_left {
+  line-height: 35px;
+}
+
+#home, #envelope, #facebook, #phone {
+  width: 20px;
+}
+
+.icon svg {
+  fill: #ae8758;
+  text-align: center;
+}
+
+.list {
+  position: relative;
+}
+
+.list p {
+  margin: 0;
+}
+
+.list p, .list a {
+  color: #323232;
+  display: table;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+ol, ul {
+  padding-left: 4rem;
+  padding-right: 3rem;
+}
+
+.line {
+  display: none;
+}
+
+.block_center h2 {
+  font-size: 3rem;
+  color: black;
+  margin: 0;
+}
+
+.icon-line {
+  font-size: .5rem;
+  margin-left: 15%;
+}
+
+.icon-line-hed {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 30px;
+}
+
+.icon-line {
+  width: 4.82609em;
+}
+
+.contact-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 31.25rem;
+}
+
+.btn-def.black {
+  color: #323232;
+  border: .0625rem solid #323232;
+}
+
+.btn-def {
+  font-size: .875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: .25rem;
+  max-width: 13.75rem;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: .625rem;
+  position: relative;
+  letter-spacing: .0625rem;
+  cursor: pointer;
+}
+
+.block_rigtn {
+  position: relative;
+}
+
+.block_map {
+  width: 80%;
+  height: 550px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #cac7c4;
+}
+
+@media (max-width: 767px) {
+  .line {
+    display: block;
+  }
+  .text {
+    text-align: center;
+  }
+  .row {
+    padding: 0 15px;
+  }
+  .list p {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=contacts.component.css.map */
