@@ -28,6 +28,7 @@
   max-width: 1230px;
   height: 99px;
   margin: 0 auto;
+  position: relative;
 }
 
 .navbar-expand-md .navbar-nav .nav-link {
@@ -60,6 +61,12 @@ a {
   top: 0;
   background: rgba(50, 50, 50, 0.9);
   z-index: 999;
+}
+
+.admin-btn {
+  position: absolute;
+  bottom: -40%;
+  right: 10px;
 }
 
 @media (max-width: 991px) {

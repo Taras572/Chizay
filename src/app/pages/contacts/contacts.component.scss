@@ -1,6 +1,11 @@
-h1, h2, h3, h4, h5, h6 {
+
+#title-contact{
     font-family: "Georgia",sans-serif;
+    font-size: 48px;
+    color: black;
+    margin: 0;
 }
+
 .block-contact{
     width: 100%;
     margin-top: 100px;
@@ -51,7 +56,6 @@ a:hover{
     color: #323232;
     display: table;
     font-size: 1.5rem;
-    
     line-height: 1.5;
 }
 
@@ -67,12 +71,6 @@ ol, ul {
 }
 .line{
     display: none;
-}
-
-.block_center h2 {
-    font-size: 3rem;
-    color: black;
-    margin: 0;
 }
 
 
@@ -96,6 +94,7 @@ ol, ul {
     display: flex;
     justify-content: space-between;
     max-width: 31.25rem;
+    margin: 40px 0;
 }
 
 .btn-def.black {

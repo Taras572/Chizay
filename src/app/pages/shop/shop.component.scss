@@ -98,6 +98,41 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     text-decoration: none;
 }
+//block category
+.shop_preview{
+    margin-right: 3.0625rem;
+    margin-left: 3.0625rem;
+    background-image: url("../../../assets/images/bg-shop-1.png"),url("../../../assets/images/bg-shop-2.png");
+    background-position: left top,right 37%;
+    background-repeat: no-repeat;
+    
+}
+.collections-slider__item{
+    text-align: center;
+    color: #323232;
+}
+a{
+    text-decoration: none;
+}
+.collections-slider__item:hover{
+    color: #ae8758;
+    cursor: pointer;
+}
+.collections-slider__item--description {
+    color: inherit;
+    font-size: 1.3125rem;
+    font-weight: 600;
+    margin: 10px 0 30px;
+    padding: 0 5px;
+}
+
+.collections-slider__item img{
+    width: 100%;
+    max-height: 238px;
+}
+.collections-slider__item .icon{
+    margin-bottom: 0;
+}
 
 //block restouran hotel
 .block_restouran_hotel{

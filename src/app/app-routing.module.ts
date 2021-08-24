@@ -10,6 +10,10 @@ import { LocationComponent } from './pages/location/location.component';
 import { RestaurantComponent } from './pages/restaurant/restaurant.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 
+import { AdminComponent } from './admin/admin.component';
+import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
+import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'home', component: HomeComponent},
@@ -19,7 +23,13 @@ const routes: Routes = [
   {path: 'tours', component: ToursComponent},
   {path: 'location', component: LocationComponent},
   {path: 'restaurant', component: RestaurantComponent},
-  {path: 'contacts', component: ContactsComponent}
+  {path: 'contacts', component: ContactsComponent},
+
+  {path: 'admin', component: AdminComponent, children: [
+    {path: '', pathMatch: 'full', redirectTo: 'category'}, 
+    {path: 'category', component: AdminCategoryComponent},
+    {path: 'product', component: AdminProductComponent},
+  ]},
 ];
 
 @NgModule({

@@ -1,5 +1,8 @@
-h1, h2, h3, h4, h5, h6 {
+#title-contact {
   font-family: "Georgia",sans-serif;
+  font-size: 48px;
+  color: black;
+  margin: 0;
 }
 
 .block-contact {
@@ -78,12 +81,6 @@ ol, ul {
   display: none;
 }
 
-.block_center h2 {
-  font-size: 3rem;
-  color: black;
-  margin: 0;
-}
-
 .icon-line {
   font-size: .5rem;
   margin-left: 15%;
@@ -109,6 +106,7 @@ ol, ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 31.25rem;
+  margin: 40px 0;
 }
 
 .btn-def.black {
