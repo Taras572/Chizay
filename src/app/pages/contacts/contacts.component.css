@@ -134,15 +134,21 @@ ol, ul {
   position: relative;
 }
 
+/* .block_map{
+    width: 80%;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(202, 199, 196);
+} */
 .block_map {
-  width: 80%;
-  height: 550px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   background-color: #cac7c4;
+  width: 80%;
+  min-height: 550px;
+  height: 80%;
+  margin: 10% auto;
 }
 
 @media (max-width: 767px) {
@@ -157,6 +163,19 @@ ol, ul {
   }
   .list p {
     width: 250px;
+  }
+  .block_left {
+    text-align: center;
+  }
+  .list p {
+    width: 100%;
+  }
+  .contact-btn {
+    margin: 40px auto;
+    display: block;
+  }
+  .icon-line {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=contacts.component.css.map */

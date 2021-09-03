@@ -1,0 +1,54 @@
+<div class="block_container">
+    <div class="block-products row">
+        <div class="product col-md-6 col-6 row" *ngFor="let prod of products">
+
+            <div class="block-product-img col-md-5 col-5">
+                <div class="product-img">
+                    <img src="../../../assets/images/test.png">
+                </div>
+                <a tabindex="0" class="btn-def black">Онлайн дешевше</a>
+            </div>
+
+            <div class=" block-product-text col-md-7 col-7 shown-categories__item--description">
+                <p class="shown-categories__item--description-heading">{{prod.name}}</p>
+                <p class="shown-categories__item--description-type">{{prod.type_of_wine}}</p>
+                <p class="shown-categories__item--description-text">{{prod.description}}</p>
+                <ul>
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>
+                                Об'єм&nbsp;-</strong>{{prod.bottle_volume}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>
+                                Алк.&nbsp;-</strong>{{prod.alcohol}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params">
+                            <strong>Колір&nbsp;-</strong>{{prod.color}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>Сорт
+                                винограду&nbsp;-</strong>{{prod.grape_variety}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params">
+                            <strong>Аромат&nbsp;-</strong>{{prod.aroma}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>Смак&nbsp;-</strong>{{prod.taste}}
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="category-match">
+
+                </div>
+                <a class="shown-categories__item--description-more"
+                    href="https://chizay.com/product/chersegi/">Більше</a>
+                <p class="shown-categories__item--description-price"><span
+                        class="woocommerce-Price-amount amount"><bdi>{{prod.price}}.00&nbsp;<span
+                                class="woocommerce-Price-currencySymbol">Грн</span></bdi></span></p>
+            </div>
+        </div>
+    </div>
+</div>

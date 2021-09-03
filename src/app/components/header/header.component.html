@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-md navbar-dark p-0">
             <div class="container-fluid p-0">
                 <div class="logo">
-                    <a class="navbar-brand" [routerLink]="[ '/home' ]">
+                    <a class="navbar-brand" [class.text_color]="text_color" [class.color_scroll]="color_scroll" [routerLink]="[ '/home' ]" >
                         <svg xmlns="http://www.w3.org/2000/svg" id="chizay_logo_black" viewBox="0 0 209.73 207.96">
                             <g id="at_Group_" data-name="<Group>">
                                 <g id="at_Group_2" data-name="<Group>">
@@ -88,33 +88,33 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" [class.text_color]="text_color" [class.color_scroll]="color_scroll">
                         <li class="nav-item">
-                            <a class="nav-link" ><i class="uil uil-search"></i></a>
+                            <a  class="nav-link" ><i class="uil uil-search"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/home' ]" routerLinkActive="active">ГОЛОВНА</a>
+                            <a  class="nav-link" [routerLink]="[ '/home' ]" routerLinkActive="active">ГОЛОВНА</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/information' ]" routerLinkActive="active">ПРО НАС</a>
+                            <a  class="nav-link" [routerLink]="[ '/information' ]" routerLinkActive="active">ПРО НАС</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/news' ]" routerLinkActive="active">НОВИНИ</a>
+                            <a  class="nav-link" [routerLink]="[ '/news' ]" routerLinkActive="active">НОВИНИ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/shop' ]" routerLinkActive="active">МАГАЗИН</a>
+                            <a  class="nav-link" [routerLink]="[ '/shop' ]" routerLinkActive="active">МАГАЗИН</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/tours' ]" routerLinkActive="active">ТУРИ</a>
+                            <a  class="nav-link" [routerLink]="[ '/tours' ]" routerLinkActive="active">ТУРИ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/path' ]" routerLinkActive="active">ДЕ КУПИТИ</a>
+                            <a  class="nav-link" [routerLink]="[ '/path' ]" routerLinkActive="active">ДЕ КУПИТИ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/restaurant' ]" routerLinkActive="active">РЕСТОРАН</a>
+                            <a  class="nav-link" [routerLink]="[ '/restaurant' ]" routerLinkActive="active">РЕСТОРАН</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" [routerLink]="[ '/contacts' ]" routerLinkActive="active">КОНТАКТИ</a>
+                            <a  class="nav-link" [routerLink]="[ '/contacts' ]" routerLinkActive="active">КОНТАКТИ</a>
                         </li>
                     </ul>
                 </div>

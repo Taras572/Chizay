@@ -122,7 +122,7 @@ ol, ul {
 .block_rigtn{
     position: relative;
 }
-.block_map{
+/* .block_map{
     width: 80%;
     height: 550px;
     position: absolute;
@@ -130,6 +130,13 @@ ol, ul {
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: rgb(202, 199, 196);
+} */
+.block_map{
+    background-color: rgb(202, 199, 196);
+    width: 80%;
+    min-height: 550px;
+    height: 80%;
+    margin: 10% auto;
 }
 
 
@@ -148,4 +155,18 @@ ol, ul {
     .list p{
         width: 250px;
     }
+    .block_left{
+       text-align: center;
+    }
+    .list p {
+         width: 100%; 
+    }
+    .contact-btn {
+        margin: 40px auto;
+        display: block;
+    }
+    .icon-line {
+        margin-left: 0; 
+    }
+        
 }

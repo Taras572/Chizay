@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { InformationComponent } from './pages/information/information.component';
 import { NewsComponent } from './pages/news/news.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { ProductsComponent } from './pages/products/products.component';
 import { ToursComponent } from './pages/tours/tours.component';
 import { LocationComponent } from './pages/location/location.component';
 import { RestaurantComponent } from './pages/restaurant/restaurant.component';
@@ -25,6 +26,8 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
 
 
 
+
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -34,6 +37,7 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
         InformationComponent,
         NewsComponent,
         ShopComponent,
+        ProductsComponent,
         ToursComponent,
         LocationComponent,
         RestaurantComponent,
@@ -48,7 +52,8 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
         BrowserModule,
         FormsModule,
         AppRoutingModule,
-        HttpClientModule
+        HttpClientModule,
+        ReactiveFormsModule
     ],
     providers: [],
     bootstrap: [AppComponent],

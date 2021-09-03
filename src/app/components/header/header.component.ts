@@ -1,4 +1,6 @@
-import { Component, OnInit , HostListener} from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+
 
 @Component({
     selector: 'app-header',
@@ -6,22 +8,49 @@ import { Component, OnInit , HostListener} from '@angular/core';
     styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-    header_scroll:boolean = false;
+    header_scroll: boolean = false;
+    color_scroll: boolean = false;
+    text_color: boolean = false;
     
-    constructor() { }
+
+    constructor(
+        private activatedRoute: ActivatedRoute,
+        private router: Router,
+        
+    ) {
+        this.router.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+                let URL = event.url.substring(1);
+                let PROD = event.url.substring(1,8);
+                if (URL == 'contacts' || URL == 'admin' || URL == 'shop' || PROD =='product') {
+                    this.text_color = true;
+                }
+                else {
+                    this.text_color = false;
+                }   
+            }
+        })
+    }
 
     ngOnInit(): void {
+
     }
     @HostListener("document:scroll")
-    scrollfunction(){
-        if(scrollY>5){
+
+    scrollfunction() {
+        let color: any;
+        if (scrollY > 5) {
             this.header_scroll = true;
+            this.color_scroll = true;
         }
-        else{
+        else {
             this.header_scroll = false;
+            this.color_scroll = false;
         }
     }
-    
-    
-   
+
+
+
+
+
 }

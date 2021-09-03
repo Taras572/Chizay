@@ -1,18 +1,10 @@
-<div class="block_container row">
-    <div class="col-xl-2 col-lg-2 col-md-2">
-        <div class="btn-group-vertical ">
-
-            <input [routerLink]="[ '/admin', 'category' ]" type="radio" class="btn-check" name="btnradio" id="btnradio1"
-                autocomplete="off">
-            <label class="btn btn-outline-danger" for="btnradio1">Category</label>
-
-            <input [routerLink]="[ '/admin', 'product' ]" type="radio" class="btn-check" name="btnradio" id="btnradio2"
-                autocomplete="off">
-            <label class="btn btn-outline-danger" for="btnradio2">Product</label>
-
-        </div>
-    </div>
-    <div class="col-xl-10 col-lg-10 col-md-10">
+<div class="block_container ">
+    <div class="btn-group m-4" role="group" aria-label="Basic example">
+        <button [routerLink]="[ '/admin', 'product' ]" type="button" class="btn btn-danger">Product</button>
+        <button [routerLink]="[ '/admin', 'category' ]" type="button" class="btn btn-danger">Category</button>
+        <button type="button" class="btn btn-danger">Right</button>
+      </div>
+    <div>
         <router-outlet></router-outlet>
     </div>
 </div>

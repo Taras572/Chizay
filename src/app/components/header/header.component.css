@@ -48,8 +48,26 @@
   color: #ae8758;
 }
 
-#navbarNav .navbar-nav .nav-link {
+.navbar-nav {
   color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: inherit;
+}
+
+.text_color, .text_color svg {
+  color: black;
+  fill: black;
+}
+
+.color_scroll, .color_scroll svg {
+  color: white;
+  fill: white;
+}
+
+.nav-link {
+  color: inherit;
 }
 
 a {
@@ -61,6 +79,7 @@ a {
   top: 0;
   background: rgba(50, 50, 50, 0.9);
   z-index: 999;
+  color: white;
 }
 
 .admin-btn {
