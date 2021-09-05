@@ -46,86 +46,85 @@
     {
       "name": "Chateau Chizay",
       "path": "chateau-chizay",
-      "icon": "",
-      "id": 1,
-      "image": null
+      "image": "",
+      "id": 1
     },
     {
       "name": "Carpathian Sekt",
       "path": "carpathian-sekt",
-      "icon": "",
+      "image": "",
       "id": 2
     },
     {
       "name": "Витримані сухі вина",
       "path": "dry-wines",
-      "icon": "",
+      "image": "",
       "id": 3
     },
     {
       "name": "GRAPE WHITE BLEND",
       "path": "grape-white_blend",
-      "icon": "",
+      "image": "",
       "id": 4
     },
     {
       "name": "Країна Мрій",
       "path": "dream-country",
-      "icon": "",
+      "image": "",
       "id": 5
     },
     {
       "name": "Кошерні вина",
       "path": "kosher-wines",
-      "icon": "",
+      "image": "",
       "id": 6
     },
     {
       "name": "Сік виноградний",
       "path": "grape-juice",
-      "icon": "",
+      "image": "",
       "id": 7
     },
     {
       "name": "Ice Wine",
       "path": "ice-wine",
-      "icon": "",
+      "image": "",
       "id": 10
     },
     {
       "name": "Авторські вина",
       "path": "authors-wines",
-      "icon": "",
+      "image": "",
       "id": 11
     },
     {
       "name": "Фруктова колекція",
       "path": "fruit-collection",
-      "icon": "",
+      "image": "",
       "id": 12
     },
     {
       "name": "Подарункові набори",
       "path": "gift-sets",
-      "icon": "",
+      "image": "",
       "id": 13
     },
     {
       "name": "Подарункові Сертифікати",
       "path": "gift-certificates",
-      "icon": "",
+      "image": "",
       "id": 14
     },
     {
       "name": "Limited Edition",
       "path": "limited-edition",
-      "icon": "",
+      "image": "",
       "id": 15
     },
     {
       "name": "Домашнє Вино",
       "path": "homemade-wine",
-      "icon": "",
+      "image": "",
       "id": 16
     },
     {
