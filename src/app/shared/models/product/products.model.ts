@@ -1,15 +1,17 @@
+import { ICategory } from "../category/category.model";
  export interface IProduct {
-    category: any;
+    category: ICategory;
     name: string;
-    type_of_wine: string;
+    path: string;
+    type: string;
     description: string;
-    bottle_volume: string;
+    volume: string;
     alcohol: string;
     color: string;
-    grape_variety: string;
+    grape: string;
     aroma: string;
     taste: string;
-    price: number;
+    price: number|string;
     image: string;
     id?: number;
 } 

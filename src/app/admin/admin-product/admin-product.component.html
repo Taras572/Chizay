@@ -1,10 +1,25 @@
-<form [formGroup]="productsForm" (ngSubmit)="createProduct()">
+<form [formGroup]="productsForm" (ngSubmit)="editStatus ? updateProduct() : createProduct()">
     <table style="width:100%">
         <tbody>
+            <tr>
+                <td>Category</td>
+                <td>
+                    <select formControlName="category" class="form-select">
+                        <option selected disabled>Select category</option>
+                        <option [ngValue]="cat" *ngFor="let cat of adminCategories">{{cat.name}}</option>
+                    </select>
+                </td>
+            </tr>
             <tr>
                 <td>Назва:</td>
                 <td>
                     <input formControlName="name" type="text" class="form-control" placeholder="Name">
+                </td>
+            </tr>
+            <tr>
+                <td>Path:</td>
+                <td>
+                    <input formControlName="path" type="text" class="form-control" placeholder="Path">
                 </td>
             </tr>
             <tr>
@@ -23,7 +38,7 @@
             <tr>
                 <td>Об'єм:</td>
                 <td>
-                    <input formControlName="volum" type="text" class="form-control" placeholder="Bottle volume">
+                    <input formControlName="volume" type="text" class="form-control" placeholder="Bottle volume">
                 </td>
             </tr>
             <tr>
@@ -73,10 +88,10 @@
                              aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </td>
-            </tr>
+            </tr><!-- [disabled]="productsForm.invalid" -->
             <tr>
                 <td>
-                    <button [disabled]="productsForm.invalid" type="submit" class="btn btn-success m-4">ADD</button>
+                    <button  type="submit" class="btn btn-success m-4" [textContent]="editStatus ? 'Save' : 'Add'">ADD</button>
                 </td>
             </tr>
             
@@ -91,6 +106,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
+                <th scope="col">Path</th>
                 <th scope="col">Type</th>
                 <th scope="col">Description</th>
                 <th scope="col">Volume</th>
@@ -107,21 +123,22 @@
             <tr class="align-middle" *ngFor="let prod of adminProducts; index as i">
                 <td>{{ i + 1 }}</td>
                 <td>{{ prod.name }}</td>
-                <td>{{ prod.type_of_wine }}</td>
+                <td>{{ prod.path }}</td>
+                <td>{{ prod.type }}</td>
                 <td>{{ prod.description | slice:0:30 }}...</td>
-                <td>{{ prod.bottle_volume }}</td>
+                <td>{{ prod.volume }}</td>
                 <td>{{ prod.alcohol }}</td>
                 <td>{{ prod.color }}</td>
-                <td>{{ prod.grape_variety }}</td>
+                <td>{{ prod.grape }}</td>
                 <td>{{ prod.aroma | slice:0:30 }}...</td>
                 <td>{{ prod.taste | slice:0:30 }}...</td>
                 <td>
                     <img [src]="prod.image" width="80px" alt="">
-                </td>
+                </td> 
                 <td>{{ prod.price }}</td>
                 <td>
-                    <button (click)="editProduct(prod)" class="btn btn-warning me-3">edit</button>
-                    <button (click)="deleteProduct(prod)" class="btn btn-danger">delete</button>
+                    <button (click)="editProduct(prod)" class="btn btn-success" type="button">edit</button>
+                    <button (click)="deleteProduct(prod)" class="btn btn-danger" type="button">delete</button>
                 </td>
             </tr>
         </tbody>

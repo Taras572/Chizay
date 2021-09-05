@@ -21,8 +21,10 @@ export class HeaderComponent implements OnInit {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 let URL = event.url.substring(1);
+                let URL2 = event.url.substring(1,6);
                 let PROD = event.url.substring(1,8);
-                if (URL == 'contacts' || URL == 'admin' || URL == 'shop' || PROD =='product') {
+                console.log(URL2)
+                if (URL == 'contacts' || URL == 'shop' || PROD =='product' || URL2 == 'admin') {
                     this.text_color = true;
                 }
                 else {

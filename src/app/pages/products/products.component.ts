@@ -10,37 +10,40 @@ import { ProductService } from 'src/app/shared/services/product/product.service'
 })
 export class ProductsComponent implements OnInit {
     products: Array<IProduct> = [];
-    currentCategory: string = '';
-    
+    currentCategory: any;
+
     constructor(
         private productService: ProductService,
         private activatedRoute: ActivatedRoute,
         private router: Router
     ) {
         this.router.events.subscribe(event => {
-            if (event instanceof NavigationEnd) {
-                 const categoryName = this.activatedRoute.snapshot.paramMap.get('name'); 
-                this.loadProduct(categoryName as string);
-                console.log(categoryName);
+            if(event instanceof NavigationEnd){
+              const categoryName = event.url.substring(9);;
+               this.loadProduct(categoryName as string);  
+              console.log(event.url.substring(9));
             }
-        })
+          })
     }
 
     ngOnInit(): void {
+        
     }
 
-
-    loadProduct(categoryName: string): void {
+     loadProduct(categoryName: string): void {
         this.productService.getByCategory(categoryName as string).subscribe(
-            data => {
-                this.products = data;
-                this.currentCategory = this.products[0].category.name;
-
-            }, err => {
-                console.log(err);
-            }
+          data => {
+            this.products = data;
+            this.currentCategory = this.products[0].category.path;
+            console.log('user page', this.products);
+          }, err => {
+            console.log(err);
+          }
         )
-    }
+      } 
+
+
+    
 
     /*  loadProduct(): void {
         this.productService.get().subscribe(data => {

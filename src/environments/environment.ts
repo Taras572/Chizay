@@ -5,6 +5,15 @@
 export const environment = {
   production: false,
   BACKEND_URL: 'http://localhost:3000/',
+  
+  firebaseConfig : {
+    apiKey: "AIzaSyBPjL3U_H0sNp2GCAV9eYCy0w7tFq35Bc8",
+    authDomain: "place-c36d0.firebaseapp.com",
+    projectId: "place-c36d0",
+    storageBucket: "place-c36d0.appspot.com",
+    messagingSenderId: "283704752937",
+    appId: "1:283704752937:web:0a0d173d64ece6d87b9538"
+  }
 };
 
 /*

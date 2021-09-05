@@ -22,8 +22,13 @@ import { BasketComponent } from './pages/basket/basket.component';
 import { AdminComponent } from './admin/admin.component';
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
+import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
 
-
+/* import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from '../environments/environment';  */
 
 
 
@@ -45,7 +50,8 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
         BasketComponent,
         AdminComponent,
         AdminCategoryComponent,
-        AdminProductComponent
+        AdminProductComponent,
+        AdminOrderComponent
 
     ],
     imports: [
@@ -54,6 +60,10 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule
+       /*  AngularFireModule.initializeApp(environment.firebaseConfig),
+        AngularFireStorageModule,
+        AngularFireAuthModule,
+        AngularFirestoreModule */
     ],
     providers: [],
     bootstrap: [AppComponent],

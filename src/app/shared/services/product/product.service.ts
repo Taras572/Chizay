@@ -15,21 +15,29 @@ export class ProductService {
         products: `${this.resourceUrl}products`
     }
 
-    constructor(private http: HttpClient) {
-        
-    }
+    constructor(
+        private http: HttpClient
+    ) { }
 
     get(): Observable<any> {
         return this.http.get<any>(this.api.products);
     }
-    
+
     getByCategory(categoryName: string): Observable<any> {
         return this.http.get<any>(`${this.api.products}?category.path=${categoryName}`);
     }
-    
-    
+
+
     create(product: IProduct): Observable<any> {
         return this.http.post<any>(this.api.products, product);
     }
-    
+
+    delete(id: number): Observable<any> {
+        return this.http.delete<any>(`${this.api.products}/${id}`);
+    }
+
+    update(product: IProduct, id: number): Observable<any> {
+        return this.http.patch<any>(`${this.api.products}/${id}`, product);
+    }
+
 }

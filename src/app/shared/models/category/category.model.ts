@@ -2,13 +2,13 @@ export interface ICategory {
     id?: number;
     name: string;
     path: string;
-    icon: string;
+    image: string;
 }
 
 export class Category implements ICategory {
     constructor(
         public name: string,
         public path: string,
-        public icon: string
+        public image: string
     ) { }
 }
