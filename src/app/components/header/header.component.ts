@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
     header_scroll: boolean = false;
     color_scroll: boolean = false;
     text_color: boolean = false;
+    shop_head: boolean = false;
     
 
     constructor(
@@ -24,12 +25,18 @@ export class HeaderComponent implements OnInit {
                 let URL2 = event.url.substring(1,6);
                 let PROD = event.url.substring(1,8);
                 console.log(URL2)
-                if (URL == 'contacts' || URL == 'shop' || PROD =='product' || URL2 == 'admin') {
+                if (URL == 'contacts' || URL == 'news' || URL == 'login' || URL == 'shop'|| URL == 'basket'  || PROD =='product' || URL2 == 'admin') {
                     this.text_color = true;
                 }
                 else {
                     this.text_color = false;
-                }   
+                }
+                if (URL == 'shop' || PROD =='product' || URL == 'basket') {
+                    this.shop_head = true;
+                }
+                else {
+                    this.shop_head = false;
+                }
             }
         })
     }

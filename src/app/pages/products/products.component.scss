@@ -64,3 +64,74 @@ ul {
     cursor: pointer;
     text-decoration: none;
 }
+
+//modal
+.xoo-cp-btns {
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+}
+
+
+a.xcp-btn {
+    width: 40%;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 8px;
+    text-decoration: none;
+    margin-right: 5px;
+}
+.xcp-btn {
+    background-color: #fff;
+    color: #323232;
+    font-size: .8125rem;
+    border: .0625rem solid #323232;
+    font-weight: 700;
+    line-height: 1.5rem;
+    border-radius: .25rem;
+    letter-spacing: .0625rem;
+}
+.xoo-cp-close.xcp-btn {
+    background: #1a1a1a;
+    color: white;
+}
+.modal-price{
+    text-align: right;
+    margin: 0;
+}
+
+
+ .ttt{
+    background-color: yellowgreen;
+    height: 40px;
+}
+.t {
+    background-color: rgb(153, 158, 141);
+    height: 40px;
+}
+.tt{
+    background-color: rgb(27, 32, 16);
+    height: 40px;
+}
+
+
+//modal - +
+.count-modal{
+   display: flex;
+    
+}
+.model-numb{
+    width: 50px;
+    height: 42px;
+    border: 1px solid black;
+    border-right: 0;
+}
+.modal-minus ,.modal-plus{
+    border: 1px solid black;
+    height: 21px;
+    width: 23px;
+    text-align: center;
+    padding-top: -9px;
+    font-size: 15px;
+}

@@ -24,6 +24,8 @@ import { AdminCategoryComponent } from './admin/admin-category/admin-category.co
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
 
+import { LoginComponent } from './pages/login/login/login.component';
+
 /* import { AngularFireModule } from '@angular/fire';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -51,7 +53,8 @@ import { environment } from '../environments/environment';  */
         AdminComponent,
         AdminCategoryComponent,
         AdminProductComponent,
-        AdminOrderComponent
+        AdminOrderComponent,
+        LoginComponent
 
     ],
     imports: [

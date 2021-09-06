@@ -27,7 +27,6 @@ export class ProductService {
         return this.http.get<any>(`${this.api.products}?category.path=${categoryName}`);
     }
 
-
     create(product: IProduct): Observable<any> {
         return this.http.post<any>(this.api.products, product);
     }

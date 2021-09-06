@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { IProduct } from '../../shared/models/product/products.model';
 import { ProductService } from 'src/app/shared/services/product/product.service';
+import { OrderService } from 'src/app/shared/services/order/order.service';
 
 @Component({
     selector: 'app-products',
@@ -15,7 +16,8 @@ export class ProductsComponent implements OnInit {
     constructor(
         private productService: ProductService,
         private activatedRoute: ActivatedRoute,
-        private router: Router
+        private router: Router,
+        private orderService: OrderService
     ) {
         this.router.events.subscribe(event => {
             if(event instanceof NavigationEnd){
@@ -43,16 +45,24 @@ export class ProductsComponent implements OnInit {
       } 
 
 
+      countProduct(product: IProduct, checker: boolean): void {
+        if(checker) {
+          product.count++;
+        } else {
+          if(product.count > 1) {
+            product.count--;
+          }
+        }
+      }
+    
+      addToBasket(product: IProduct): void {
+        this.orderService.addToBasket(product);
+        product.count = 1;
+      } 
+
     
 
-    /*  loadProduct(): void {
-        this.productService.get().subscribe(data => {
-            if (data) {
-                this.products = data;
-            }
-            console.log(this.products);
-        })
-    }  */
+    
 
 
 }

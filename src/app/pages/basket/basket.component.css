@@ -1,1 +1,62 @@
-/* No CSS *//*# sourceMappingURL=basket.component.css.map */
+.container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 140px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1a1a1a;
+  font-size: 3rem;
+  font-family: "Georgia",sans-serif;
+}
+
+.cart-empty, .return-to-shop {
+  text-align: center;
+  margin: 1.875rem 0;
+}
+
+a.button {
+  font-size: 100%;
+  margin: 0;
+  line-height: 1;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+  overflow: visible;
+  padding: .618em 1em;
+  font-weight: 700;
+  border-radius: 3px;
+  left: auto;
+  color: #515151;
+  background-color: #ebe9eb;
+  border: 0;
+  display: inline-block;
+  background-image: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+}
+
+.cart-empty, .return-to-shop {
+  text-align: center;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+  padding: 1em 2em 1em 3.5em;
+  margin: 0 0 2em;
+  position: relative;
+  background-color: #f7f6f7;
+  color: #515151;
+  border-top: 3px solid #a46497;
+  list-style: none outside;
+  width: auto;
+  word-wrap: break-word;
+}
+
+.woocommerce-error, .woocommerce-info, .woocommerce-message {
+  border-top-color: #c09560;
+}
+/*# sourceMappingURL=basket.component.css.map */

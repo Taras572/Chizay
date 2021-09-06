@@ -23,6 +23,10 @@
     margin: 0 auto;
     position: relative;
 }
+//shop head
+.shop_head{
+    height: 120px;
+}
 
 .navbar-expand-md .navbar-nav .nav-link {
     padding-right: 1rem;
@@ -57,7 +61,10 @@
     color: inherit;
 }
 a{
+    margin-left: 5px;
     font-size: 14px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .head_scroll{
@@ -73,13 +80,43 @@ a{
   //admin btn
 .admin-btn{
     position: absolute;
-    bottom: -40%;
+    bottom: -50%;
     right: 10px;
 }
+
+//list basket
+.line{
+    margin: 5px 0;
+    height: 1px;
+    margin-left: auto;
+    width: 85%;
+}
+.list-basket{
+    display: flex;
+    justify-content:flex-end;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#shopping-bag-2 ,#man-user{
+    width: 15px;
+}
+.icon svg{
+    fill: #ae8758;
+    text-align: center;
+}
+.block-nav-shop{
+    margin-top: -20px;
+}
+
 
 @media( max-width: 991px){
     a{
         font-size: 13px;
+
     }
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 0.4rem;

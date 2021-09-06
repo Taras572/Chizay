@@ -14,5 +14,6 @@ import { ICategory } from "../category/category.model";
     price: number|string;
     image: string;
     id?: number;
+    count:number;
 } 
 
