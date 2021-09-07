@@ -98,18 +98,18 @@ export class AdminProductComponent implements OnInit {
     editProduct(product: IProduct): void {
         this.productsForm.patchValue({
             category: [product.category.name],
-            name: [product.name],
-            path: [product.path],
-            type:[product.type],
-            description: [product.description],
-            volume:[product.volume],
-            alcohol:[product.alcohol],
-            color:[product.color],
-            grape:[product.grape],
-            aroma:[product.aroma],
-            taste:[product.taste],
-            price: [product.price]
-            /* image: [product.image] */
+            name: product.name,
+            path: product.path,
+            type:product.type,
+            description: product.description,
+            volume:product.volume,
+            alcohol:product.alcohol,
+            color:product.color,
+            grape:product.grape,
+            aroma:product.aroma,
+            taste:product.taste,
+            price: product.price
+            /* image: product.image */
         });
         this.editProductID = product.id as number;
         this.editStatus = true;
@@ -131,6 +131,5 @@ export class AdminProductComponent implements OnInit {
         this.editStatus = false;
         this.imageStatus = false;
       }
-
 
 }
