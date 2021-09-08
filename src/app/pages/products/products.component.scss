@@ -102,30 +102,24 @@ a.xcp-btn {
 }
 
 
- .ttt{
-    background-color: yellowgreen;
-    height: 40px;
-}
-.t {
-    background-color: rgb(153, 158, 141);
-    height: 40px;
-}
-.tt{
-    background-color: rgb(27, 32, 16);
-    height: 40px;
-}
 
 
 //modal - +
 .count-modal{
-   display: flex;
-    
+   display: flex;  
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
 }
 .model-numb{
     width: 50px;
     height: 42px;
     border: 1px solid black;
     border-right: 0;
+    text-align: center;
 }
 .modal-minus ,.modal-plus{
     border: 1px solid black;
@@ -134,4 +128,26 @@ a.xcp-btn {
     text-align: center;
     padding-top: -9px;
     font-size: 15px;
+}
+.text_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+.text_center p{
+    margin: 0;
+    
+}
+.image_modal img{
+    width: 100%;
+}
+
+@media(max-width: 575px){
+    .image_modal{
+        display: none;
+    }
+    .xcp-btn {
+        display: inline-block;
+    }
 }

@@ -4,6 +4,7 @@ import { IProduct } from '../../shared/models/product/products.model';
 import { ProductService } from 'src/app/shared/services/product/product.service';
 import { OrderService } from 'src/app/shared/services/order/order.service';
 
+
 @Component({
     selector: 'app-products',
     templateUrl: './products.component.html',
@@ -12,6 +13,8 @@ import { OrderService } from 'src/app/shared/services/order/order.service';
 export class ProductsComponent implements OnInit {
     products: Array<IProduct> = [];
     currentCategory: any;
+    public productsModal!: IProduct;
+    
 
     constructor(
         private productService: ProductService,
@@ -20,49 +23,55 @@ export class ProductsComponent implements OnInit {
         private orderService: OrderService
     ) {
         this.router.events.subscribe(event => {
-            if(event instanceof NavigationEnd){
-              const categoryName = event.url.substring(9);;
-               this.loadProduct(categoryName as string);  
-              console.log(event.url.substring(9));
+            if (event instanceof NavigationEnd) {
+                const categoryName = event.url.substring(9);;
+                this.loadProduct(categoryName as string);
+                console.log(event.url.substring(9));
             }
-          })
+        })
     }
 
     ngOnInit(): void {
         
     }
 
-     loadProduct(categoryName: string): void {
+    loadProduct(categoryName: string): void {
+        this.loadProductModal(1);
         this.productService.getByCategory(categoryName as string).subscribe(
-          data => {
-            this.products = data;
-            this.currentCategory = this.products[0].category.path;
-            console.log('user page', this.products);
-          }, err => {
-            console.log(err);
-          }
+            data => {
+                this.products = data;
+                this.currentCategory = this.products[0].category.path;
+                console.log('user page', this.products);
+            }, err => {
+                console.log(err);
+            }
         )
-      } 
+    }
+
+    loadProductModal(Num:any): void {
+        this.productService.getByID(Num).subscribe(
+            data => {
+                this.productsModal = data;
+            }, err => {
+                console.log(err);
+            }
+        ) 
+    }
 
 
-      countProduct(product: IProduct, checker: boolean): void {
-        if(checker) {
-          product.count++;
+    countProduct(products: IProduct, checker: boolean): void {
+        if (checker) {
+            products.count++;
         } else {
-          if(product.count > 1) {
-            product.count--;
-          }
+            if (products.count > 1) {
+                products.count--;
+            }
         }
-      }
-    
-      addToBasket(product: IProduct): void {
+    }
+
+    addToBasket(product: IProduct): void {
         this.orderService.addToBasket(product);
         product.count = 1;
-      } 
-
-    
-
-    
-
+    }
 
 }

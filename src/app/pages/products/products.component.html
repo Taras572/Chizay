@@ -1,13 +1,13 @@
 <div class="block_container">
     <div class="block-products row">
-        <div class="product col-md-6 col-6 row" *ngFor="let prod of products">
+        <div class="product col-md-6 col-sm-12 row" *ngFor="let prod of products">
 
             <div class="block-product-img col-md-5 col-5">
                 <div class="product-img">
                     <img src="../../../assets/images/test.png">
                 </div>
 
-                <a tabindex="0" class="btn-def black" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Додати до
+                <a (click)="loadProductModal(prod.id)"  tabindex="0" class="btn-def black" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Додати до
                     кошика</a>
 
 
@@ -40,6 +40,7 @@
                             <strong>Аромат&nbsp;-</strong>{{prod.aroma}}
                         </p>
                     </li>
+
                     <li>
                         <p class="shown-categories__item--description-params"><strong>Смак&nbsp;-</strong>{{prod.taste}}
                         </p>
@@ -54,48 +55,48 @@
                         class="woocommerce-Price-amount amount"><bdi>{{prod.price}}&nbsp;<span
                                 class="woocommerce-Price-currencySymbol"></span></bdi></span></p>
             </div>
-        </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-0  image_modal">
+                                    <img src="../../../assets/images/test.png" alt="">
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-5  text_center">
+                                    <p>{{productsModal.name}}</p>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 text_center">
+                                    <p>{{productsModal.price}} грн</p>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 center">
+                                    <div class="count-modal">
+                                        <input class="model-numb" type="text" maxlength="3" [value]="productsModal.count">
+                                        <div>
+                                            <div class="modal-plus" (click)="countProduct(productsModal, true)"><i class="uil uil-plus"></i></div>
+                                            <div class="modal-minus" (click)="countProduct(productsModal, false)"><i class="uil uil-minus"></i></div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
 
-
-    </div>
-</div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered ">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-3 tt"></div>
-                    <div class="col-xl-4 col-lg-4 col-md-4 t"></div>
-                    <div class="col-xl-3 col-lg-3 col-md-3 ttt"></div>
-                    <div class="col-xl-2 col-lg-2 col-md-2 tttt">
-                        <div class="count-modal">
-                            <div class="model-numb"></div>
-                            <div>
-                                <div class="modal-plus"><i class="uil uil-plus"></i></div>
-                                <div class="modal-minus"><i class="uil uil-minus"></i></div>
+                            </div>
+                            <p class="modal-price">Всього: <strong>{{ productsModal.count * productsModal.price }} грн</strong>  </p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="xoo-cp-btns">
+                                <a class="xoo-cp-btn-vc xcp-btn" [routerLink]="[ '/basket' ]" data-bs-dismiss="modal">Подивитись кошик</a>
+                                <a class="xoo-cp-close xcp-btn" data-bs-dismiss="modal">Продовжити покупки</a>
                             </div>
                         </div>
-
                     </div>
-
                 </div>
-                <p class="modal-price">Всього:</p>
-            </div>
-            <div class="modal-footer">
-                <div class="xoo-cp-btns">
-                    <a class="xoo-cp-btn-vc xcp-btn" [routerLink]="[ '/basket' ]" data-bs-dismiss="modal">>Подивитись кошик</a>
-                    <a class="xoo-cp-close xcp-btn" data-bs-dismiss="modal">Продовжити покупки</a>
-                </div>
-                <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button> -->
             </div>
         </div>
     </div>

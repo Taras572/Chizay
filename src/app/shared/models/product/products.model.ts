@@ -11,7 +11,7 @@ import { ICategory } from "../category/category.model";
     grape: string;
     aroma: string;
     taste: string;
-    price: number|string;
+    price: number;
     image: string;
     id?: number;
     count:number;

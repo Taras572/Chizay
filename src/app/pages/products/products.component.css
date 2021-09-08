@@ -97,6 +97,7 @@ a.xcp-btn {
   line-height: 1.5rem;
   border-radius: .25rem;
   letter-spacing: .0625rem;
+  display: inline-block;
 }
 
 .xoo-cp-close.xcp-btn {
@@ -130,11 +131,26 @@ a.xcp-btn {
   display: flex;
 }
 
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
 .model-numb {
   width: 50px;
   height: 42px;
   border: 1px solid black;
   border-right: 0;
+  text-align: center;
 }
 
 .modal-minus, .modal-plus {
@@ -144,5 +160,32 @@ a.xcp-btn {
   text-align: center;
   padding-top: -9px;
   font-size: 15px;
+}
+
+.text_center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0;
+}
+
+.text_center p {
+  margin: 0;
+}
+
+.image_modal img {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .image_modal {
+    display: none;
+  }
 }
 /*# sourceMappingURL=products.component.css.map */
