@@ -23,6 +23,7 @@ export class BasketComponent implements OnInit {
     public totalPrice = 0;
     public countBusket = 0;
     public orderForm!: FormGroup;
+    public discount: any;
 
     constructor(
         private orderService: OrderService,
@@ -49,16 +50,20 @@ export class BasketComponent implements OnInit {
         if (localStorage.getItem('basket')) {
             this.basket = JSON.parse(<string>localStorage.getItem('basket'));
             this.totalPrice = this.getTotal(this.basket);
+            this.discount = this.getTotalDiscount(this.basket);
             this.countBusket = this.getCount(this.basket);
+
         }
+        
         console.log(this.basket);
     }
 
     private getTotal(products: Array<IProduct>): number {
         return products.reduce((total, prod) => total + (prod.price * prod.count), 0);
-
     }
-
+    private getTotalDiscount(products: Array<IProduct>): number {
+        return Math.round( products.reduce((total, prod) => (total + (prod.price * prod.count))/100*5, 0));
+    }
     private getCount(products: Array<IProduct>): number {
         return products.reduce((total, prod) => total + prod.count, 0);
 
@@ -77,6 +82,7 @@ export class BasketComponent implements OnInit {
             }
         }
         this.totalPrice = this.getTotal(this.basket);
+        this.discount = this.getTotalDiscount(this.basket);
         this.countBusket = this.getCount(this.basket);
         this.orderService.changeBasket$.next(true);
         localStorage.setItem('basket', JSON.stringify(this.basket));
@@ -88,32 +94,13 @@ export class BasketComponent implements OnInit {
             const index = this.basket.findIndex(prod => prod.id === product.id);
             this.basket.splice(index, 1);
             this.totalPrice = this.getTotal(this.basket);
+            this.discount = this.getTotalDiscount(this.basket);
             this.countBusket = this.getCount(this.basket);
             this.orderService.changeBasket$.next(true);
             localStorage.setItem('basket', JSON.stringify(this.basket));
         }
     }
 
-    addOrder(): void {
-        const order = {
-            ...this.orderForm.value,
-            products: this.basket,
-            totalPrice: this.totalPrice
-        }
-        this.orderService.create(order).subscribe(
-            () => {
-                this.basket = [];
-                localStorage.removeItem('basket');
-                this.orderService.changeBasket$.next(true);
-            }, err => {
-                console.log(err);
-
-            }
-        )
-    }
-
-    checkUserLogin(): void {
-
-    }
+    
 
 }

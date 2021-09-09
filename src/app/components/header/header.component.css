@@ -130,6 +130,24 @@ ul {
   margin-top: -20px;
 }
 
+.basked_count {
+  position: relative;
+}
+
+.shop_bag_count {
+  position: absolute;
+  font-size: 11px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  left: 5px;
+  top: 9px;
+  line-height: 1rem;
+  min-width: 1rem;
+  min-height: 1rem;
+}
+
 @media (max-width: 991px) {
   a {
     font-size: 13px;

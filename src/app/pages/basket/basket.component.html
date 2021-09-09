@@ -52,8 +52,10 @@
                                         <div class="count-modal">
                                             <input class="model-numb" type="text" maxlength="3" [value]="order.count">
                                             <div>
-                                                <div class="modal-plus" (click)="productCount(order,true)"><i class="uil uil-plus"></i></div>
-                                                <div class="modal-minus" (click)="productCount(order,false)"><i class="uil uil-minus"></i></div>
+                                                <div class="modal-plus" (click)="productCount(order,true)"><i
+                                                        class="uil uil-plus"></i></div>
+                                                <div class="modal-minus" (click)="productCount(order,false)"><i
+                                                        class="uil uil-minus"></i></div>
                                             </div>
                                         </div>
                                     </div>
@@ -82,94 +84,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="btnWrapper txtRight fadeInTop mt-3">
-                        <div class="emptySpace40 emptySpace-xs20"></div>
-                        <div class="payCheckboxs text-left">
-                            <label class="checkboxEntry radio ">
-                                <input id="pay" type="radio" name="payment-type" value="cash" class="payment-cash"
-                                    checked="checked"><span>Оплата готівкою</span>
-                            </label>
-                            <label class="checkboxEntry radio ml-3">
-                                <input id="pay2" type="radio" name="payment-type" value="card"
-                                    class="payment-card"><span>Безготівкова
-                                    оплата</span>
-                            </label>
-                        </div>
-                        <div class="emptySpace40"></div>
-                    </div>
-                    <div class="emptySpace-lt60 emptySpace-md45 emptySpace-xs25"></div>
-                </div>
-                <div class="col-lg-12 col-lg-pull-6 col-my-lt-12 paySelect">
-                    <h6 class="h6 as smallSlideRight animationDelay-1">Оберіть спосіб доставки</h6>
-                    <div class="emptySpace30"></div>
-                    <div class="payForm smallSlideRight">
-                        <form [formGroup]="orderForm" id="make-order-form">
-                            <input type="hidden" name="payment_type" value="cash">
-                            <div class="deliveryCheckboxs">
-                                <label class="checkboxEntry radio">
-                                    <input type="radio" name="delivery" value="delivery"
-                                        checked="checked"><span>Доставка</span>
-                                </label>
-                                <label class="checkboxEntry radio ml-3">
-                                    <input type="radio" name="delivery" value="advance"><span>Заздалегідь</span>
-                                </label>
-                            </div>
-                            <div class="emptySpace20 emptySpace-xs15"></div>
-                            <label class="inputWrapper ">
-                                <i>Ваше имя*</i>
-                                <span>
-                                    <input class="simpleInput name" formControlName="userName" type="text" value=""
-                                        maxlength="60">
-                                </span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Телефон*</i>
-                                <span><input class="simpleInput" formControlName="userPhone" type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Місто*</i>
-                                <span><input class="simpleInput" formControlName="userCity" type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Вулиця*</i>
-                                <span><input class="simpleInput" formControlName="userStreet" type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i>Будинок*</i>
-                                <span><input class="simpleInput" formControlName="userHouse" type="text"></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <label class="inputWrapper ">
-                                <i class="textarea">Ваш коментар</i>
-                                <span><textarea class="simpleInput" formControlName="userComment" id="" maxlength="256"
-                                        cols="30" rows="10"></textarea></span>
-                                <span class="firstBorderElement"></span>
-                                <span class="secondBorderElement"></span>
-                            </label>
-                            <div class="emptySpace10"></div>
-                            <input type="submit" style="display: none">
-                        </form>
-                        <div class="emptySpace20 emptySpace-xs15"></div>
-                    </div>
-                    <div class="btnWrapper text-center mb-3">
-                        <a class="button btnColor2 orderButton make-order" (click)="addOrder()">ОФОРМИТИ ЗАМОВЛЕННЯ</a>
-                    </div>
+
                 </div>
             </div>
         </div>
+        <!-- ------------------------------------ -->
+        <div class="cart_totals calculated_shipping" *ngIf="basket.length">
+
+            <h2>Підсумки кошика </h2>
+
+            <table cellspacing="0" class="shop_table shop_table_responsive">
+
+                <tbody>
+                    <tr >
+                        <td class="table_left">Підсумок</td>
+                        <td class="table_right">{{totalPrice}} Грн</td>
+                    </tr>
+                    <tr>
+                        <td class="table_left">Знижка 5%</td>
+                        <td class="table_right">-{{discount}} Грн</td>
+                    </tr>
+                    <tr>
+                        <td class="table_left"><strong>Загалом</strong></td>
+                        <td class="table_right"> <strong>{{totalPrice - discount}} Грн</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="wc-proceed-to-checkout">
+                <a class="btn-def black" [routerLink]="[ '/checkout' ]">Перейти до оформлення</a>
+            </div>
+
+
+        </div>
     </div>
-</div>

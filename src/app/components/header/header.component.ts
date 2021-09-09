@@ -29,13 +29,13 @@ export class HeaderComponent implements OnInit {
                 let URL2 = event.url.substring(1, 6);
                 let PROD = event.url.substring(1, 8);
                 console.log(URL2)
-                if (URL == 'contacts' || URL == 'news' || URL == 'login' || URL == 'shop' || URL == 'basket' || PROD == 'product' || URL2 == 'admin') {
+                if (URL == 'contacts' || URL == 'checkout' || URL == 'news' || URL == 'login' || URL == 'shop' || URL == 'basket' || PROD == 'product' || URL2 == 'admin') {
                     this.text_color = true;
                 }
                 else {
                     this.text_color = false;
                 }
-                if (URL == 'shop' || PROD == 'product' || URL == 'basket') {
+                if (URL == 'shop' || PROD == 'product' || URL == 'basket' || URL == 'checkout') {
                     this.shop_head = true;
                 }
                 else {

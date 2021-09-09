@@ -18,7 +18,7 @@ import { LocationComponent } from './pages/location/location.component';
 import { RestaurantComponent } from './pages/restaurant/restaurant.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { BasketComponent } from './pages/basket/basket.component';
-import { CheckoutComponent } from './pages/checkout/checkout/checkout.component'; 
+import { CheckoutComponent } from './pages/checkout/checkout.component'; 
 
 import { AdminComponent } from './admin/admin.component';
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
