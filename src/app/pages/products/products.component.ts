@@ -69,9 +69,9 @@ export class ProductsComponent implements OnInit {
         }
     }
 
-    addToBasket(product: IProduct): void {
-        this.orderService.addToBasket(product);
-        product.count = 1;
+    addToBasket(products: IProduct): void {
+        this.orderService.addToBasket(products);
+        products.count = 1;
     }
 
 }

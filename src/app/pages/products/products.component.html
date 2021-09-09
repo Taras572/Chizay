@@ -91,7 +91,7 @@
                         </div>
                         <div class="modal-footer">
                             <div class="xoo-cp-btns">
-                                <a class="xoo-cp-btn-vc xcp-btn" [routerLink]="[ '/basket' ]" data-bs-dismiss="modal">Подивитись кошик</a>
+                                <a class="xoo-cp-btn-vc xcp-btn" data-bs-dismiss="modal" (click)="addToBasket(productsModal)">Додати до кошика</a>
                                 <a class="xoo-cp-close xcp-btn" data-bs-dismiss="modal">Продовжити покупки</a>
                             </div>
                         </div>

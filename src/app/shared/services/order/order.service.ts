@@ -4,46 +4,57 @@ import { Observable, Subject } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { IProduct } from '../../models/product/products.model';
 
+
 @Injectable({
-  providedIn: 'root'
+   providedIn: 'root'
 })
 export class OrderService {
+   public changeBasket$ = new Subject<boolean>();
+   private resourceUrl = environment.BACKEND_URL;
+   private api = {
+      orders: `${this.resourceUrl}orders`
+   };
+   
+   
 
-  public changeBasket$ = new Subject<boolean>();
+   constructor(
+      private http: HttpClient,
+      
+   ) { }
 
-  private resourceUrl = environment.BACKEND_URL;
+   get(): Observable<any> {
+      return this.http.get<any>(this.api.orders);
+   }
 
-  private api = {
-    orders: `${this.resourceUrl}orders`
-  }
+   create(order: any): Observable<any> {
+      return this.http.post<any>(this.api.orders, order);
+   }
 
-  constructor(
-    private http: HttpClient
-  ) { }
-
-  get(): Observable<any> {
-    return this.http.get<any>(this.api.orders);
-  }
-
-  create(order: any): Observable<any> {
-    return this.http.post<any>(this.api.orders, order);
-  }
-
-  addToBasket(product: IProduct): void {
-    let basket: Array<IProduct> = [];
-    if(localStorage.getItem('basket')){
-      basket = JSON.parse(<string>localStorage.getItem('basket'));
-      if(basket.some(prod => prod.id === product.id)){
-        const index = basket.findIndex(prod => prod.id === product.id);
-        basket[index].count += product.count;
+   addToBasket(product: IProduct): void {
+      let basket: Array<IProduct> = [];
+      if (localStorage.getItem('basket')) {
+         basket = JSON.parse(<string>localStorage.getItem('basket'));
+         if (basket.some(prod => prod.id === product.id)) {
+            const index = basket.findIndex(prod => prod.id === product.id);
+            basket[index].count += product.count;
+         } else {
+            basket.push(product);
+         }
       } else {
-        basket.push(product);
+         basket.push(product);
       }
-    } else {
-      basket.push(product);
-    }
-    localStorage.setItem('basket', JSON.stringify(basket));
-    this.changeBasket$.next(true);
-    product.count = 1;
-  }
+      localStorage.setItem('basket', JSON.stringify(basket));
+      this.changeBasket$.next(true);
+      product.count = 1;
+
+      
+      
+   }
+
+
+
+  
+
+
+
 }

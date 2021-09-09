@@ -134,7 +134,7 @@
                     </a>
                 </li>
                 <li>
-                    <a [routerLink]="[ '/basket']">
+                    <a class="basked_count" [routerLink]="[ '/basket']">
                         <span class="icon">
                             <svg xmlns="http://www.w3.org/2000/svg" id="shopping-bag-2" viewBox="0 0 512 512"
                                 xml:space="preserve">
@@ -144,7 +144,7 @@
                             </svg>
                         </span>
                         Кошик
-                        <!-- <span class="shop_bag_count">0</span> -->
+                        <span class="shop_bag_count">{{count_busket}}</span> 
                     </a>
                 </li>
             </ul>
