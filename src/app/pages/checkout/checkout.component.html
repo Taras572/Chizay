@@ -76,6 +76,11 @@
                 <h2>Підсумки кошика </h2>
                 <table cellspacing="0" class="shop_table shop_table_responsive">
                     <tbody>
+                        <tr *ngFor="let order of basket">
+                            <td class="table_left">{{order.name}} <span class="x">×</span>   {{order.count}}</td>
+                            <td class="table_right">{{order.count *
+                                order.price}} ГРН</td>
+                        </tr>
                         <tr>
                             <td class="table_left">Підсумок</td>
                             <td class="table_right">{{totalPrice}} Грн</td>
@@ -91,7 +96,7 @@
                     </tbody>
                 </table>
                 <div class="wc-proceed-to-checkout">
-                    <a class="btn-def black" (click)="addOrder()" >Підтвердити замовлення</a>
+                    <a class="btn-def black" (click)="addOrder()" [routerLink]="[ '/home' ]" >Підтвердити замовлення</a>
                 </div>
             </div>
         </div>

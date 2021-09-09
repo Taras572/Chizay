@@ -734,7 +734,7 @@ label.light textarea:-ms-input-placeholder {
   background-color: #f9f9f9;
   padding: 1.5625rem 1.25rem;
   width: 100%;
-  max-width: 22.5rem;
+  max-width: 26.5rem;
   margin-bottom: 1.25rem;
   color: #323232;
   text-align: center;
@@ -770,16 +770,18 @@ table {
   width: 100%;
 }
 
+td {
+  padding: 5px 20px;
+}
+
 .table_right {
   text-align: right;
+  padding-left: 0;
+  min-width: 93px;
 }
 
 .table_left {
   text-align: left;
-}
-
-td {
-  padding: 5px 20px;
 }
 
 .woocommerce-message {
@@ -804,5 +806,10 @@ td {
 
 .Second, .Name {
   width: calc(98%/2);
+}
+
+.x {
+  line-height: 10px;
+  font-weight: lighter;
 }
 /*# sourceMappingURL=checkout.component.css.map */

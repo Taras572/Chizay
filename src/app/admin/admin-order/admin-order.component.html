@@ -1,1 +1,35 @@
-<p>admin-order works!</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Second</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Point</th>
+            <th scope="col">Price</th>
+            <th scope="col">Product</th>
+            <th scope="col">Product Count</th>
+            <th scope="col">Icon</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="align-middle" *ngFor="let orders of adminOrder; index as i">
+            <td>{{ i + 1 }}</td>
+            <td>{{ orders.userName }}</td>
+            <td>{{ orders.userSecondName }}</td>
+            <td>{{ orders.userPhone }}</td>
+            <td>{{ orders.userCity }}/{{ orders.userStreet }}/{{ orders.userHouse }}</td>
+            <td>{{ orders.totalPrice }} Грн</td>
+            <td>{{ orders.products[0].name}}</td>
+            <td>{{ orders.products[0].count}}</td>
+            <td>
+                <img [src]="orders.image" width="80px" alt="">
+            </td>
+            <td>
+                <button (click)="deleteCategory(orders)" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
