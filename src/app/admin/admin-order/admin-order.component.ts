@@ -15,7 +15,6 @@ export class AdminOrderComponent implements OnInit {
 
     public adminOrder: Array<any> = [];
     public categoryForm!: FormGroup;
-    private editCategoryID = 0;
 
     constructor(
         private categoryService: CategoryService,
@@ -32,7 +31,7 @@ export class AdminOrderComponent implements OnInit {
         this.orderService.get().subscribe(
             data => {
                 this.adminOrder = data;
-                console.log(this.adminOrder[1].products[0].name);
+                console.log(data);   
             }, err => {
                 console.log(err);
             }

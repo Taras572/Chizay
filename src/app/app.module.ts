@@ -31,11 +31,11 @@ import { LoginComponent } from './pages/login/login/login.component';
 // import { AngularFireStorageModule } from '@angular/fire/storage';
 // import { AngularFireAuthModule } from '@angular/fire/auth';
 // import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+/* import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import * as AngularFireAuthModule  from '@angular/fire/auth';
-import { environment } from '../environments/environment';
+import { environment } from '../environments/environment'; */
 
 
 
@@ -69,9 +69,9 @@ import { environment } from '../environments/environment';
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
-        provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+       /*  provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
         provideFirestore(() => getFirestore()),
-        provideStorage(() => getStorage())
+        provideStorage(() => getStorage()) */
         // AngularFireModule.initializeApp(environment.firebaseConfig),
         // AngularFireStorageModule,
         // AngularFireAuthModule,
