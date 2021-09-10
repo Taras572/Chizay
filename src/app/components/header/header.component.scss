@@ -52,10 +52,12 @@
 .text_color, .text_color svg{
     color: rgb(0, 0, 0);
     fill: rgb(0, 0, 0);
+    
 }
 .color_scroll , .color_scroll svg{
     color: rgb(255, 255, 255);
     fill: rgb(255, 255, 255);
+    margin-right: 10px;
 }
 .nav-link{
     color: inherit;
@@ -69,6 +71,7 @@ a{
 
 .head_scroll{
     position: fixed;
+    padding-top: 10px;
     top: 0;
     background: rgba(50,50,50,.9);
     z-index: 999;
@@ -108,8 +111,11 @@ ul {
     fill: #ae8758;
     text-align: center;
 }
+
+
 .block-nav-shop{
     margin-top: -20px;
+    margin-right: 10px;
 }
 //basked
 .basked_count{
@@ -128,6 +134,15 @@ ul {
     min-width: 1rem;
     min-height: 1rem;
 }
+//burger menu
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,.55);
+    border: 0 
+}
+.bg_color_burger{
+    display: none;
+    color:  inherit;
+}
 @media( max-width: 991px){
     a{
         font-size: 13px;
@@ -138,9 +153,21 @@ ul {
         padding-left: 0.4rem;
     }
 }
+
 @media(max-width: 767px){
     .head{
         top: 0;
+    }
+    .bg_color{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        fill: rgb(0, 0, 0);
+        
+        z-index: 22;
+    }
+    .bg_color_burger{
+        
+        display: block;
     }
 }
 

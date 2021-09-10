@@ -63,3 +63,12 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     letter-spacing: .125rem;
 }
+.marg{
+    margin: 20px 0;
+}
+
+@media(max-width: 767px){
+    .recipe_img{
+        margin: 15px 0;
+    }
+}

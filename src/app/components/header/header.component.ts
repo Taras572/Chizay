@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
     color_scroll: boolean = false;
     text_color: boolean = false;
     shop_head: boolean = false;
+    
 
     count_busket: number = 0;
    

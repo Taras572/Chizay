@@ -83,12 +83,13 @@
                         </svg>
                     </a>
                 </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav" [class.text_color]="text_color" [class.color_scroll]="color_scroll">
+               
+                     
+                    <i class="uil uil-bars bg_color_burger" [class.color_scroll]="color_scroll" data-bs-toggle="collapse" data-bs-target="#navbarNav" ></i>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                
+                <div class="collapse navbar-collapse bg_color"  id="navbarNav">
+                    <ul class="navbar-nav bg_color" [class.text_color]="text_color" [class.color_scroll]="color_scroll">
                         <li class="nav-item">
                             <a  class="nav-link" ><i class="uil uil-search"></i></a>
                         </li>
