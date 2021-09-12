@@ -1,1 +1,8 @@
-/* No CSS *//*# sourceMappingURL=admin-order.component.css.map */
+li {
+  list-style-type: none;
+}
+
+td, th {
+  text-align: center;
+}
+/*# sourceMappingURL=admin-order.component.css.map */

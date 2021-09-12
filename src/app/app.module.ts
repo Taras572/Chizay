@@ -27,15 +27,9 @@ import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
 
 import { LoginComponent } from './pages/login/login/login.component';
 
-// import { AngularFireModule } from '@angular/fire';
-// import { AngularFireStorageModule } from '@angular/fire/storage';
-// import { AngularFireAuthModule } from '@angular/fire/auth';
-// import { AngularFirestoreModule } from '@angular/fire/firestore';
-/* import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-import { getStorage, provideStorage } from '@angular/fire/storage';
-import * as AngularFireAuthModule  from '@angular/fire/auth';
-import { environment } from '../environments/environment'; */
+import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
+import { getStorage,provideStorage } from '@angular/fire/storage';
+import { environment } from '../environments/environment';
 
 
 
@@ -69,13 +63,8 @@ import { environment } from '../environments/environment'; */
         AppRoutingModule,
         HttpClientModule,
         ReactiveFormsModule,
-       /*  provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-        provideFirestore(() => getFirestore()),
-        provideStorage(() => getStorage()) */
-        // AngularFireModule.initializeApp(environment.firebaseConfig),
-        // AngularFireStorageModule,
-        // AngularFireAuthModule,
-        // AngularFirestoreModule
+        provideFirebaseApp(() => initializeApp(environment.firebaseConfig )),
+        provideStorage(() => getStorage(getApp(), 'anotherBucket'))
     ],
     providers: [],
     bootstrap: [AppComponent],

@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AAAA,AAAA,EAAE,CAAA;EACE,eAAe,EAAE,IAAI;CACxB;;AACD,AAAA,EAAE,EAAE,EAAE,CAAA;EACF,UAAU,EAAE,MAAM;CACrB",
     "sources": [
         "admin-order.component.scss"
     ],

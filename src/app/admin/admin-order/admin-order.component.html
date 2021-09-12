@@ -22,11 +22,11 @@
             <td>{{ orders.userPhone }}</td>
             <td>{{ orders.userCity }}/{{ orders.userStreet }}/{{ orders.userHouse }}</td>
             <td>{{ orders.totalPrice }} Грн</td>
-            <td>{{ orders.products[0].name}}</td>
-            <td>{{ orders.products[0].count}}</td>
-            <td>
-                <img [src]="orders.image" width="80px" alt="">
-            </td>
+            <td><li *ngFor="let item of orders.products"> {{ item.name }}</li></td>
+            <td><li *ngFor="let item of orders.products"> {{ item.count }}</li></td>
+            <!-- <td >{{ orders.products[0].name }}</td> -->
+            <!-- <td >{{ orders.products[y].name }}</td> -->
+            <td> <img src="{{ orders.products[0].image }}" height="60px" alt=""></td>
             <td>
                 <button (click)="deleteCategory(orders)" class="btn btn-danger">delete</button>
             </td>

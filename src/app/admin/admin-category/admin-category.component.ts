@@ -6,6 +6,10 @@ import { CategoryService } from 'src/app/shared/services/category/category.servi
 
 import { Observable } from 'rxjs';
 
+import { getStorage, ref, uploadBytes, uploadString, getDownloadURL } from "firebase/storage"; 
+import { FirebaseApp, FirebaseApps } from '@angular/fire/app';
+import { Storage, StorageInstances } from '@angular/fire/storage';
+
 
 @Component({
     selector: 'app-admin-category',
@@ -27,6 +31,10 @@ export class AdminCategoryComponent implements OnInit {
     constructor(
         private categoryService: CategoryService,
         private fb: FormBuilder,
+        defaultApp: FirebaseApp,       // Injects the default FirebaseApp
+        allFirebaseApps: FirebaseApps, // Injects an array of all initialized Firebase Apps
+        storage: Storage,                      // Injects the default storage instance
+        allStorageInstances: StorageInstances, // Injects an array of all the intialized storage instances
     ) {}
 
 
@@ -99,18 +107,23 @@ export class AdminCategoryComponent implements OnInit {
         this.initCategoryForm();
         this.editStatus = false;
     }
-    /* document.getElementById('file-id').addEventListener('change', function(event){
-        let file = event.target.files[0];
-        BACK.style.backgroundImage = `url(${URL.createObjectURL(file)})` 
-        console.log(file);
-    }) */
     uploadFile(event: any): void {
         const file = event.target.files[0];
-        const filePath = `url(${URL.createObjectURL(file)})`;
-        this.imageUrl = filePath;
-        console.log(file);
-        console.log(this.imageUrl);
-      }
+        const filePath = `images/${file.name}`;
+        const storage = getStorage();
+        const storageRef = ref(storage, filePath);
+        uploadBytes(storageRef, file).then 
+        getDownloadURL(ref(storage, `images/${file.name}`)).then((snapshot) => {
+           this.image = snapshot;
+           this.categoryForm.patchValue({
+            image: this.image
+            
+          }) 
+          console.log(this.image);
+
+        });
+
+    }
     
     /* uploadFileImage(event: any): void {
         const file = event.target.files[0];
