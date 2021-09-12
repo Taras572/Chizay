@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ICategory } from 'src/app/shared/models/category/category.model';
+import { CategoryService } from 'src/app/shared/services/category/category.service';
 
 @Component({
   selector: 'app-shop',
@@ -6,10 +8,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shop.component.scss']
 })
 export class ShopComponent implements OnInit {
+  public adminCategories: Array<ICategory> = [];
 
-  constructor() { }
+  constructor(
+
+    private categoryService: CategoryService,
+  ) { }
 
   ngOnInit(): void {
+    this.loadCategories();
+  }
+
+  loadCategories(): void {
+    this.categoryService.get().subscribe(
+      data => {
+        this.adminCategories = data;
+      }, err => {
+        console.log(err);
+      }
+    )
   }
 
 }

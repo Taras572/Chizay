@@ -90,97 +90,97 @@
     {
       "name": "Chateau Chizay",
       "path": "chateau-chizay",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
       "id": 1
     },
     {
       "name": "Carpathian Sekt",
       "path": "carpathian-sekt",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop2.png?alt=media&token=7e09cca5-ff39-4b1a-8092-fdc47e933b8f",
       "id": 2
     },
     {
       "name": "Витримані сухі вина",
       "path": "dry-wines",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
       "id": 3
     },
     {
       "name": "GRAPE WHITE BLEND",
       "path": "grape-white_blend",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop4.png?alt=media&token=d5464227-ca9f-4725-8003-0767ac162c35",
       "id": 4
     },
     {
       "name": "Країна Мрій",
       "path": "dream-country",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop5.png?alt=media&token=54b03397-25b8-47c9-84c6-6f90448e8873",
       "id": 5
     },
     {
       "name": "Кошерні вина",
       "path": "kosher-wines",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop6.png?alt=media&token=275afbf5-5033-47ea-8ae3-56f0ecd5a32e",
       "id": 6
     },
     {
       "name": "Сік виноградний",
       "path": "grape-juice",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop7.png?alt=media&token=45c051a1-e34d-44da-9993-b3713b8cace7",
       "id": 7
     },
     {
       "name": "Ice Wine",
       "path": "ice-wine",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop8.png?alt=media&token=2546e565-34ca-488b-8c5c-4d0d34c7003a",
       "id": 10
     },
     {
       "name": "Авторські вина",
       "path": "authors-wines",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop9.png?alt=media&token=06b04ef1-8a5a-45fa-a942-5ab00d581607",
       "id": 11
     },
     {
       "name": "Фруктова колекція",
       "path": "fruit-collection",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop10.png?alt=media&token=b1d1d0ef-ad90-4b02-ad18-518698792c81",
       "id": 12
     },
     {
       "name": "Подарункові набори",
       "path": "gift-sets",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop11.png?alt=media&token=9fcff8f1-a754-4bdf-82ee-4c036d12d7c4",
       "id": 13
     },
     {
       "name": "Подарункові Сертифікати",
       "path": "gift-certificates",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop12.png?alt=media&token=9c6189ab-f64d-44b6-b14d-5b916ab0f10e",
       "id": 14
     },
     {
       "name": "Limited Edition",
       "path": "limited-edition",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop13.png?alt=media&token=dfab9545-7ab1-4d7b-ac6f-ffdd9c046fa4",
       "id": 15
     },
     {
       "name": "Домашнє Вино",
       "path": "homemade-wine",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop14.png?alt=media&token=02bd61e5-445e-4c44-a84b-e9ccf7eca880",
       "id": 16
     },
     {
       "name": "Вино bag-in-box",
       "path": "bag-in-box",
-      "image": "",
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop15.png?alt=media&token=2209c668-9bd8-48c6-afd4-f77116578f8f",
       "id": 17
     },
     {
       "name": "Аксесуари",
       "path": "accessories",
-      "image": null,
+      "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop16.png?alt=media&token=7347503d-59e6-4d56-8f62-f1ac998bb15b",
       "id": 18
     }
   ],
