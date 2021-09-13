@@ -152,7 +152,6 @@ export class AdminCategoryComponent implements OnInit {
       } */
 
 }
-function subscribe(snapshot: any): ((value: import("@firebase/storage").UploadResult) => import("@firebase/storage").UploadResult | PromiseLike<import("@firebase/storage").UploadResult>) | null | undefined {
-    throw new Error('Function not implemented.');
+
 }
 
