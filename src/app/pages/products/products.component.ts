@@ -37,15 +37,30 @@ export class ProductsComponent implements OnInit {
 
     loadProduct(categoryName: string): void {
         this.loadProductModal(1);
-        this.productService.getByCategory(categoryName as string).subscribe(
-            data => {
-                this.products = data;
-                this.currentCategory = this.products[0].category.path;
-                console.log('user page', this.products);
-            }, err => {
-                console.log(err);
-            }
-        )
+        if( categoryName == 'all-vine'){
+            this.productService.get().subscribe(
+                data => {
+                    this.products = data;
+                    console.log('user page', this.products);
+                }, err => {
+                    console.log(err);
+                }
+            )
+        }
+        else{
+            this.productService.getByCategory(categoryName as string).subscribe(
+                data => {
+                    this.products = data;
+                    this.currentCategory = this.products[0].category.path;
+                    console.log('user page', this.products);
+                }, err => {
+                    console.log(err);
+                }
+            )
+        }
+        
+        
+        
     }
 
     loadProductModal(Num:any): void {

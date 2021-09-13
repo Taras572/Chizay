@@ -6,6 +6,10 @@ import { ICategory } from 'src/app/shared/models/category/category.model';
 import { ProductService } from 'src/app/shared/services/product/product.service';
 import { CategoryService } from 'src/app/shared/services/category/category.service';
 
+import { getStorage, ref, uploadBytes, uploadString, getDownloadURL, deleteObject } from "firebase/storage";
+import { FirebaseApp, FirebaseApps } from '@angular/fire/app';
+import { Storage, StorageInstances } from '@angular/fire/storage';
+
 @Component({
     selector: 'app-admin-product',
     templateUrl: './admin-product.component.html',
@@ -24,7 +28,11 @@ export class AdminProductComponent implements OnInit {
     constructor(
         private productService: ProductService,
         private categoryService: CategoryService,
-        private fb: FormBuilder
+        private fb: FormBuilder,
+        defaultApp: FirebaseApp,       // Injects the default FirebaseApp
+        allFirebaseApps: FirebaseApps, // Injects an array of all initialized Firebase Apps
+        storage: Storage,                      // Injects the default storage instance
+        allStorageInstances: StorageInstances, // Injects an array of all the intialized storage instances
     ) { }
 
     ngOnInit(): void {
@@ -50,7 +58,7 @@ export class AdminProductComponent implements OnInit {
             aroma: [null, Validators.required],
             taste: [null, Validators.required],
             price: [null, Validators.required],
-            /* image: [null, Validators.required],  */
+            image: [null, Validators.required], 
             count: [1]
         })
     }
@@ -82,7 +90,7 @@ export class AdminProductComponent implements OnInit {
             }
         )
         this.initProductForm();
-        this.imageStatus = false;  
+        this.imageStatus = false;
         console.log(this.productsForm.value);
     }
 
@@ -100,16 +108,16 @@ export class AdminProductComponent implements OnInit {
             category: [product.category.name],
             name: product.name,
             path: product.path,
-            type:product.type,
+            type: product.type,
             description: product.description,
-            volume:product.volume,
-            alcohol:product.alcohol,
-            color:product.color,
-            grape:product.grape,
-            aroma:product.aroma,
-            taste:product.taste,
-            price: product.price
-            /* image: product.image */
+            volume: product.volume,
+            alcohol: product.alcohol,
+            color: product.color,
+            grape: product.grape,
+            aroma: product.aroma,
+            taste: product.taste,
+            price: product.price,
+            image: product.image 
         });
         this.editProductID = product.id as number;
         this.editStatus = true;
@@ -121,15 +129,51 @@ export class AdminProductComponent implements OnInit {
         const product = this.productsForm.value;
         console.log(product);
         this.productService.update(product, this.editProductID).subscribe(
-          () => {
-            this.loadProduct();
-          }, err => {
-            console.log(err);
-          }
+            () => {
+                this.loadProduct();
+            }, err => {
+                console.log(err);
+            }
         );
         this.initProductForm();
         this.editStatus = false;
         this.imageStatus = false;
-      }
+    }
+
+    uploadFile(event: any): void {
+        const file = event.target.files[0];
+        const filePath = `images/${file.name}`;
+        const storage = getStorage();
+        const storageRef = ref(storage, filePath);
+
+        const task = uploadBytes(storageRef, file).then((snapshot) => {
+
+            getDownloadURL(ref(storage, filePath))
+                .then((img) => {
+                    this.image = img;
+                    this.productsForm.patchValue({
+                        image: this.image
+                    })
+                    console.log(this.image);
+                })
+        })
+
+    };
+
+
+    deleteFile(category?: ICategory): void {
+        const pathImage = category?.image || this.image;
+        const storage = getStorage();
+
+        // Create a reference to the file to delete
+        const desertRef = ref(storage, pathImage);
+        deleteObject(desertRef).then(() => {
+            this.image = '';
+            this.imageStatus = false;
+        }).catch((error) => {
+           
+        });
+       
+    };
 
 }

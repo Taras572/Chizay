@@ -7,23 +7,22 @@
         <label for="path" class="form-label">Path</label>
         <input formControlName="path" type="text" class="form-control" id="path">
     </div>
-    <!-- -------------- -->
+    
     <div class="mb-3">
         
-        <input type="file" class="form-control" #image id="image" aria-describedby="image" aria-label="Upload"
+        <input [(ngModel)]="imgt" type="file" class="form-control" #image id="image" aria-describedby="image" aria-label="Upload"
           (change)="uploadFile($event)">
       </div>
       <div class="progress mb-3" *ngIf="!imageStatus">
         <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
             [style.width]="(uploadPercent | async) + '%'" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
     </div>
-    <!-- -------------- -->
-    <div class="image-box" *ngIf="imageStatus">
-        <img width="100px" [src]="image" alt="">
+    
+    <div class="image-box">
+        <img width="100px" height="100px" [src]="image" alt="">
         <button (click)="deleteFile()" type="button" class="btn btn-danger">Delete</button>
     </div>
-    <button [disabled]="!image" type="submit" class="btn btn-primary"
-        [textContent]="editStatus ? 'Save' : 'Add'"></button>
+    <button [disabled]="categoryForm.invalid" type="submit" class="btn btn-primary" [textContent]="editStatus ? 'Save' : 'Add'"></button>
 </form>
 <hr>
 <table class="table">

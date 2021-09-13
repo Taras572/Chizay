@@ -81,17 +81,21 @@
                 <td>
                     <div class="mb-3" *ngIf="!imageStatus">
                         <label for="formFile" class="form-label">Default file input example</label>
-                        <input class="form-control" type="file" id="formFile">
+                        <input (change)="uploadFile($event)" class="form-control" type="file" id="formFile">
                     </div>
                     <div class="progress mb-3" *ngIf="!imageStatus">
                         <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
                              aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
+                    <div class="image-box" >
+                        <img width="100px" [src]="image" alt="">
+                        <button (click)="deleteFile()" type="button" class="btn btn-danger">Delete</button>
+                    </div>
                 </td>
             </tr><!-- [disabled]="productsForm.invalid" -->
             <tr>
                 <td>
-                    <button  type="submit" class="btn btn-success m-4" [textContent]="editStatus ? 'Save' : 'Add'">ADD</button>
+                    <button [disabled]="productsForm.invalid"  type="submit" class="btn btn-success m-4" [textContent]="editStatus ? 'Save' : 'Add'">ADD</button>
                 </td>
             </tr>
             

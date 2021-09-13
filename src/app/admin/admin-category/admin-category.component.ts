@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 import { ICategory } from 'src/app/shared/models/category/category.model';
@@ -6,7 +6,7 @@ import { CategoryService } from 'src/app/shared/services/category/category.servi
 
 import { Observable } from 'rxjs';
 
-import { getStorage, ref, uploadBytes, uploadString, getDownloadURL } from "firebase/storage";
+import { getStorage, ref, uploadBytes, uploadString, getDownloadURL, deleteObject } from "firebase/storage";
 import { FirebaseApp, FirebaseApps } from '@angular/fire/app';
 import { Storage, StorageInstances } from '@angular/fire/storage';
 
@@ -25,7 +25,7 @@ export class AdminCategoryComponent implements OnInit {
     public image: string = '';
     public imageStatus: boolean = false;
     public imageUrl!: any;
-
+    public imgt!: string;
 
 
     constructor(
@@ -47,7 +47,7 @@ export class AdminCategoryComponent implements OnInit {
         this.categoryForm = this.fb.group({
             name: [null, Validators.required],
             path: [null, Validators.required],
-            image: [null]
+            image: [null, Validators.required]
         })
     }
 
@@ -107,35 +107,31 @@ export class AdminCategoryComponent implements OnInit {
         this.initCategoryForm();
         this.editStatus = false;
     }
+
+
     uploadFile(event: any): void {
         const file = event.target.files[0];
         const filePath = `images/${file.name}`;
         const storage = getStorage();
         const storageRef = ref(storage, filePath);
-        
-        const task = uploadBytes(storageRef, file);
-        task.then((snapshot) => {
-            getDownloadURL(ref(storage, filePath)).then(img => {
-                this.image = img;
-                this.categoryForm.patchValue({
-                    image: this.image
+
+        const task = uploadBytes(storageRef, file).then((snapshot) => {
+
+            getDownloadURL(ref(storage, filePath))
+                .then((img) => {
+                    this.image = img;
+                    this.categoryForm.patchValue({
+                        image: this.image
+                    })
+                    console.log(this.image);
                 })
-                console.log(this.image);
-            })
         })
 
     }
 
-    deleteFile(category?: ICategory): void {
-      /*   const pathImage = category?.icon || this.icon;
-        this.storage.storage.refFromURL(pathImage).delete().then(
-          () => {
-            console.log('Image deleted!');
-            this.icon = '';
-            this.imageStatus = false;
-          }
-        ).catch(err => console.log(err)); */
-      }
+
+
+
 
     /* uploadFileImage(event: any): void {
         const file = event.target.files[0];
@@ -150,9 +146,23 @@ export class AdminCategoryComponent implements OnInit {
           });
         });
       } */
+    deleteFile(category?: ICategory): void {
+        const pathImage = category?.image || this.image;
+        const storage = getStorage();
+
+        // Create a reference to the file to delete
+        const desertRef = ref(storage, pathImage);
+        deleteObject(desertRef).then(() => {
+            this.image = '';
+            this.imageStatus = false;
+            this.imgt = '';
+        }).catch((error) => {
+           
+        });
+       
+    }
 
 }
-function subscribe(snapshot: any): ((value: import("@firebase/storage").UploadResult) => import("@firebase/storage").UploadResult | PromiseLike<import("@firebase/storage").UploadResult>) | null | undefined {
-    throw new Error('Function not implemented.');
-}
+
+
 

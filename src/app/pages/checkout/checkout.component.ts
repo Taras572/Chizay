@@ -52,7 +52,7 @@ export class CheckoutComponent implements OnInit {
         if (localStorage.getItem('basket')) {
             this.basket = JSON.parse(<string>localStorage.getItem('basket'));
             this.totalPrice = this.getTotal(this.basket);
-            this.discount = this.getTotalDiscount(this.basket)/100 * 5;
+            this.discount = Math.round(this.getTotalDiscount(this.basket)/100 * 5);
 
 
         }
@@ -64,7 +64,7 @@ export class CheckoutComponent implements OnInit {
         return products.reduce((total, prod) => total + (prod.price * prod.count), 0);
     }
     private getTotalDiscount(products: Array<IProduct>): number {
-        return Math.round(products.reduce((total, prod) => total + (prod.price * prod.count), 0));
+        return products.reduce((total, prod) => total + (prod.price * prod.count), 0);
     }
 
     addOrder(): void {
