@@ -109,7 +109,7 @@ export class AdminCategoryComponent implements OnInit {
     }
 
 
-    uploadFile(event: any): void {
+     uploadFile(event: any): void {
         const file = event.target.files[0];
         const filePath = `images/${file.name}`;
         const storage = getStorage();
@@ -127,7 +127,7 @@ export class AdminCategoryComponent implements OnInit {
                 })
         })
 
-    }
+    } 
 
 
 
@@ -155,7 +155,7 @@ export class AdminCategoryComponent implements OnInit {
         deleteObject(desertRef).then(() => {
             this.image = '';
             this.imageStatus = false;
-            this.imgt = '';
+            
         }).catch((error) => {
            
         });

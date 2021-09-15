@@ -4,7 +4,7 @@
 
             <div class="block-product-img col-md-5 col-5">
                 <div class="product-img">
-                    <img src="../../../assets/images/test.png">
+                    <img [src]="prod.image">
                 </div>
 
                 <a (click)="loadProductModal(prod.id)"  tabindex="0" class="btn-def black" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Додати до
