@@ -154,4 +154,16 @@ label {
   margin-top: 1.25rem;
   font-weight: 400;
 }
+
+.borderEmail input {
+  border-color: red;
+}
+
+.borderDate input {
+  border-color: red;
+}
+
+.borderPass input {
+  border-color: red;
+}
 /*# sourceMappingURL=login.component.css.map */

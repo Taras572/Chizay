@@ -130,8 +130,6 @@ label {
     text-decoration: underline;
     display: block;
     margin: 0 auto 3.75rem;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
     width: fit-content;
 }
 
@@ -141,4 +139,15 @@ label {
     font-size: .75rem;
     margin-top: 1.25rem;
     font-weight: 400;
+}
+
+//color login
+.borderEmail input{
+    border-color: red;
+}
+.borderDate input{
+    border-color: red;
+}
+.borderPass input{
+    border-color: red;
 }

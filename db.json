@@ -221,6 +221,128 @@
       ],
       "totalPrice": 2058,
       "id": 1
+    },
+    {
+      "userName": "Назар",
+      "userSecondName": "Перс",
+      "userPhone": "09348723",
+      "userCity": "Львів",
+      "userStreet": "Дфдвад",
+      "userHouse": "231",
+      "userComment": null,
+      "products": [
+        {
+          "category": {
+            "name": "Chateau Chizay",
+            "path": "chateau-chizay",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+            "id": 1
+          },
+          "name": "Chersegi",
+          "path": "Chersegi",
+          "type": "Сухе",
+          "description": "Вино створене з винограду сорту Черсегі Фюсереш, що перекладається з угорської мови, як Черсегі пряний та вирощується в Україні тільки на виноградниках Шато Чизай. Його насичений букет сповнений ароматами квітів та літніх фруктів. Смак вина яскравий, фруктово-пряний, з витонченою гірчинкою, тонами абрикосу та освіжаючою кислотністю. Вино здобуло Срібну медаль London Wine Competition 2021.",
+          "volume": "0.75",
+          "alcohol": "12.5",
+          "color": "Біле",
+          "grape": "Черсегі Фюсереш",
+          "aroma": "літні фрукти, квіти, прянощі.",
+          "taste": "фруктово-пряний з витонченою гірчинкою, тони абрикосу, освіжаюча кислотність.",
+          "price": "115",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Ftest.png?alt=media&token=3cb9091e-cc22-4b66-832a-e9da1000da44",
+          "count": 5,
+          "id": 5
+        }
+      ],
+      "totalPrice": 575,
+      "id": 2
+    },
+    {
+      "userName": "Павло",
+      "userSecondName": "Павлов",
+      "userPhone": "09378573",
+      "userCity": "Львів",
+      "userStreet": "Дорошенка",
+      "userHouse": "251",
+      "userComment": null,
+      "products": [
+        {
+          "category": {
+            "name": "Carpathian Sekt",
+            "path": "carpathian-sekt",
+            "image": "",
+            "id": 2
+          },
+          "name": "Carpathian Sekt CHERSEGI",
+          "path": "carpathian-sekt-CHERSEGI",
+          "type": "Ігристе брют",
+          "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+          "volume": "0,75 л",
+          "alcohol": "11.5%",
+          "color": "Біле",
+          "grape": "Черсегі Фюсереш",
+          "aroma": "свіжий, тони квітів і фруктів",
+          "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+          "price": 147,
+          "count": 1,
+          "id": 2
+        },
+        {
+          "category": {
+            "name": "Витримані сухі вина",
+            "path": "dry-wines",
+            "image": "",
+            "id": 3
+          },
+          "name": "Cabernet Sauvignon 9 міс.",
+          "path": "cabernet-sauvignon",
+          "type": "Витримане",
+          "description": "Сухе вино інтенсивного гранатового кольору створене з винограду сорту Каберне Совіньйон. Витримка у бариках з французького дуба 9 місяців. Букет вина насичений ароматами стиглої вишні та смородини у поєднанні з нотками паприки, табаку і какао. Смак збалансований, з приємною танінною структурою, у якому відчуваються пряні тони перцю, шоколаду та ожини. Післясмак насичений і тривалий.",
+          "volume": "0,75 л",
+          "alcohol": "14%",
+          "color": "Червоне",
+          "grape": " Каберне Совіньйон",
+          "aroma": "стигла вишня та смородина, ноти паприки, табаку і какао",
+          "taste": "приємна танінна структура, пряні тони перцю, шоколаду, ожини, насичений і тривалий післясмак",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fproduct.png?alt=media&token=431af092-c3c0-4beb-8b9e-531d2bed13dd",
+          "price": 197,
+          "count": 1,
+          "id": 3
+        }
+      ],
+      "totalPrice": 344,
+      "id": 3
+    }
+  ],
+  "users": [
+    {
+      "date": "19/06/1997",
+      "email": "admin",
+      "pass": "admin",
+      "second_pass": "admin",
+      "id": 1
+    },
+    {
+      "date": "19/06/1997",
+      "email": "admin",
+      "pass": "admin",
+      "second_pass": "admin",
+      "id": 2
+    },
+    {
+      "date": "19/06/1997",
+      "email": "admin",
+      "pass": "admin",
+      "second_pass": "admin",
+      "id": 3
+    },
+    {
+      "date": "2003-12-03",
+      "email": "19Zefir@gmail.com",
+      "pass": "1234567",
+      "second_pass": "1234567",
+      "id": 4
     }
   ]
 }
