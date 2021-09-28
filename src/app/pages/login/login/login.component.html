@@ -14,7 +14,7 @@
                 </div>
             </div>
 
-            <form class="login-section__form" method="post">
+            <form [formGroup]="singForm" class="login-section__form" method="post">
 
                 <div class="login-section__form--item">
                     <label for="username">E-mail</label>
@@ -24,20 +24,20 @@
                 <div class="login-section__form--item">
                     <label for="password">Пароль</label>
                     <span class="password-input"><input class="woocommerce-Input woocommerce-Input--text input-text"
-                            type="password" name="password" id="password" autocomplete="current-password"><span
+                            type="password" name="password" id="password"><span
                             class="show-password-input"></span></span>
                 </div>
                 <div class="login-section__form--item-checkbox">
                     <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
-                        type="checkbox" id="login-checkbox" value="forever">
+                        type="checkbox" id="login-checkbox">
                     <label for="login-checkbox">Пам'ятати мене</label>
                 </div>
 
 
                 <p class="form-row" [routerLink]="[ '/admin' ]">
-                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce"
-                        value="d4c52eb481"><input type="hidden" name="_wp_http_referer" value="/my-account/"> <input
-                        type="submit" name="login" class="btn-def white" value="Вхід">
+                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce">
+                    <input type="hidden" name="_wp_http_referer"> <input type="submit" name="login"
+                        class="btn-def white" value="Вхід">
 
                 </p>
                 <p class="woocommerce-LostPassword lost_password forgot-pass">
@@ -75,26 +75,26 @@
 
                 <div class="login-section__form--item" [class.borderEmail]="email_color">
                     <label for="reg_email">Адреса електронної пошти&nbsp;<span class="required">*</span></label>
-                    <input formControlName="email" type="email"  
-                        class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email" 
-                        >
+                    <input formControlName="email" type="email"
+                        class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email">
                 </div>
 
                 <div class="login-section__form--item" [class.borderPass]="password_color">
                     <label for="reg_password">Пароль&nbsp;<span class="required">*</span></label>
-                    <span class="password-input"><input type="password"  formControlName="pass" 
-                            class="woocommerce-Input woocommerce-Input--text input-text" name="password"  
+                    <span class="password-input"><input type="password" formControlName="pass"
+                            class="woocommerce-Input woocommerce-Input--text input-text" name="password"
                             id="reg_password"></span>
                 </div>
 
                 <div class="login-section__form--item" [class.borderPass]="password_color">
                     <label for="reg_password_repeat">Повторіть пароль&nbsp;<span class="required">*</span></label>
-                    <span class="password-input"><input type="password" formControlName="second_pass" 
+                    <span class="password-input"><input type="password" formControlName="second_pass"
                             class="woocommerce-Input woocommerce-Input--text input-text" name="password-repeat"
                             id="reg_password_repeat"></span>
                 </div>
 
-                <button [disabled]="usersForm.invalid" type="submit" name="register" class="btn-def black">Реєстрація</button>
+                <button [disabled]="usersForm.invalid" type="submit" name="register"
+                    class="btn-def black">Реєстрація</button>
 
             </form>
 

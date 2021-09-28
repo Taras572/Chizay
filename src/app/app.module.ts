@@ -24,12 +24,14 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
 import { AdminProductComponent } from './admin/admin-product/admin-product.component';
 import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
+import { AdminUsersComponent } from './admin/admin-users/admin-users/admin-users.component';
 
 import { LoginComponent } from './pages/login/login/login.component';
 
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getStorage,provideStorage } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
+
 
 
 
@@ -55,7 +57,9 @@ import { environment } from '../environments/environment';
         AdminCategoryComponent,
         AdminProductComponent,
         AdminOrderComponent,
+        AdminUsersComponent,
         LoginComponent
+        
     ],
     imports: [
         BrowserModule,

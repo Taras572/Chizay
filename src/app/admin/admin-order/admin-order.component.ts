@@ -24,7 +24,6 @@ export class AdminOrderComponent implements OnInit {
 
     ngOnInit(): void {
         this.loadCategories();
-        
     }
 
     loadCategories(): void {

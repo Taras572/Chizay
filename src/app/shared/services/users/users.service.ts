@@ -23,8 +23,8 @@ export class UsersService {
     return this.http.get<any>(this.api.users);
   }
 
-  create(users: IUsers): Observable<any> {
-    return this.http.post<any>(this.api.users, users);
+  create(user: IUsers): Observable<any> {
+    return this.http.post<any>(this.api.users, user);
   }
 
   delete(id: number): Observable<any> {

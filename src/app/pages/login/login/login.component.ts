@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
     public email_color: boolean = false;
     public date_color: boolean = false;
     public password_color: boolean = false;
-
+    public singForm!: FormGroup;
     validStatus: boolean = false;
     password!: string;
 
@@ -103,6 +103,10 @@ export class LoginComponent implements OnInit {
             this.createUsers();
         }
         count = 0;;
+    }
+
+    SingIn():void{
+
     }
 }
 

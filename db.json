@@ -324,25 +324,11 @@
       "id": 1
     },
     {
-      "date": "19/06/1997",
-      "email": "admin",
-      "pass": "admin",
-      "second_pass": "admin",
-      "id": 2
-    },
-    {
-      "date": "19/06/1997",
-      "email": "admin",
-      "pass": "admin",
-      "second_pass": "admin",
-      "id": 3
-    },
-    {
       "date": "2003-12-03",
       "email": "19Zefir@gmail.com",
       "pass": "1234567",
       "second_pass": "1234567",
-      "id": 4
+      "id": 2
     }
   ]
 }
