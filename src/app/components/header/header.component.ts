@@ -3,6 +3,7 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { OrderService } from 'src/app/shared/services/order/order.service';
 
 
+
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -13,17 +14,17 @@ export class HeaderComponent implements OnInit {
     color_scroll: boolean = false;
     text_color: boolean = false;
     shop_head: boolean = false;
-    
 
-    count_busket: number = 0;
-   
+
+    count_busket: any;
+
 
     constructor(
         private activatedRoute: ActivatedRoute,
         private router: Router,
         private orderService: OrderService
     ) {
-        
+
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
                 let URL = event.url.substring(1);
@@ -44,11 +45,11 @@ export class HeaderComponent implements OnInit {
                 }
             }
         })
-        
+
     }
 
     ngOnInit(): void {
-        
+        this.countInit();
     }
 
     @HostListener("document:scroll")
@@ -63,10 +64,11 @@ export class HeaderComponent implements OnInit {
             this.header_scroll = false;
             this.color_scroll = false;
         }
-
+        this.countInit();
     }
 
-  
-
+    countInit(): void {
+        this.count_busket = this.orderService.sellCount()
+    }
 
 }

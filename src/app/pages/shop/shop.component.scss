@@ -81,7 +81,10 @@ h1, h2, h3, h4, h5, h6 {
     color: #323232;
     border: .0625rem solid #323232;
 }
-
+.btn-def:hover {
+    border-color: #c09560;
+    color: #c09560;
+}
 .btn-def {
     font-size: .875rem;
     font-weight: 700;
@@ -160,6 +163,7 @@ a{
     color: #fff;
     border: .0625rem solid #fff;
 }
+
 
 @media(max-width:768px){
     .block_restouran_hotel h2{

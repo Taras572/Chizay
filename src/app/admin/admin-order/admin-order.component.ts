@@ -23,10 +23,10 @@ export class AdminOrderComponent implements OnInit {
     ) { }
 
     ngOnInit(): void {
-        this.loadCategories();
+        this.loadOrder();
     }
 
-    loadCategories(): void {
+    loadOrder(): void {
         this.orderService.get().subscribe(
             data => {
                 this.adminOrder = data;
@@ -37,10 +37,10 @@ export class AdminOrderComponent implements OnInit {
         )
     }
 
-    deleteCategory(orders:any): void {
+    deleteOrder(orders:any): void {
         this.orderService.delete(orders.id as number).subscribe(
             () => {
-                this.loadCategories();
+                this.loadOrder();
             }, err => {
                 console.log(err);
             }

@@ -91,6 +91,11 @@ h1, h2, h3, h4, h5, h6 {
   border: .0625rem solid #323232;
 }
 
+.btn-def:hover {
+  border-color: #c09560;
+  color: #c09560;
+}
+
 .btn-def {
   font-size: .875rem;
   font-weight: 700;

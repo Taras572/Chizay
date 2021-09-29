@@ -116,6 +116,11 @@ ol, ul {
     position: relative;
     letter-spacing: .0625rem;
     cursor: pointer;
+    margin: 0 5px;
+}
+.btn-def:hover {
+    border-color: #c09560;
+    color: #c09560;
 }
 
 //block rigth
@@ -132,14 +137,22 @@ ol, ul {
     background-color: rgb(202, 199, 196);
 } */
 .block_map{
-    background-color: rgb(202, 199, 196);
+    
     width: 80%;
     min-height: 550px;
     height: 80%;
     margin: 10% auto;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url(../../../assets/images/map.jpg);
 }
 
-
+@media(max-width:840px){
+    .btn-def {
+        font-size: .75rem;
+        
+    }
+}
 
 
 @media(max-width: 767px){

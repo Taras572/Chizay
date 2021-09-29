@@ -26,7 +26,7 @@
             <td><li *ngFor="let item of orders.products"> {{ item.count }}</li></td>
             <td><li *ngFor="let item of orders.products"> <img src="{{ item.image }}" height="60px" alt=""></li></td>
             <td>
-                <button (click)="deleteCategory(orders)" class="btn btn-danger">delete</button>
+                <button (click)="deleteOrder(orders)" class="btn btn-danger">delete</button>
             </td>
         </tr>
     </tbody>

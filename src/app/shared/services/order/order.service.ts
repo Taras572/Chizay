@@ -11,6 +11,7 @@ import { IProduct } from '../../models/product/products.model';
 export class OrderService {
    public changeBasket$ = new Subject<boolean>();
    private resourceUrl = environment.BACKEND_URL;
+   public countBasket: any ;
    private api = {
       orders: `${this.resourceUrl}orders`
    };
@@ -55,8 +56,13 @@ export class OrderService {
       
    }
 
-
-
+   sellCount(): Observable<any>{
+      return this.countBasket;
+   }
+   
+   getCount(count: any): Observable<any>{
+      return this.countBasket = count;
+   }
   
 
 

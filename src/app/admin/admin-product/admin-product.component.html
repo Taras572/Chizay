@@ -83,11 +83,11 @@
                         <label for="formFile" class="form-label">Default file input example</label>
                         <input (change)="uploadFile($event)" class="form-control" type="file" id="formFile">
                     </div>
-                    <div class="progress mb-3" *ngIf="!imageStatus">
+                    <!-- <div class="progress mb-3" *ngIf="!imageStatus">
                         <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
                              aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <div class="image-box" >
+                    </div> -->
+                    <div class="image-box" *ngIf="!productsForm.invalid" >
                         <img width="100px" [src]="image" alt="">
                         <button (click)="deleteFile()" type="button" class="btn btn-danger">Delete</button>
                     </div>
@@ -110,7 +110,6 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
-                <th scope="col">Path</th>
                 <th scope="col">Type</th>
                 <th scope="col">Description</th>
                 <th scope="col">Volume</th>
@@ -125,9 +124,8 @@
         </thead>
         <tbody>
             <tr class="align-middle" *ngFor="let prod of adminProducts; index as i">
-                <td>{{ i + 1 }}</td>
+                <td>{{ i + 1 }})</td>
                 <td>{{ prod.name }}</td>
-                <td>{{ prod.path }}</td>
                 <td>{{ prod.type }}</td>
                 <td>{{ prod.description | slice:0:30 }}...</td>
                 <td>{{ prod.volume }}</td>

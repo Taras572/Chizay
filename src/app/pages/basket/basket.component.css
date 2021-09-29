@@ -218,7 +218,7 @@ a.button {
   margin-left: -7px;
   background: #c80000;
   -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+          transform: rotate(-45deg);
   -webkit-transition: background .250s linear;
   transition: background .250s linear;
   content: '';
@@ -848,5 +848,10 @@ table {
 
 td {
   padding: 5px 20px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
 }
 /*# sourceMappingURL=basket.component.css.map */
