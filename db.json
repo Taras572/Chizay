@@ -317,7 +317,7 @@
   ],
   "users": [
     {
-      "date": "19/06/1997",
+      "date": "1997-19-06",
       "email": "admin",
       "pass": "admin",
       "second_pass": "admin",
@@ -329,6 +329,13 @@
       "pass": "1234567",
       "second_pass": "1234567",
       "id": 2
+    },
+    {
+      "date": "2003-12-03",
+      "email": "19Zir@gmail.com",
+      "pass": "123456",
+      "second_pass": "123456",
+      "id": 3
     }
   ]
 }

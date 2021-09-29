@@ -155,6 +155,10 @@ label {
   font-weight: 400;
 }
 
+.login-section__form--item {
+  position: relative;
+}
+
 .borderEmail input {
   border-color: red;
 }
@@ -165,5 +169,48 @@ label {
 
 .borderPass input {
   border-color: red;
+}
+
+.email-err {
+  right: 1%;
+  bottom: 10px;
+  font-size: 10px;
+  color: white;
+  border-radius: 15px;
+  padding: 4px 8px;
+  background-color: red;
+  position: absolute;
+}
+
+.login-section__form {
+  position: relative;
+}
+
+.adminLog {
+  background-color: rgba(211, 211, 211, 0.3);
+  width: 130px;
+  margin: auto;
+  border-radius: 3px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: -50px;
+}
+
+.adminLog p {
+  margin: 0;
+  line-height: 14px;
+}
+
+@media (max-width: 900px) {
+  .email-err {
+    font-size: 8px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 470px) {
+  .email-err {
+    bottom: -23px;
+  }
 }
 /*# sourceMappingURL=login.component.css.map */

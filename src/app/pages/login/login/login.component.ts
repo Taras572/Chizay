@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { IUsers } from 'src/app/shared/models/users/users.model';
 import { UsersService } from 'src/app/shared/services/users/users.service';
 
@@ -16,16 +17,21 @@ export class LoginComponent implements OnInit {
     public date_color: boolean = false;
     public password_color: boolean = false;
     public singForm!: FormGroup;
+    public singCount: boolean = true;
+    public adminLog: boolean = false;
     validStatus: boolean = false;
-    password!: string;
+    
+    
 
     constructor(
         private usersService: UsersService,
         private fb: FormBuilder,
+        private router: Router
     ) { }
 
     ngOnInit(): void {
         this.initUsersForm();
+        this.initSingIn();
         this.loadUsers();
     }
 
@@ -105,8 +111,19 @@ export class LoginComponent implements OnInit {
         count = 0;;
     }
 
-    SingIn():void{
 
+    initSingIn(): void {
+        this.singForm = this.fb.group({
+            email: [null, Validators.required],
+            pass: [null, Validators.required]
+        })
+    }
+
+    SingIn():void{
+        const sing = this.singForm.value;
+        if(sing.email == 'admin'&& sing.pass == 'admin'){
+            this.router.navigate(['/admin']);
+        }
     }
 }
 
