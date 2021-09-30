@@ -57,10 +57,7 @@ export class ProductsComponent implements OnInit {
                     console.log(err);
                 }
             )
-        }
-        
-        
-        
+        } 
     }
 
     loadProductModal(Num:any): void {

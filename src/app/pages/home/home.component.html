@@ -70,37 +70,11 @@
         <div class="shop-preview">
             <div class="row">
 
-                <a class="col-md-3 col-6 shop-preview__item-wrapper">
+                <a class="col-md-3 col-6 shop-preview__item-wrapper" *ngFor="let prod of homeProd">
                     <div class="shop-preview__item">
-                        <img src="../../../assets/images/home_shop1.png">
-                        <p class="shop-preview__item--description">Carpathian Sekt CHERSEGI</p>
-                        <p class="shop-preview__item--type">Ігристе брют</p>
-                    </div>
-                </a>
-
-                <a class="col-md-3 col-6 shop-preview__item-wrapper">
-                    <div class="shop-preview__item">
-                        <img src="../../../assets/images/home_shop2.png">
-                        <p class="shop-preview__item--description">“Країна Мрій” Rosé Pinot Noir</p>
-                        <p class="shop-preview__item--type">Авторське вино Олега Скрипки</p>
-                    </div>
-                </a>
-
-                <a class="col-md-3 col-6 shop-preview__item-wrapper">
-                    <div class="shop-preview__item">
-                        <img src="../../../assets/images/home_shop3.png">
-                        <p class="shop-preview__item--description">GRAPE WHITE BLEND</p>
-                        <p class="shop-preview__item--type"></p>
-                        <p class="shop-preview__item--description"></p>
-                    </div>
-                </a>
-
-                <a class="col-md-3 col-6 shop-preview__item-wrapper">
-                    <div class="shop-preview__item">
-                        <img src="../../../assets/images/home_shop4.png">
-                        <p class="shop-preview__item--description">Подарунковий Набір “Витримані Вина”</p>
-                        <p class="shop-preview__item--type"></p>
-                        <p class="shop-preview__item--description"></p>
+                        <img [src]="prod.image" style="max-height: 303px;">
+                        <p class="shop-preview__item--description">{{prod.name}}</p>
+                        <p class="shop-preview__item--type">{{prod.type}}</p>
                     </div>
                 </a>
 
