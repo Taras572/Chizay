@@ -57,7 +57,7 @@
     <div class="block_container content">
         <h2>Ресторан та мініготель <br> "Chizay. Мала гора" </h2>
         <div class="baner-links">
-            <a class="btn-def white">Ресторан</a>
+            <a [routerLink]="[ '/restaurant' ]" class="btn-def white">Ресторан</a>
             <a class="btn-def white">Мініготель </a>
         </div>
     </div>
@@ -72,14 +72,14 @@
 
                 <a class="col-md-3 col-6 shop-preview__item-wrapper" *ngFor="let prod of homeProd">
                     <div class="shop-preview__item">
-                        <img [src]="prod.image" style="max-height: 303px;">
+                        <img [src]="prod.image" style="height: 303px;">
                         <p class="shop-preview__item--description">{{prod.name}}</p>
                         <p class="shop-preview__item--type">{{prod.type}}</p>
                     </div>
                 </a>
 
             </div>
-            <a class="btn-def black">Відвідати магазин</a>
+            <a [routerLink]="[ '/shop' ]" class="btn-def black">Відвідати магазин</a>
         </div>
     </div>
 

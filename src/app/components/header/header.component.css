@@ -17,6 +17,7 @@
   position: absolute;
   top: 30px;
   font-family: "Open Sans",sans-serif;
+  z-index: 888;
 }
 
 .dl, ol, ul {

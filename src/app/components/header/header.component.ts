@@ -31,7 +31,7 @@ export class HeaderComponent implements OnInit {
                 let URL2 = event.url.substring(1, 6);
                 let PROD = event.url.substring(1, 8);
                 console.log(URL2)
-                if (URL == 'contacts' || URL == 'checkout' || URL == 'news' || URL == 'login' || URL == 'shop' || URL == 'basket' || PROD == 'product' || URL2 == 'admin') {
+                if (URL == 'contacts' || URL == 'checkout' || URL == 'news' || URL == 'location' || URL == 'login' || URL == 'shop' || URL == 'basket' || PROD == 'product' || URL2 == 'admin') {
                     this.text_color = true;
                 }
                 else {

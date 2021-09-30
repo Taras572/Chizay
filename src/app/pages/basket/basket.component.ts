@@ -13,12 +13,6 @@ import { OrderService } from 'src/app/shared/services/order/order.service';
 export class BasketComponent implements OnInit {
 
     public basket: Array<IProduct> = [];
-    // public userName!: string;
-    // public userPhone!: string;
-    // public userCity!: string;
-    // public userStreet!: string;
-    // public userHouse!: string;
-    // public userComment!: string;
 
     public totalPayment!: string;
     public totalPrice = 0;

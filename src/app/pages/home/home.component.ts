@@ -54,7 +54,7 @@ export class HomeComponent implements OnInit {
                 this.products = data;
                 for (let i = 0; i < 4; i++) {
                     /* this.numbArr.push(this.getRandomInt(0,this.products.length)); */
-                    this.homeProd.push(this.products[this.getRandomInt(0,this.products.length)]);
+                    this.homeProd.push(this.products[this.getRandomInt(0,this.products.length-1)]);
                 }
                 console.log(this.homeProd);
             }
