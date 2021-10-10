@@ -1,23 +1,25 @@
 <div class="block_container">
+
     <div class="block-products row">
-        <div class="product col-md-6 col-sm-12 row" *ngFor="let prod of products">
+        <div class="product col-md-6 col-sm-12 row" *ngFor="let prod of products; index as i">
 
             <div class="block-product-img col-md-5 col-5">
                 <div class="product-img">
                     <img [src]="prod.image" style="max-height: 385px;">
                 </div>
 
-                <a (click)="loadProductModal(prod.id)"  tabindex="0" class="btn-def black" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Додати до
+                <a (click)="loadProductModal(prod.id)" tabindex="0" class="btn-def black" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Додати до
                     кошика</a>
-
-
             </div>
 
             <div class=" block-product-text col-md-7 col-7 shown-categories__item--description">
                 <p class="shown-categories__item--description-heading">{{prod.name}}</p>
-                <p class="shown-categories__item--description-type">{{prod.type}}</p>
+                <p *ngIf="prodCount" class="shown-categories__item--description-type">{{prod.type}}</p>
                 <p class="shown-categories__item--description-text">{{prod.description}}</p>
-                <ul>
+
+                <ul *ngIf="prodCount">
+                    <!-- *ngIf="prod.category.path != 'gift-certificates'" -->
                     <li>
                         <p class="shown-categories__item--description-params"><strong>
                                 Об'єм&nbsp;-</strong>{{prod.volume}}</p>
@@ -77,21 +79,26 @@
                                 </div>
                                 <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 center">
                                     <div class="count-modal">
-                                        <input class="model-numb" type="text" maxlength="3" [value]="productsModal.count">
+                                        <input class="model-numb" type="text" maxlength="3"
+                                            [value]="productsModal.count">
                                         <div>
-                                            <div class="modal-plus" (click)="countProduct(productsModal, true)"><i class="uil uil-plus"></i></div>
-                                            <div class="modal-minus" (click)="countProduct(productsModal, false)"><i class="uil uil-minus"></i></div>
+                                            <div class="modal-plus" (click)="countProduct(productsModal, true)"><i
+                                                    class="uil uil-plus"></i></div>
+                                            <div class="modal-minus" (click)="countProduct(productsModal, false)"><i
+                                                    class="uil uil-minus"></i></div>
                                         </div>
                                     </div>
-                                   
+
                                 </div>
 
                             </div>
-                            <p class="modal-price">Всього: <strong>{{ productsModal.count * productsModal.price }} грн</strong>  </p>
+                            <p class="modal-price">Всього: <strong>{{ productsModal.count * productsModal.price }}
+                                    грн</strong> </p>
                         </div>
                         <div class="modal-footer">
                             <div class="xoo-cp-btns">
-                                <a class="xoo-cp-btn-vc xcp-btn" data-bs-dismiss="modal" (click)="addToBasket(productsModal)">Додати до кошика</a>
+                                <a class="xoo-cp-btn-vc xcp-btn" data-bs-dismiss="modal"
+                                    (click)="addToBasket(productsModal)">Додати до кошика</a>
                                 <a class="xoo-cp-close xcp-btn" data-bs-dismiss="modal">Продовжити покупки</a>
                             </div>
                         </div>
@@ -100,4 +107,19 @@
             </div>
         </div>
     </div>
+    <!--  <ul class="breadcrumb smallSlideLeft">
+        <li>
+            <a routerLink="/home">
+                <span>Головна</span>
+            </a>
+        </li>
+        <li>
+            <a [routerLink]="[ '/products/'+products?.category?.path ]">
+                <span>{{ products?.category?.name | titlecase }}</span>
+            </a>
+        </li>
+        <li>
+            <a><span>{{products?.name | titlecase}}</span></a>
+        </li>
+    </ul> -->
 </div>

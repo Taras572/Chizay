@@ -14,6 +14,7 @@ export class ProductsComponent implements OnInit {
     products: Array<IProduct> = [];
     currentCategory: any;
     public productsModal!: IProduct;
+    public prodCount: boolean = true;
     
 
     constructor(
@@ -24,7 +25,7 @@ export class ProductsComponent implements OnInit {
     ) {
         this.router.events.subscribe(event => {
             if (event instanceof NavigationEnd) {
-                const categoryName = event.url.substring(9);;
+                const categoryName = event.url.substring(9);
                 this.loadProduct(categoryName as string);
                 console.log(event.url.substring(9));
             }
@@ -58,6 +59,12 @@ export class ProductsComponent implements OnInit {
                 }
             )
         } 
+        if(categoryName == 'gift-certificates' || categoryName == 'accessories' || categoryName =='grape-juice'){
+            this.prodCount = false;
+        }
+        else{
+            this.prodCount = true;
+        }
     }
 
     loadProductModal(Num:any): void {
@@ -74,10 +81,10 @@ export class ProductsComponent implements OnInit {
     countProduct(products: IProduct, checker: boolean): void {
         if (checker) {
             products.count++;
-        } else {
-            if (products.count > 1) {
+        } 
+        else if (products.count > 1) {
                 products.count--;
-            }
+            
         }
     }
 

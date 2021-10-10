@@ -105,8 +105,8 @@
 
     <!-- ---------------------- -->
 
-    <table class="table">
-        <thead>
+    <table class="table" style="width:100%">
+        <thead style="width:100%">
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
@@ -120,9 +120,10 @@
                 <th scope="col">Taste</th>
                 <th scope="col">image</th>
                 <th scope="col">Price</th>
+                <th scope="col"></th>
             </tr>
         </thead>
-        <tbody>
+        <tbody style="width:100%">
             <tr class="align-middle" *ngFor="let prod of adminProducts; index as i">
                 <td>{{ i + 1 }})</td>
                 <td>{{ prod.name }}</td>

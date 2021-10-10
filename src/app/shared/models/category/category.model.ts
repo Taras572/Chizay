@@ -9,6 +9,7 @@ export class Category implements ICategory {
     constructor(
         public name: string,
         public path: string,
-        public image: string
+        public image: string,
+        public id: number
     ) { }
 }
