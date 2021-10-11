@@ -54,10 +54,17 @@ h1, h2, h3, h4, h5, h6 {
     margin: 1.175rem auto;
     max-width: 18.75rem;
 }
-
+//btn
+.contact-btn {
+    display: flex;
+}
 .btn-def.white {
     color: #fff;
     border: .0625rem solid #fff;
+}
+.btn-def.black {
+    color: #323232;
+    border: .0625rem solid #323232;
 }
 
 .btn-def {
@@ -75,6 +82,35 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: .0625rem;
     cursor: pointer;
     text-decoration: none;
+    overflow: hidden;
+}
+
+.btn-def:hover {
+    border-color: #c09560;
+    color: #c09560;
+}
+.btn-def.white::after {
+    background:white;
+}
+.btn-def.black::after {
+    background: rgb(0, 0, 0);
+}
+.btn-def::after {
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+.btn-def:hover::after {
+    background: #c09560;
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 //home about
@@ -126,10 +162,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-.btn-def.black {
-    color: #323232;
-    border: .0625rem solid #323232;
-}
+
 .home-about__block.without-img {
     padding: 5.625rem .625rem;
     height: auto;
@@ -168,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     height: 100%;
     flex-direction: column;
+    text-align: center;
 }
 
 .baner-links {
@@ -175,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: space-between;
     align-items: center;
     min-width: 31.25rem;
+    z-index: 2;
 }
 //block show shop
 .block_shop{
@@ -200,10 +235,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 0 1.25rem;
     color: black;
 }
-.btn-def:hover {
-    border-color: #c09560;
-    color: #c09560;
-}
+
 //block hall-preview__image
 .hall-preview__image {
     background-image: url("../../../assets/images/muzeum.png");
@@ -252,6 +284,8 @@ h1, h2, h3, h4, h5, h6 {
 .icon-tilde {
     width: 4.82609em;
 }
+/* --------- */
+
 
 @media(max-width: 768px){
     .block_reverse{

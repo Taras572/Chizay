@@ -148,6 +148,19 @@ h1, h2, h3, h4, h5, h6 {
     -o-transition: none;
     transition: none;
 } 
+//btn
+.contact-btn {
+    display: flex;
+}
+.btn-def.white {
+    color: #fff;
+    border: .0625rem solid #fff;
+}
+.btn-def.black {
+    color: #323232;
+    border: .0625rem solid #323232;
+}
+
 .btn-def {
     font-size: .875rem;
     font-weight: 700;
@@ -162,17 +175,34 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     letter-spacing: .0625rem;
     cursor: pointer;
-}
-.btn-def.white {
-    color: #fff;
-    border: .0625rem solid #fff;
     text-decoration: none;
-    transition: 0.3s;
+    overflow: hidden;
+    z-index: 2;
+}
+/* .btn-def:hover {
+    border-color: #c09560;
+    color: #c09560;
+} */
+.btn-def.white::after {
+    background:white;
 }
 
-.btn-def.white:hover {
-    color: #ae8758;
-    border: .0625rem solid #ae8758;;
+.btn-def::after {
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+.btn-def:hover::after {
+    background: #c09560;
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 //block map
