@@ -382,6 +382,12 @@ h1, h2, h3, h4, h5, h6 {
   .hall-preview__image, .hall-preview__image2 {
     height: 300px;
   }
+  .block_restouran_hotel h2 {
+    font-size: 30px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 500px) {

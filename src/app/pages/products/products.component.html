@@ -4,8 +4,8 @@
         <div class="product col-md-6 col-sm-12 row" *ngFor="let prod of products; index as i">
 
             <div class="block-product-img col-md-5 col-5">
-                <div class="product-img">
-                    <img [src]="prod.image" style="max-height: 385px;">
+                <div class="product-img" style="overflow: hidden; height: 385px;" >
+                    <img class="imageProduct" [src]="prod.image" style="max-height: 385px; " >
                 </div>
 
                 <a (click)="loadProductModal(prod.id)" tabindex="0" class="btn-def black" data-bs-toggle="modal"

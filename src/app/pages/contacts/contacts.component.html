@@ -20,7 +20,7 @@
                                 fill="#c09560"></path>
                         </svg>
                     </span>
-            
+
                     <p><a class="contact-block__item--text">Онлайн-магазин +38 050 430 20 60</a></p>
                     <p><a class="contact-block__item--text">Тури та дегустації +38 050 432 05 25</a></p>
                     <p><a class="contact-block__item--text">Пряма дистрибуція +38 050 685 09 90</a></p>
@@ -72,13 +72,21 @@
                 </li>
             </ul>
             <div class="contact-btn">
-                <a class="btn-def black" [routerLink]="[ '/tours' ]" ><span>Замовити тур</span></a>
-                <a class="btn-def black" [routerLink]="[ '/shop' ]" ><span>Відвідати магазин</span></a>
+                <a class="btn-def black" [routerLink]="[ '/tours' ]"><span>Замовити тур</span></a>
+                <a class="btn-def black" [routerLink]="[ '/shop' ]"><span>Відвідати магазин</span></a>
             </div>
-            
+
         </div>
         <div class="col-xl-6 col-lg-6 col-md-6 p-0 block_rigtn">
-            <div class="block_map"></div>
+            <div class="animation_vine" >
+                <div class="block_map">
+                    <div class="glass">
+                        <div class="block-vine" [class.vine_Anim]="vine_anim"></div>
+                    </div>
+                    <div class="bottle" [class.bottle_Anim]="bottle_anim"></div>
+                    <div [class.line_Vine]="line_vine"></div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

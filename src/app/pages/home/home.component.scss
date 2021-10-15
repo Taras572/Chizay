@@ -3,12 +3,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg_image{
-    background-image: url("../../../assets/images/home.jpg");
+    /* background-image: url("../../../assets/images/home.jpg"); */
+    /* background-image: url("../../../assets/images/spring.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+.bg_winter{
+    background-image: url("../../../assets/images/winter.jpg");
+}
+.bg_autumn{
+    background-image: url("../../../assets/images/autumn.jpg");
+}
+.bg_summer{
+    background-image: url("../../../assets/images/home.jpg");
+}
+.bg_spring{
+    background-image: url("../../../assets/images/spring.jpg");
+}
+
 .container_home{
     width: 100%;
     max-width: 1230px;
@@ -312,6 +327,12 @@ h1, h2, h3, h4, h5, h6 {
 @media(max-width: 622px ){
     .hall-preview__image ,.hall-preview__image2 {
         height: 300px;
+    }
+    .block_restouran_hotel h2{
+        font-size: 30px;
+    }
+    .section-title{
+        font-size: 2rem
     }
 }
 @media(max-width: 500px ){

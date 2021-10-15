@@ -7,26 +7,38 @@ import { ProductService } from 'src/app/shared/services/product/product.service'
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.scss']
 })
+
 export class HomeComponent implements OnInit {
     products: Array<IProduct> = [];
     homeProd: Array<IProduct> =[];
-
     randNumOld: number = 0;
-
     numbArr: Array<any> = [];
+    season!:string;
+    date = new Date;
 
     constructor(
         private productService: ProductService
     ) { }
 
     ngOnInit(): void {
-        
+        let mounts = this.date.getMonth();
+        if(mounts >=3 && mounts <=5){
+            this.season = 'bg_spring';
+        }
+        else if(mounts >=6 && mounts <=8){
+            this.season = 'bg_summer';
+        }
+        else if(mounts >=9 && mounts <=11){
+            this.season = 'bg_autumn';
+        }
+        else{
+            this.season = 'bg_winter';
+        }
+
         this.loadProduct();
         /*   
           let random = {
-  
               randNumOld: 0,
-  
               getRandomInt(min: any, max: any): void {
                   let randNum = Math.floor(Math.random() * (max - min + 1)) + min;
                   if (randNum == random.randNumOld) return random.getRandomInt(min, max);
@@ -47,7 +59,6 @@ export class HomeComponent implements OnInit {
         return randNum;
     }
 
-
     loadProduct(): void {
         this.productService.get().subscribe(data => {
             if (data) {
@@ -59,8 +70,6 @@ export class HomeComponent implements OnInit {
                 console.log(this.homeProd);
             }
         })
-        
     }
-
 
 }

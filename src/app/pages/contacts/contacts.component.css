@@ -132,10 +132,6 @@ ol, ul {
   overflow: hidden;
 }
 
-.btn-def span {
-  z-index: 20;
-}
-
 .btn-def:hover {
   border-color: #c09560;
   color: #c09560;
@@ -169,13 +165,226 @@ ol, ul {
 }
 
 .block_map {
+  position: relative;
   width: 80%;
   min-height: 550px;
   height: 80%;
   margin: 10% auto;
-  background-size: cover;
+  background-size: 180px, cover,contain;
+  background-position: bottom 50px left 10px, top 370px left -200px, center;
   background-repeat: no-repeat;
-  background-image: url(../../../assets/images/map.jpg);
+  background-color: #dfdfdf;
+  background-image: url(../../../assets/images/kisspng-red-wine-wine-glass-cup-tall-wine-glass-5a6a16bfbf6959.9182614415169020797841.png), url(../../../assets/images/pngwing.com.png), url(../../../assets/images/bg-shop-2.png);
+}
+
+.bottle {
+  position: absolute;
+  background-image: url(../../../assets/images/animate-back.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 400px;
+  bottom: 50px;
+  left: 100px;
+}
+
+.glass {
+  position: absolute;
+  bottom: 130px;
+  left: 99.5px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 13% 13% 50% 50% / 60% 60% 40% 40%;
+  width: 61px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.block-vine {
+  position: absolute;
+  height: 100px;
+  width: 62px;
+  bottom: -100px;
+  -webkit-transition: 8s;
+  transition: 8s;
+  background-color: #800000;
+  -webkit-animation: animate 3s ease-in-out;
+          animation: animate 3s ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.vine_Anim {
+  bottom: 0;
+}
+
+.bottle_Anim {
+  -webkit-animation: bottle 8s ease;
+          animation: bottle 8s ease;
+}
+
+.line_Vine {
+  width: 20px;
+  height: 0;
+  background-color: #800000;
+  position: absolute;
+  top: 190px;
+  left: 103px;
+  border-radius: 50px 0 0 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+  -webkit-animation: linevine 6s ease;
+          animation: linevine 6s ease;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes linevine {
+  0%, 100% {
+    -webkit-clip-path: polygon(38% 0, 33% 13%, 26% 26%, 20% 36%, 21% 53%, 20% 69%, 18% 85%, 9% 100%, 34% 100%, 39% 76%, 35% 61%, 40% 43%, 47% 30%, 57% 15%, 59% 0);
+            clip-path: polygon(38% 0, 33% 13%, 26% 26%, 20% 36%, 21% 53%, 20% 69%, 18% 85%, 9% 100%, 34% 100%, 39% 76%, 35% 61%, 40% 43%, 47% 30%, 57% 15%, 59% 0);
+  }
+  50% {
+    -webkit-clip-path: polygon(38% 0, 31% 10%, 30% 23%, 25% 36%, 18% 52%, 14% 69%, 13% 84%, 9% 100%, 34% 100%, 33% 76%, 43% 57%, 46% 38%, 52% 22%, 54% 10%, 59% 0);
+            clip-path: polygon(38% 0, 31% 10%, 30% 23%, 25% 36%, 18% 52%, 14% 69%, 13% 84%, 9% 100%, 34% 100%, 33% 76%, 43% 57%, 46% 38%, 52% 22%, 54% 10%, 59% 0);
+    height: 185px;
+  }
+  80% {
+    height: 185px;
+    top: 190px;
+  }
+  100% {
+    height: 0;
+    top: 375px;
+  }
+}
+
+@keyframes linevine {
+  0%, 100% {
+    -webkit-clip-path: polygon(38% 0, 33% 13%, 26% 26%, 20% 36%, 21% 53%, 20% 69%, 18% 85%, 9% 100%, 34% 100%, 39% 76%, 35% 61%, 40% 43%, 47% 30%, 57% 15%, 59% 0);
+            clip-path: polygon(38% 0, 33% 13%, 26% 26%, 20% 36%, 21% 53%, 20% 69%, 18% 85%, 9% 100%, 34% 100%, 39% 76%, 35% 61%, 40% 43%, 47% 30%, 57% 15%, 59% 0);
+  }
+  50% {
+    -webkit-clip-path: polygon(38% 0, 31% 10%, 30% 23%, 25% 36%, 18% 52%, 14% 69%, 13% 84%, 9% 100%, 34% 100%, 33% 76%, 43% 57%, 46% 38%, 52% 22%, 54% 10%, 59% 0);
+            clip-path: polygon(38% 0, 31% 10%, 30% 23%, 25% 36%, 18% 52%, 14% 69%, 13% 84%, 9% 100%, 34% 100%, 33% 76%, 43% 57%, 46% 38%, 52% 22%, 54% 10%, 59% 0);
+    height: 185px;
+  }
+  80% {
+    height: 185px;
+    top: 190px;
+  }
+  100% {
+    height: 0;
+    top: 375px;
+  }
+}
+
+@-webkit-keyframes animate {
+  0%, 100% {
+    -webkit-clip-path: polygon(0 24%, 11% 21%, 23% 20%, 33% 22%, 41% 25%, 51% 27%, 63% 28%, 75% 27%, 87% 25%, 100% 21%, 100% 100%, 0 100%);
+            clip-path: polygon(0 24%, 11% 21%, 23% 20%, 33% 22%, 41% 25%, 51% 27%, 63% 28%, 75% 27%, 87% 25%, 100% 21%, 100% 100%, 0 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 22%, 9% 26%, 21% 29%, 31% 31%, 44% 29%, 55% 26%, 65% 23%, 78% 21%, 90% 22%, 100% 26%, 100% 100%, 0 100%);
+            clip-path: polygon(0 22%, 9% 26%, 21% 29%, 31% 31%, 44% 29%, 55% 26%, 65% 23%, 78% 21%, 90% 22%, 100% 26%, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes animate {
+  0%, 100% {
+    -webkit-clip-path: polygon(0 24%, 11% 21%, 23% 20%, 33% 22%, 41% 25%, 51% 27%, 63% 28%, 75% 27%, 87% 25%, 100% 21%, 100% 100%, 0 100%);
+            clip-path: polygon(0 24%, 11% 21%, 23% 20%, 33% 22%, 41% 25%, 51% 27%, 63% 28%, 75% 27%, 87% 25%, 100% 21%, 100% 100%, 0 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0 22%, 9% 26%, 21% 29%, 31% 31%, 44% 29%, 55% 26%, 65% 23%, 78% 21%, 90% 22%, 100% 26%, 100% 100%, 0 100%);
+            clip-path: polygon(0 22%, 9% 26%, 21% 29%, 31% 31%, 44% 29%, 55% 26%, 65% 23%, 78% 21%, 90% 22%, 100% 26%, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes bottle {
+  0%, 100% {
+    bottom: 50px;
+    left: 100px;
+  }
+  30% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  40% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  50% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  70% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  80% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  50% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+}
+
+@keyframes bottle {
+  0%, 100% {
+    bottom: 50px;
+    left: 100px;
+  }
+  30% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  40% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  50% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  70% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  80% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
+  50% {
+    bottom: 120px;
+    left: 210px;
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg);
+  }
 }
 
 @media (max-width: 840px) {

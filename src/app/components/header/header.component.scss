@@ -44,6 +44,9 @@
 #navbarNav .navbar-nav .nav-link:hover {
     color: #ae8758;
 }
+.nav-link{
+    position: relative;
+}
 .navbar-nav{
     color: white;
 }
@@ -137,16 +140,46 @@ ul {
 //burger menu
 .navbar-dark .navbar-toggler {
     color: rgba(255,255,255,.55);
-    border: 0 
+    border: 0 ;
 }
 .bg_color_burger{
     display: none;
     color:  inherit;
 }
+
+@media(min-width: 768px){
+       //line hover
+    a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 70%;
+        height: 0.1em;
+        background-color: #ae8758;
+        opacity: 0;
+        transition: opacity 300ms, transform 300ms;
+    }
+  
+    .nav-item  a {
+        overflow: hidden;
+    }
+  
+    .nav-item a::after {
+        opacity: 1;
+        transform: translate3d(200%, 0, 0);
+    }
+  
+    .nav-item a:hover::after,
+    .nav-item a:focus::after{
+        transform: translate3d(20%, 0, 0);
+    }
+}
+
+
 @media( max-width: 991px){
     a{
         font-size: 13px;
-
     }
     .navbar-expand-md .navbar-nav .nav-link {
         padding-right: 0.4rem;
@@ -162,11 +195,9 @@ ul {
         background-color: white;
         color: rgb(0, 0, 0);
         fill: rgb(0, 0, 0);
-        
         z-index: 22;
     }
     .bg_color_burger{
-        
         display: block;
     }
 }

@@ -11,6 +11,7 @@ dl, h1, h2, h3, h4, h5, h6, ol, p {
   max-width: 1230px;
   margin: 0 auto;
   margin-top: 160px;
+  padding: 0 20px;
 }
 
 .block-product-img {
@@ -47,6 +48,18 @@ ul {
   font-size: .8125rem;
   font-weight: 600;
   margin: .625rem 0 0;
+}
+
+.product-img {
+  position: relative;
+}
+
+.imageProduct {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .contact-btn {
@@ -200,6 +213,30 @@ ul {
 
 .image_modal img {
   width: 100%;
+}
+
+@media (max-width: 1054px) {
+  .btn-def {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .imageProduct {
+    width: 95%;
+  }
+}
+
+@media (max-width: 902px) {
+  .btn-def {
+    font-size: 0.55rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .imageProduct {
+    width: 193px;
+  }
 }
 
 @media (max-width: 575px) {

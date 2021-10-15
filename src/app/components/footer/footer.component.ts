@@ -8,9 +8,15 @@ import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 })
 export class FooterComponent implements OnInit {
   block_none: boolean = true;
+  d = new Date();
+  /*date = d.getDate();
+  mounts = d.getMonth(); */
+  year = this.d.getFullYear();
+  
   constructor(
     private activatedRoute: ActivatedRoute,
     private router: Router
+
   ) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
