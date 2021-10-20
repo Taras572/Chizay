@@ -1,16 +1,19 @@
 <div class="block_container">
 
+    <input [(ngModel)]="searchField" name="searchField" type="text"
+        placeholder="Пошук: за назвою, за типом, за кольором" class="login-section__form--item">
+
     <div class="block-products row">
-        <div class="product col-md-6 col-sm-12 row" *ngFor="let prod of products; index as i">
+
+        <div class="product col-md-6 col-sm-12 row" *ngFor="let prod of products | products: searchField; index as i">
 
             <div class="block-product-img col-md-5 col-5">
-                <div class="product-img" style="overflow: hidden; height: 385px;" >
-                    <img class="imageProduct" [src]="prod.image" style="max-height: 385px; " >
+                <div class="product-img" style="overflow: hidden; height: 385px;">
+                    <img class="imageProduct" [src]="prod.image" style="max-height: 385px; ">
                 </div>
 
                 <a (click)="loadProductModal(prod.id)" tabindex="0" class="btn-def black" data-bs-toggle="modal"
-                    data-bs-target="#staticBackdrop">Додати до
-                    кошика</a>
+                    data-bs-target="#staticBackdrop">Додати до кошика</a>
             </div>
 
             <div class=" block-product-text col-md-7 col-7 shown-categories__item--description">
@@ -105,6 +108,27 @@
             </div>
         </div>
     </div>
+    <div *ngIf="recom">
+        <div class="block_shop">
+            <h2 class="section-title black">Рекомендовано</h2>
+            <div class="shop-preview">
+                <div class="row">
+
+                    <a class="col-md-3 col-6 shop-preview__item-wrapper" *ngFor="let prod of homeProd">
+                        <div class="shop-preview__item">
+                            <img [src]="prod.image" style="height: 250px;">
+                            <p class="shop-preview__item--description">{{prod.name}}</p>
+                            <p class="shop-preview__item--price">{{prod.price}} грн</p>
+                        </div>
+                    </a>
+
+                </div>
+                <br>
+                
+            </div>
+        </div>
+    </div>
+
     <!--  <ul class="breadcrumb smallSlideLeft">
         <li>
             <a routerLink="/home">

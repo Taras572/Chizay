@@ -179,10 +179,7 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     z-index: 2;
 }
-/* .btn-def:hover {
-    border-color: #c09560;
-    color: #c09560;
-} */
+
 .btn-def.white::after {
     background:white;
 }
@@ -208,14 +205,53 @@ h1, h2, h3, h4, h5, h6 {
 //block map
 .bg_map{
     margin-top: 20px;
-    height: 414px;
 }
 .block_map{
     width: 100%;
     margin-top: 55px;
     height: 300px;
-    background-image: url(../../../assets/images/map.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
+.winter_img{
+    background-image: url(../../../assets/images/latifundistcomchizay16-101397.jpg);
+}
+.autumn_img{
+    background-image: url(../../../assets/images/osin_u_shato_chizaj.jpg);
+}
+.spring_img{
+    
+}
+.summer_img{
+    
+}
+.winter{
+    background-image: url(../../../assets/images/snowflake.png), url(../../../assets/images/snowflake3.png), url(../../../assets/images/snowflake2.png);
+}
+.autumn{
+    background-image: url(../../../assets/images/autumn_bg.png), url(../../../assets/images/autumn_bg2.png);
+    background-size: contain, contain;
+}
+.spring{
+    
+}
+.summer{
+
+}
+//animation
+.snow-container {
+    height: 100%;
+    animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+
+
 .icon-tilde {
     width: 4.82609em;
 }
@@ -224,9 +260,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-.recipe_title h2{
+/* .recipe_title h2{
     font-size: 36px;
-}
+} */
 .recipe_img img{
     width: 100%;
     display: flex;
@@ -263,6 +299,7 @@ h1, h2, h3, h4, h5, h6 {
 } 
 
 
+
 @media(max-width: 767px){
     .restouran{
         flex-direction: column;
@@ -284,5 +321,22 @@ h1, h2, h3, h4, h5, h6 {
     } 
     .recipe_img{
         margin-top: 20px;
+    }
+    .block_map{
+        height: 250px; 
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    .block_map{
+        margin-top: 20px;
+    }
+}
+@media( max-width: 350px){
+    .block_map{
+        height: 200px; 
     }
 }

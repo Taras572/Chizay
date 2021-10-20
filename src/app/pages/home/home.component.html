@@ -71,16 +71,14 @@
 
         <div class="shop-preview">
             <div class="row">
-
                 <a class="col-md-3 col-6 shop-preview__item-wrapper" *ngFor="let prod of homeProd">
                     <div class="shop-preview__item">
                         <img [src]="prod.image" style="height: 303px;">
                         <p class="shop-preview__item--description">{{prod.name}}</p>
-                        <p class="shop-preview__item--type">{{prod.type}}</p>
                     </div>
                 </a>
-
             </div>
+            <br>
             <div class="container-btn">
                 <a [routerLink]="[ '/shop' ]" class="btn-def black">Відвідати магазин</a>
             </div>

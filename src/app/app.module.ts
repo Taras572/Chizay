@@ -31,6 +31,7 @@ import { LoginComponent } from './pages/login/login/login.component';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getStorage,provideStorage } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
+import { ProductsPipe } from './pages/products/products.pipe';
 
 
 
@@ -58,7 +59,8 @@ import { environment } from '../environments/environment';
         AdminProductComponent,
         AdminOrderComponent,
         AdminUsersComponent,
-        LoginComponent
+        LoginComponent,
+        ProductsPipe
         
     ],
     imports: [

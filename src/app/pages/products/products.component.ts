@@ -15,7 +15,10 @@ export class ProductsComponent implements OnInit {
     currentCategory: any;
     public productsModal!: IProduct;
     public prodCount: boolean = true;
-    
+    public searchField!: string;
+    public randNumOld: number = 0;
+    homeProd: Array<IProduct> =[];
+    recom: boolean = false;
 
     constructor(
         private productService: ProductService,
@@ -43,6 +46,10 @@ export class ProductsComponent implements OnInit {
                 data => {
                     this.products = data;
                     console.log('user page', this.products);
+                    this.recom = true;
+                    for (let i = 0; i < 4; i++) {
+                        this.homeProd.push(this.products[this.getRandomInt(0,this.products.length-1)]);
+                    }
                 }, err => {
                     console.log(err);
                 }
@@ -54,6 +61,7 @@ export class ProductsComponent implements OnInit {
                     this.products = data;
                     this.currentCategory = this.products[0].category.path;
                     console.log('user page', this.products);
+                    this.recom = false;
                 }, err => {
                     console.log(err);
                 }
@@ -65,6 +73,7 @@ export class ProductsComponent implements OnInit {
         else{
             this.prodCount = true;
         }
+
     }
 
     loadProductModal(Num:any): void {
@@ -91,6 +100,13 @@ export class ProductsComponent implements OnInit {
     addToBasket(products: IProduct): void {
         this.orderService.addToBasket(products);
         products.count = 1;
+    }
+
+    getRandomInt(min: any, max: any): any {
+        let randNum = Math.floor(Math.random() * (max - min + 1)) + min;
+        if (randNum == this.randNumOld) return this.getRandomInt(min, max);
+        this.randNumOld = randNum;
+        return randNum;
     }
 
 }
