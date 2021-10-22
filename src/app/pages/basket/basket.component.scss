@@ -865,4 +865,17 @@ table {
   height: 60px;
   
 }
+@media(max-width:550px){
+  h1 {
+    margin-bottom: 0;
+    font-size: 2rem;
+  }
+  .payItems {
+     padding: 0; 
+  }
+  #mobile{
+  display: none;
+  }
+
+}
 

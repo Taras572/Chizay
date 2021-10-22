@@ -166,15 +166,19 @@ ol, ul {
 
 .block_map {
   position: relative;
-  width: 80%;
+  width: 492px;
   min-height: 550px;
-  height: 80%;
+  height: 550px;
   margin: 10% auto;
-  background-size: 180px, cover,contain;
-  background-position: bottom 50px left 10px, top 370px left -200px, center;
+  background-size: 180px, cover,500px;
+  background-position: bottom 50px left 10px, top 380px left -200px, center;
   background-repeat: no-repeat;
   background-color: #dfdfdf;
   background-image: url(../../../assets/images/kisspng-red-wine-wine-glass-cup-tall-wine-glass-5a6a16bfbf6959.9182614415169020797841.png), url(../../../assets/images/pngwing.com.png), url(../../../assets/images/bg-shop-2.png);
+}
+
+.animation_vine {
+  overflow: hidden;
 }
 
 .bottle {
@@ -418,6 +422,9 @@ ol, ul {
   }
   .icon-line {
     margin-left: 0;
+  }
+  .block_rigtn {
+    display: none;
   }
 }
 /*# sourceMappingURL=contacts.component.css.map */

@@ -39,6 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
+  margin-top: 10px;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
@@ -83,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 1.875rem 0;
+  margin: 1.375rem 0;
 }
 
 .btn-def.white {
@@ -236,6 +237,12 @@ a {
   }
   .title-category {
     font-size: 18px;
+  }
+  .collections-slider__item--description {
+    font-size: 0.9rem;
+  }
+  .title-price {
+    margin: 1rem 0;
   }
 }
 /*# sourceMappingURL=shop.component.css.map */

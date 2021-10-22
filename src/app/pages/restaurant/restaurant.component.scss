@@ -7,6 +7,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
     letter-spacing: .125rem;
 }
+h2{
+    margin-top: 40px;
+    margin-bottom: 16px;
+    
+} 
 .bg_image{
     background-image: url("../../../assets/images/restaurant-1.jpg");
     background-size: cover;
@@ -28,14 +33,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans",sans-serif;
     font-size: 14px;
 }
-.head h2{
-    margin-top: 40px;
-    margin-bottom: 16px;
-    font-size: 3rem;
-    font-weight: 400;
-    font-family: "Georgia",sans-serif;
-    letter-spacing: .125rem;
-}
+
 .restouran .image{
     display: flex;
     flex-direction: column;
@@ -124,15 +122,10 @@ h1, h2, h3, h4, h5, h6 {
     background-size: cover;
     background-position: center;
     padding: 3.75rem 0;
-    
     color: white;
 }
 .block_menu h2{
-    font-size: 3rem;
-    font-weight: 400;
-    text-align: center;
     margin-bottom: 1rem;
-    letter-spacing: .125rem;
 }
 
 //btn pdf menu
@@ -260,9 +253,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 30px;
     margin-bottom: 50px;
 }
-/* .recipe_title h2{
-    font-size: 36px;
-} */
+
 .recipe_img img{
     width: 100%;
     display: flex;

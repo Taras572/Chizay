@@ -11,7 +11,7 @@ import { IProduct } from '../../models/product/products.model';
 export class OrderService {
    public changeBasket$ = new Subject<boolean>();
    private resourceUrl = environment.BACKEND_URL;
-   public countBasket: any ;
+   public countBasket: any;
    private api = {
       orders: `${this.resourceUrl}orders`
    };
@@ -51,20 +51,10 @@ export class OrderService {
       localStorage.setItem('basket', JSON.stringify(basket));
       this.changeBasket$.next(true);
       product.count = 1;
-
-      
-      
    }
 
-   sellCount(): Observable<any>{
+   getCount(): Observable<any>{
       return this.countBasket;
    }
-   
-   getCount(count: any): Observable<any>{
-      return this.countBasket = count;
-   }
-  
-
-
 
 }

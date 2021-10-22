@@ -20,7 +20,7 @@
                                 <div class="tr">
                                     <div class="td"></div>
                                     <div class="td">Товар</div>
-                                    <div class="td">Ціна</div>
+                                    <div class="td " id="mobile">Ціна</div>
                                     <div class="td">Кількість</div>
                                     <div class="td">Загалом</div>
                                 </div>
@@ -28,22 +28,23 @@
                             <div class="tr tbody">
                                 <div class="tr productOrder" *ngFor="let order of basket">
                                     <div class="td">
-                                        <div class="delateProduct remove-cart-product-popup open-popup" data-bs-toggle="modal"
-                                            data-bs-target="#staticBackdrop" (click)="indexBtn = order">
+                                        <div class="delateProduct remove-cart-product-popup open-popup"
+                                            data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                            (click)="indexBtn = order">
                                         </div>
                                     </div>
                                     <div class="td">
                                         <div class="smallProduct">
                                             <a class="imgWrapper" style="background-size: contain;"
                                                 [style.backgroundImage]="'url('+ order.image +')'"></a>
-                                            <div class="smallProductInfo">
+                                            <div class="smallProductInfo " id="mobile">
                                                 <h6 class="h6 as"><a>{{order.name}}</a>
                                                 </h6>
                                                 <p></p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="td">
+                                    <div class="td " id="mobile">
                                         <div class="singleItemPrice">
                                             <span> {{order.price}}</span><i>грн</i>
                                         </div>
@@ -118,8 +119,6 @@
 
         </div>
     </div>
-
-    
 
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
@@ -215,10 +214,12 @@
                     <h6>Ви впевнені що хочете видалити товар?</h6>
                 </div>
                 <div class="modal-footer">
-                    <button (click)="removeProduct(indexBtn)"  type="button" class="btn btn-dark" data-bs-dismiss="modal">Підтвердити</button>
-                    <button  type="button" class="btn btn-danger" data-bs-dismiss="modal">Відмінити</button>
+                    <button (click)="removeProduct(indexBtn)" type="button" class="btn btn-dark"
+                        data-bs-dismiss="modal">Підтвердити</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Відмінити</button>
                 </div>
             </div>
         </div>
     </div>
+
 </div>

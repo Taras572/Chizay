@@ -90,10 +90,10 @@
     },
     {
       "category": {
-        "name": "Витримані сухі вина",
-        "path": "dry-wines",
-        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
-        "id": 3
+        "name": "Chateau Chizay",
+        "path": "chateau-chizay",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+        "id": 1
       },
       "name": "Furmint",
       "path": "Furmint",
@@ -105,7 +105,7 @@
       "grape": " Фурмінт",
       "aroma": "різномаїття фруктових ароматів, тони цитрусів, ванілі, мигдалю та мінеральні нюанси.",
       "taste": "приємний, збалансований, яскрава кислотність, тривалий післясмак",
-      "price": "217",
+      "price": "217.00",
       "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux1.png?alt=media&token=ac329871-f1ff-4407-b43f-4802db735582",
       "count": 1,
       "id": 6
@@ -881,6 +881,85 @@
       ],
       "totalPrice": 2130,
       "id": 7
+    },
+    {
+      "userName": "Олег",
+      "userSecondName": "Гриновець",
+      "userPhone": "093717234",
+      "userCity": "Тернопіль",
+      "userStreet": "Тернопільська",
+      "userHouse": "546",
+      "userComment": null,
+      "products": [
+        {
+          "category": {
+            "name": "Carpathian Sekt",
+            "path": "carpathian-sekt",
+            "image": "",
+            "id": 2
+          },
+          "name": "Carpathian Sekt CHERSEGI",
+          "path": "carpathian-sekt-CHERSEGI",
+          "type": "Ігристе брют",
+          "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+          "volume": "0,75 л",
+          "alcohol": "11.5%",
+          "color": "Біле",
+          "grape": "Черсегі Фюсереш",
+          "aroma": "свіжий, тони квітів і фруктів",
+          "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+          "price": 147,
+          "count": 2,
+          "id": 2
+        },
+        {
+          "category": {
+            "name": "Витримані сухі вина",
+            "path": "dry-wines",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+            "id": 3
+          },
+          "name": "Merlot 9 міс.",
+          "path": "Merlot9 ",
+          "type": "Витримане",
+          "description": "Витримане сухе Мерло приваблює своєю фруктовістю, яка елегантно огорнута пряними тонами. У смаку відчуваються тони стиглої вишні і ожини, таніни м'які, округлі, кислотність помірна. Витримка в дубових бариках понад 9 місяців збагатила вино приємним шоколадно-вершковим відтінком. Післясмак тривалий, фруктовий.",
+          "volume": "0,75 л",
+          "alcohol": "12.5%",
+          "color": "Червоне",
+          "grape": "Мерло",
+          "aroma": "ноти фруктів та витримки у дубі, елегантні пряні тони",
+          "taste": "стигла вишня, ожина, округлі таніни, приємний шоколадно-вершковий відтінок.",
+          "price": "190.00",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux2.png?alt=media&token=65b24c6b-44a6-48c5-96c4-8d12dad048be",
+          "count": 1,
+          "id": 7
+        },
+        {
+          "category": {
+            "name": "Витримані сухі вина",
+            "path": "dry-wines",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+            "id": 3
+          },
+          "name": "Cabernet Franc",
+          "path": "CabernetFranc",
+          "type": "Витримане",
+          "description": "Вишуканий Cabernet Franc з колекції найцінніших вин Chateau Chizay створений із відбірного однойменного винограду, зібраного у 2018 році з власних виноградників на Закарпатті.\nВино витримане 18 місяців у бариках з французького дуба та розлите у пляшки лімітованою партією.",
+          "volume": "0,75 л",
+          "alcohol": "14%",
+          "color": "Біле",
+          "grape": " Каберне Фран",
+          "aroma": "темні ягоди, чорниця, вишня, ваніль, тютюн",
+          "taste": "повний, м’які таніни, пряні тони гострого перцю, темні ягоди, тривалий післясмак",
+          "price": "387.00",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux3.png?alt=media&token=d9a10cdf-c4e1-4ae0-8a27-8b35011df96b",
+          "count": 1,
+          "id": 8
+        }
+      ],
+      "totalPrice": 871,
+      "id": 8
     }
   ],
   "users": [
@@ -904,6 +983,13 @@
       "pass": "123456",
       "second_pass": "123456",
       "id": 3
+    },
+    {
+      "date": "2003-12-18",
+      "email": "tarikxarosh@ukr.net",
+      "pass": "12345678",
+      "second_pass": "12345678",
+      "id": 4
     }
   ]
 }

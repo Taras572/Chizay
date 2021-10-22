@@ -334,9 +334,16 @@ h1, h2, h3, h4, h5, h6 {
     .section-title{
         font-size: 2rem
     }
+    .slider-text{
+        font-size: 15px;
+    }
+    .home-slider__item{
+        width: 80%;
+    }
 }
 @media(max-width: 500px ){
     .hall-preview__image ,.hall-preview__image2 {
         height: 200px;
     }
+    
 }

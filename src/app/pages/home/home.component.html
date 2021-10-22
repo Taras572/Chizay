@@ -28,7 +28,7 @@
                     <h2 class="section-title white">Новини</h2>
                     <p>Про події з вином, про вино і навколо вина. Розповідаємо, чим живе Шато Чизай та ділимося тим, що
                         вміємо і любимо.</p>
-                    <a class="btn-def white">Детальніше</a>
+                    <a [routerLink]="[ '/news' ]" class="btn-def white">Детальніше</a>
                 </div>
             </div>
             <div class="home-about__block without-img bg_img1">
@@ -43,12 +43,12 @@
                     <h2 class="section-title white">Наші<br>
                         вина</h2>
                     <p>Вина "Шато Чизай" зроблені <br>виключно з власного винограду</p>
-                    <a class="btn-def white">Онлайн зі знижкою</a>
+                    <a [routerLink]="[ '/shop' ]" class="btn-def white">Онлайн зі знижкою</a>
                 </div>
             </div>
             <div class="home-about__block without-img bg_img2">
                 <h2 class="section-title black">Тури в Шато Чизай</h2>
-                <a class="btn-def black">Відвідай Шато</a>
+                <a [routerLink]="[ '/tours' ]" class="btn-def black">Відвідай Шато</a>
             </div>
         </div>
 

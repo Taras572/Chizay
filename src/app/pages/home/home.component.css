@@ -3,11 +3,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg_image {
-  background-image: url("../../../assets/images/home.jpg");
+  /* background-image: url("../../../assets/images/home.jpg"); */
+  /* background-image: url("../../../assets/images/spring.jpg"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+}
+
+.bg_winter {
+  background-image: url("../../../assets/images/winter.jpg");
+}
+
+.bg_autumn {
+  background-image: url("../../../assets/images/autumn.jpg");
+}
+
+.bg_summer {
+  background-image: url("../../../assets/images/home.jpg");
+}
+
+.bg_spring {
+  background-image: url("../../../assets/images/spring.jpg");
 }
 
 .container_home {
@@ -387,6 +404,12 @@ h1, h2, h3, h4, h5, h6 {
   }
   .section-title {
     font-size: 2rem;
+  }
+  .slider-text {
+    font-size: 15px;
+  }
+  .home-slider__item {
+    width: 80%;
   }
 }
 

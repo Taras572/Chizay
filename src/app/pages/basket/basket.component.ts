@@ -32,7 +32,7 @@ export class BasketComponent implements OnInit {
     ngOnInit(): void {
         this.initOrderForm();
         this.getLocalProducts();
-        this.orderService.getCount(this.countBusket);   
+        this.getCount(this.basket);
     }
 
     initOrderForm(): void {
@@ -51,12 +51,7 @@ export class BasketComponent implements OnInit {
             this.basket = JSON.parse(<string>localStorage.getItem('basket'));
             this.totalPrice = this.getTotal(this.basket);
             this.discount = Math.round(this.getTotalDiscount(this.basket) / 100 * 5);
-            this.countBusket = this.getCount(this.basket);
-            this.orderService.getCount(this.countBusket); 
-
         }
-
-        console.log(this.basket);
     }
 
     private getTotal(products: Array<IProduct>): number {
@@ -65,31 +60,25 @@ export class BasketComponent implements OnInit {
     private getTotalDiscount(products: Array<IProduct>): number {
         return products.reduce((total, prod) => total + (prod.price * prod.count), 0);
     }
-    private getCount(products: Array<IProduct>): number {
+
+    private getCount(products: Array<IProduct>) {
         return products.reduce((total, prod) => total + prod.count, 0);
     }
 
-    
-   
 
     productCount(product: IProduct, status: boolean): void {
         if (status) {
             product.count++;
-
         }
         else {
             if (product.count > 1) {
                 product.count--;
-
             }
         }
         this.totalPrice = this.getTotal(this.basket);
         this.discount = Math.round(this.getTotalDiscount(this.basket) / 100 * 5);
-        this.countBusket = this.getCount(this.basket);
         this.orderService.changeBasket$.next(true);
         localStorage.setItem('basket', JSON.stringify(this.basket));
-        this.orderService.getCount(this.countBusket); 
-
     }
 
 
@@ -98,10 +87,8 @@ export class BasketComponent implements OnInit {
         this.basket.splice(index, 1);
         this.totalPrice = this.getTotal(this.basket);
         this.discount = Math.round(this.getTotalDiscount(this.basket) / 100 * 5);
-        this.countBusket = this.getCount(this.basket);
         this.orderService.changeBasket$.next(true);
         localStorage.setItem('basket', JSON.stringify(this.basket));
-        this.orderService.getCount(this.countBusket); 
     }
 
 }

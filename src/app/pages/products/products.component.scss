@@ -44,6 +44,8 @@ ul {
 
 .product-img{
     position: relative;
+    height: 385px;
+    overflow: hidden;
 }
 .imageProduct{
     position: absolute;
@@ -188,7 +190,6 @@ ul {
     margin-bottom: 20px;
 }
 
-
 //block show shop
 .block_shop{
     margin: 50px 0;
@@ -260,9 +261,18 @@ ul {
     .xcp-btn {
         display: inline-block;
     }
+    .product-img{
+        height: 300px;  
+    }
+    .imageProduct{
+        width: 150px;
+    }
 }
 @media(max-width:395px){
     .btn-def {
         line-height: 12px;
+    }
+    .imageProduct{
+        width: 120px;
     }
 }

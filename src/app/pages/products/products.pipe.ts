@@ -6,16 +6,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ProductsPipe implements PipeTransform {
 
   transform(value: Array<any>, field: any): Array<any> {
-    if(!field){
+    if (!field) {
       return value;
     }
-    if(!value){
+    if (!value) {
       return [];
     }
-    return value.filter(mas => 
-        new RegExp(field ,'gi').test(mas.name) || 
-        new RegExp(field ,'gi').test(mas.type) || 
-        new RegExp(field ,'gi').test(mas.color));
+    return value.filter(mas =>
+      new RegExp(field, 'gi').test(mas.name) ||
+      new RegExp(field, 'gi').test(mas.type) ||
+      new RegExp(field, 'gi').test(mas.color));
   }
-
 }

@@ -16,7 +16,7 @@ export class HeaderComponent implements OnInit {
     shop_head: boolean = false;
 
 
-    count_busket: any;
+    public countBasket: any = 0;
 
 
     constructor(
@@ -45,11 +45,9 @@ export class HeaderComponent implements OnInit {
                 }
             }
         })
-
     }
 
     ngOnInit(): void {
-        this.countInit();
     }
 
     @HostListener("document:scroll")
@@ -64,11 +62,6 @@ export class HeaderComponent implements OnInit {
             this.header_scroll = false;
             this.color_scroll = false;
         }
-        this.countInit();
-    }
-
-    countInit(): void {
-        this.count_busket = this.orderService.sellCount()
     }
 
 }
