@@ -48,9 +48,14 @@ export class HeaderComponent implements OnInit {
     }
 
     ngOnInit(): void {
+        this.basketProduct();
     }
 
     @HostListener("document:scroll")
+
+    basketProduct(): void {
+        this.orderService.stream$.subscribe(val => this.countBasket = val);
+    }
 
     scrollfunction() {
         let color: any;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { observeInsideAngular } from '@angular/fire';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { IProduct } from 'src/app/shared/models/product/products.model';
@@ -16,11 +17,15 @@ export class BasketComponent implements OnInit {
 
     public totalPayment!: string;
     public totalPrice = 0;
-    public countBusket: any = 0;
+    /* public countBusket: any = 0; */
     public orderForm!: FormGroup;
     public discount: any;
 
     indexBtn!: any;
+
+   /*  private stream$ = new Observable(observer=>{
+        observer.next(this.getCount(this.basket));
+    }) */
 
 
 
@@ -32,8 +37,12 @@ export class BasketComponent implements OnInit {
     ngOnInit(): void {
         this.initOrderForm();
         this.getLocalProducts();
-        this.getCount(this.basket);
+        
+        //test
+        this.orderService.stream$.next(this.getCount(this.basket));
+        /* this.stream$.subscribe(val=> console.log('Val',val)); */
     }
+    
 
     initOrderForm(): void {
         this.orderForm = this.fb.group({
@@ -79,6 +88,8 @@ export class BasketComponent implements OnInit {
         this.discount = Math.round(this.getTotalDiscount(this.basket) / 100 * 5);
         this.orderService.changeBasket$.next(true);
         localStorage.setItem('basket', JSON.stringify(this.basket));
+
+        this.orderService.stream$.next(this.getCount(this.basket)); 
     }
 
 
@@ -89,6 +100,10 @@ export class BasketComponent implements OnInit {
         this.discount = Math.round(this.getTotalDiscount(this.basket) / 100 * 5);
         this.orderService.changeBasket$.next(true);
         localStorage.setItem('basket', JSON.stringify(this.basket));
+
+        this.orderService.stream$.next(this.getCount(this.basket));
     }
+
+
 
 }

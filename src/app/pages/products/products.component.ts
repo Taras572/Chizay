@@ -19,6 +19,7 @@ export class ProductsComponent implements OnInit {
     public randNumOld: number = 0;
     homeProd: Array<IProduct> =[];
     recom: boolean = false;
+    public basket: Array<IProduct> = [];
 
     constructor(
         private productService: ProductService,
@@ -36,7 +37,8 @@ export class ProductsComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        
+        this.getLocalProducts();
+        this.orderService.stream$.next(this.getCount(this.basket));
     }
 
     loadProduct(categoryName: string): void {
@@ -92,12 +94,13 @@ export class ProductsComponent implements OnInit {
             products.count++;
         } 
         else if (products.count > 1) {
-                products.count--;
-            
+            products.count--; 
         }
+         
     }
 
     addToBasket(products: IProduct): void {
+        this.orderService.stream$.next(this.getCount(this.basket)+this.productsModal.count);
         this.orderService.addToBasket(products);
         products.count = 1;
     }
@@ -107,6 +110,16 @@ export class ProductsComponent implements OnInit {
         if (randNum == this.randNumOld) return this.getRandomInt(min, max);
         this.randNumOld = randNum;
         return randNum;
+    }
+
+    private getCount(products: Array<IProduct>) {
+        return products.reduce((total, prod) => total + prod.count, 0);
+    }
+
+    private getLocalProducts(): void {
+        if (localStorage.getItem('basket')) {
+            this.basket = JSON.parse(<string>localStorage.getItem('basket'));
+        }
     }
 
 }

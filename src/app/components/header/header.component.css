@@ -189,6 +189,9 @@ ul {
     -webkit-transform: translate3d(20%, 0, 0);
             transform: translate3d(20%, 0, 0);
   }
+  .bg_color_burger {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
@@ -213,6 +216,9 @@ ul {
   }
   .bg_color_burger {
     display: block;
+  }
+  .block-nav-shop {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=header.component.css.map */

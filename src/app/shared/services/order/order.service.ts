@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, Subject } from 'rxjs';
+import { Observable, Subject} from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { IProduct } from '../../models/product/products.model';
 
@@ -10,6 +10,8 @@ import { IProduct } from '../../models/product/products.model';
 })
 export class OrderService {
    public changeBasket$ = new Subject<boolean>();
+   public stream$ = new Subject <number>();
+
    private resourceUrl = environment.BACKEND_URL;
    public countBasket: any;
    private api = {
@@ -53,8 +55,6 @@ export class OrderService {
       product.count = 1;
    }
 
-   getCount(): Observable<any>{
-      return this.countBasket;
-   }
+ 
 
 }

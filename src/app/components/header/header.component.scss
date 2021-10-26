@@ -171,6 +171,9 @@ ul {
     .nav-item a:focus::after{
         transform: translate3d(20%, 0, 0);
     }
+    .bg_color_burger{
+        display: none;
+    }
 }
 
 
@@ -196,6 +199,9 @@ ul {
     }
     .bg_color_burger{
         display: block;
+    }
+    .block-nav-shop{
+        margin-top: 0;
     }
 }
 
