@@ -23,8 +23,10 @@
                         2021.</p>
                     <p class="title-price"><span class="woocommerce-Price-amount amount"><bdi>115.00&nbsp;<span
                                     class="woocommerce-Price-currencySymbol">Грн</span></bdi></span></p>
-                    <a class="btn-def black dataForGA" style="margin-left: 2%;margin-bottom: 10px;" [routerLink]="[ '/product/chateau-chizay' ]" >купити</a>
-                    <a [routerLink]="[ '/product/all-vine' ]" class="btn-def black" style="margin-left: 2%; margin-bottom: 10px;">Всі вина</a>
+                    <a class="btn-def black dataForGA" style="margin-left: 2%;margin-bottom: 10px;"
+                        [routerLink]="[ '/product/chateau-chizay' ]">купити</a>
+                    <a [routerLink]="[ '/product/all-vine' ]" class="btn-def black"
+                        style="margin-left: 2%; margin-bottom: 10px;">Всі вина</a>
                 </div>
             </div>
         </div>
@@ -34,11 +36,14 @@
 
 <div class="block_container">
     <h2 class="section-title black">Колекції</h2>
-    <div class="shop_preview row" >
+    <div class="shop_preview row">
         <div class="col-md-3 col-6" *ngFor="let item of adminCategories">
             <a [routerLink]="['/product/', item.path]" class=" shop-preview__item-wrapper">
                 <div class="collections-slider__item">
-                    <img src="{{item.image}}">
+                    <div>
+                        <img src="{{item.image}}">
+                    </div>
+
                     <div class="icon icon-tilde">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 4.6" id="tilde">
                             <path

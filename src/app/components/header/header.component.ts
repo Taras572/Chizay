@@ -1,5 +1,6 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { IProduct } from 'src/app/shared/models/product/products.model';
 import { OrderService } from 'src/app/shared/services/order/order.service';
 
 
@@ -15,7 +16,7 @@ export class HeaderComponent implements OnInit {
     text_color: boolean = false;
     shop_head: boolean = false;
 
-
+    public basket: Array<IProduct> = [];
     public countBasket: any = 0;
 
 
@@ -49,6 +50,9 @@ export class HeaderComponent implements OnInit {
 
     ngOnInit(): void {
         this.basketProduct();
+
+        this.getLocalProducts();
+        this.orderService.stream$.next(this.getCount(this.basket));
     }
 
     @HostListener("document:scroll")
@@ -67,6 +71,17 @@ export class HeaderComponent implements OnInit {
             this.header_scroll = false;
             this.color_scroll = false;
         }
+    }
+
+    
+    private getLocalProducts(): void {
+        if (localStorage.getItem('basket')) {
+            this.basket = JSON.parse(<string>localStorage.getItem('basket'));
+        }
+    }
+
+    private getCount(products: Array<IProduct>) {
+        return products.reduce((total, prod) => total + prod.count, 0);
     }
 
 }

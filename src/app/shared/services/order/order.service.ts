@@ -35,7 +35,7 @@ export class OrderService {
    
    delete(id: number): Observable<any> {
       return this.http.delete<any>(`${this.api.orders}/${id}`);
-    }
+   }
 
    addToBasket(product: IProduct): void {
       let basket: Array<IProduct> = [];

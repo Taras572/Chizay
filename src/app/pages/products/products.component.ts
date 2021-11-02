@@ -20,6 +20,7 @@ export class ProductsComponent implements OnInit {
     homeProd: Array<IProduct> =[];
     recom: boolean = false;
     public basket: Array<IProduct> = [];
+    public load_style = false;
 
     constructor(
         private productService: ProductService,
@@ -39,6 +40,7 @@ export class ProductsComponent implements OnInit {
     ngOnInit(): void {
         this.getLocalProducts();
         this.orderService.stream$.next(this.getCount(this.basket));
+        
     }
 
     loadProduct(categoryName: string): void {
