@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { OrderService } from 'src/app/shared/services/order/order.service';
-import { ICategory } from 'src/app/shared/models/category/category.model';
 import { CategoryService } from 'src/app/shared/services/category/category.service';
 
 

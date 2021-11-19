@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { IUsers } from 'src/app/shared/models/users/users.model';
+import { IUsers, IUsLog } from 'src/app/shared/models/users/users.model';
 import { UsersService } from 'src/app/shared/services/users/users.service';
+import { OrderService } from 'src/app/shared/services/order/order.service';
+import { IProduct } from 'src/app/shared/models/product/products.model';
+
 
 @Component({
     selector: 'app-login',
@@ -20,19 +23,25 @@ export class LoginComponent implements OnInit {
     public singCount: boolean = true;
     public adminLog: boolean = false;
     validStatus: boolean = false;
-    
-    
+    public basket: Array<IProduct> = [];
+
+    usLog: Array<IUsLog> = [{
+        usLog: 0,
+    }];
+
 
     constructor(
         private usersService: UsersService,
         private fb: FormBuilder,
-        private router: Router
+        private router: Router,
+        private orderService: OrderService
     ) { }
 
     ngOnInit(): void {
+        this.loadUsers();
         this.initUsersForm();
         this.initSingIn();
-        this.loadUsers();
+        localStorage.setItem('usLog', JSON.stringify(this.usLog));
     }
 
     initUsersForm(): void {
@@ -67,6 +76,7 @@ export class LoginComponent implements OnInit {
     }
 
     checkUsers(): void {
+
         //EMAIL
         const users = this.usersForm.value;
         let count = 0;
@@ -79,6 +89,7 @@ export class LoginComponent implements OnInit {
             this.email_color = true;
             count++;
         }
+
         //date
         if (users.date) {
             this.date_color = false;
@@ -87,6 +98,7 @@ export class LoginComponent implements OnInit {
             this.date_color = true;
             count++;
         }
+
         //PASSWORD
         let regEXP_PASSWORD = /^\w{6,15}$/;
 
@@ -101,7 +113,7 @@ export class LoginComponent implements OnInit {
         this.adminUsers.forEach((value) => {
             if (value.email == users.email) {
                 count++;
-                this.email_color = true; 
+                this.email_color = true;
             }
         });
 
@@ -119,11 +131,30 @@ export class LoginComponent implements OnInit {
         })
     }
 
-    SingIn():void{
+    SingIn(): void {
         const sing = this.singForm.value;
-        if(sing.email == 'admin'&& sing.pass == 'admin'){
+
+        if (sing.email == 'admin' && sing.pass == 'admin') {
+            this.orderService.variables$.next(false);
+            this.usLog[0].usLog = this.adminUsers[0].id;
+            localStorage.setItem('usLog', JSON.stringify(this.usLog)); 
+
             this.router.navigate(['/admin']);
         }
+
+        else {
+            this.adminUsers.forEach((value) => {
+                if (value.email == sing.email && value.pass == sing.pass) {
+                    this.orderService.variables$.next(false);
+                    this.usLog[0].usLog = value.id;
+                    localStorage.setItem('usLog', JSON.stringify(this.usLog));
+
+                    this.router.navigate(['/my-account']);
+                }
+
+            });
+        }
+
     }
 }
 

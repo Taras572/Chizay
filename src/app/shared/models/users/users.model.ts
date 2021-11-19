@@ -5,3 +5,7 @@ export interface IUsers {
     second_pass: number;
     id?: number;
 } 
+
+export interface IUsLog {
+    usLog?: number;
+} 

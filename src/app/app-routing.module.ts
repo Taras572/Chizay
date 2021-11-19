@@ -12,6 +12,7 @@ import { RestaurantComponent } from './pages/restaurant/restaurant.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { BasketComponent } from './pages/basket/basket.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component'; 
+import { MyAccountComponent } from './pages/my-account/my-account.component';
 
 import { AdminComponent } from './admin/admin.component';
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
@@ -34,6 +35,7 @@ const routes: Routes = [
   { path: 'basket', component: BasketComponent },
   { path: 'login', component: LoginComponent },
   { path: 'checkout', component: CheckoutComponent },
+  { path: 'my-account', component: MyAccountComponent },
 
   {
     path: 'admin', component: AdminComponent, children: [
@@ -42,6 +44,7 @@ const routes: Routes = [
       { path: 'product', component: AdminProductComponent },
       { path: 'order', component: AdminOrderComponent },
       { path: 'users', component: AdminUsersComponent },
+      
     ]
   },
 ];

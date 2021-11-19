@@ -10,16 +10,16 @@ import { IProduct } from '../../models/product/products.model';
 })
 export class OrderService {
    public changeBasket$ = new Subject<boolean>();
-   public stream$ = new Subject <number>();
+   public stream$ = new Subject<number>();
 
-   private resourceUrl = environment.BACKEND_URL;
+   public variables$ = new Subject<boolean>();
+
    public countBasket: any;
+   private resourceUrl = environment.BACKEND_URL;
    private api = {
       orders: `${this.resourceUrl}orders`
    };
    
-   
-
    constructor(
       private http: HttpClient,
       
@@ -54,7 +54,5 @@ export class OrderService {
       this.changeBasket$.next(true);
       product.count = 1;
    }
-
- 
 
 }

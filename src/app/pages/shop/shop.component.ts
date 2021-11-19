@@ -3,6 +3,7 @@ import { ICategory } from 'src/app/shared/models/category/category.model';
 import { CategoryService } from 'src/app/shared/services/category/category.service';
 import { OrderService } from 'src/app/shared/services/order/order.service';
 
+
 @Component({
     selector: 'app-shop',
     templateUrl: './shop.component.html',
@@ -13,11 +14,11 @@ export class ShopComponent implements OnInit {
 
     constructor(
         private categoryService: CategoryService,
+        private orderService: OrderService,
     ) { }
 
     ngOnInit(): void {
         this.loadCategories();
-
     }
 
     loadCategories(): void {

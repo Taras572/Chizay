@@ -27,21 +27,12 @@
                             class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password"
                             id="password"></span>
                 </div>
-                <div class="login-section__form--item-checkbox">
-                    <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme"
-                        type="checkbox" id="login-checkbox">
-                    <label for="login-checkbox">Пам'ятати мене</label>
-                </div>
 
                 <button (click)="SingIn()" (mouseenter)="adminLog = true" (mouseleave)="adminLog = false" type="button"
                     name="login" class="btn-def white">Вхід</button>
 
-                <p class="woocommerce-LostPassword lost_password forgot-pass">
-                    <a>Забули ваш пароль?</a>
-                </p>
                 <div *ngIf="adminLog" class="adminLog"><p style="font-size: 12px;">Вхід в адмін панель</p>
                     <p style="font-size: 10px;">Пошта: admin <br> Пароль: admin</p> </div>
-
 
             </form>
 

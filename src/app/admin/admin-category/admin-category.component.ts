@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-
 import { ICategory } from 'src/app/shared/models/category/category.model';
 import { CategoryService } from 'src/app/shared/services/category/category.service';
-
 import { Observable } from 'rxjs';
-
 import { getStorage, ref, uploadBytes, uploadString, getDownloadURL, deleteObject } from "firebase/storage";
 import { FirebaseApp, FirebaseApps } from '@angular/fire/app';
 import { Storage, StorageInstances } from '@angular/fire/storage';
@@ -109,7 +106,7 @@ export class AdminCategoryComponent implements OnInit {
     }
 
 
-     uploadFile(event: any): void {
+    uploadFile(event: any): void {
         const file = event.target.files[0];
         const filePath = `images/${file.name}`;
         const storage = getStorage();
@@ -130,22 +127,6 @@ export class AdminCategoryComponent implements OnInit {
     } 
 
 
-
-
-
-    /* uploadFileImage(event: any): void {
-        const file = event.target.files[0];
-        const filePath = `images/${file.name}`;
-        const task = this.afStorage.upload(filePath, file);
-        task.then(image => {
-          this.afStorage.ref(`images/${image.metadata.name}`).getDownloadURL().subscribe(url => {
-            // this.icon = url;
-            this.categoryForm.patchValue({
-              image: url
-            })
-          });
-        });
-      } */
     deleteFile(category?: ICategory): void {
         const pathImage = category?.image || this.image;
         const storage = getStorage();

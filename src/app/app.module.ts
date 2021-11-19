@@ -19,6 +19,7 @@ import { RestaurantComponent } from './pages/restaurant/restaurant.component';
 import { ContactsComponent } from './pages/contacts/contacts.component';
 import { BasketComponent } from './pages/basket/basket.component';
 import { CheckoutComponent } from './pages/checkout/checkout.component'; 
+import { MyAccountComponent } from './pages/my-account/my-account.component';
 
 import { AdminComponent } from './admin/admin.component';
 import { AdminCategoryComponent } from './admin/admin-category/admin-category.component';
@@ -26,15 +27,13 @@ import { AdminProductComponent } from './admin/admin-product/admin-product.compo
 import { AdminOrderComponent } from './admin/admin-order/admin-order.component';
 import { AdminUsersComponent } from './admin/admin-users/admin-users/admin-users.component';
 
+
 import { LoginComponent } from './pages/login/login/login.component';
 
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getStorage,provideStorage } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
 import { ProductsPipe } from './pages/products/products.pipe';
-
-
-
 
 
 
@@ -54,14 +53,15 @@ import { ProductsPipe } from './pages/products/products.pipe';
         ContactsComponent,
         BasketComponent,
         CheckoutComponent,
+        MyAccountComponent,
         AdminComponent,
         AdminCategoryComponent,
         AdminProductComponent,
         AdminOrderComponent,
         AdminUsersComponent,
         LoginComponent,
-        ProductsPipe
-        
+        ProductsPipe,
+         
     ],
     imports: [
         BrowserModule,

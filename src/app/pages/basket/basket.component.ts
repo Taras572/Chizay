@@ -12,22 +12,13 @@ import { OrderService } from 'src/app/shared/services/order/order.service';
     styleUrls: ['./basket.component.scss']
 })
 export class BasketComponent implements OnInit {
-
     public basket: Array<IProduct> = [];
-
     public totalPayment!: string;
     public totalPrice = 0;
-    /* public countBusket: any = 0; */
     public orderForm!: FormGroup;
     public discount: any;
-
-    indexBtn!: any;
-
-   /*  private stream$ = new Observable(observer=>{
-        observer.next(this.getCount(this.basket));
-    }) */
-
-
+    public indexBtn!: any;
+    
 
     constructor(
         private orderService: OrderService,
@@ -37,7 +28,6 @@ export class BasketComponent implements OnInit {
     ngOnInit(): void {
         this.initOrderForm();
         this.getLocalProducts();
-        
         //test
         this.orderService.stream$.next(this.getCount(this.basket));
         /* this.stream$.subscribe(val=> console.log('Val',val)); */
@@ -66,6 +56,7 @@ export class BasketComponent implements OnInit {
     private getTotal(products: Array<IProduct>): number {
         return products.reduce((total, prod) => total + (prod.price * prod.count), 0);
     }
+    
     private getTotalDiscount(products: Array<IProduct>): number {
         return products.reduce((total, prod) => total + (prod.price * prod.count), 0);
     }

@@ -11,14 +11,14 @@ import { OrderService } from 'src/app/shared/services/order/order.service';
     styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-    products: Array<IProduct> = [];
-    currentCategory: any;
+    public products: Array<IProduct> = [];
+    public currentCategory: any;
     public productsModal!: IProduct;
     public prodCount: boolean = true;
     public searchField!: string;
     public randNumOld: number = 0;
-    homeProd: Array<IProduct> =[];
-    recom: boolean = false;
+    public homeProd: Array<IProduct> =[];
+    public recom: boolean = false;
     public basket: Array<IProduct> = [];
     public load_style = false;
 

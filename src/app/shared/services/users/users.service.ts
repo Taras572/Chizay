@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { IUsers } from '../../models/users/users.model';
 
@@ -18,6 +18,10 @@ export class UsersService {
   ) { 
 
   }
+
+  getByID(id: number): Observable<any> {
+    return this.http.get<any>(`${this.api.users}/${id}`);
+}
 
   get(): Observable<any> {
     return this.http.get<any>(this.api.users);

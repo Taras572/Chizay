@@ -2,7 +2,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { IProduct } from 'src/app/shared/models/product/products.model';
 import { OrderService } from 'src/app/shared/services/order/order.service';
-
+import { IUsLog } from 'src/app/shared/models/users/users.model';
 
 
 @Component({
@@ -15,7 +15,13 @@ export class HeaderComponent implements OnInit {
     color_scroll: boolean = false;
     text_color: boolean = false;
     shop_head: boolean = false;
+    entry: boolean = true;
 
+    usLog: Array<IUsLog> = [{
+        usLog: 0,
+    }];
+
+   
     public basket: Array<IProduct> = [];
     public countBasket: any = 0;
 
@@ -32,13 +38,13 @@ export class HeaderComponent implements OnInit {
                 let URL2 = event.url.substring(1, 6);
                 let PROD = event.url.substring(1, 8);
                 console.log(URL2)
-                if (URL == 'contacts' || URL == 'checkout' || URL == 'news' || URL == 'location' || URL == 'login' || URL == 'shop' || URL == 'basket' || PROD == 'product' || URL2 == 'admin') {
+                if (URL == 'contacts' || URL == 'checkout' || URL == 'news' || URL == 'location' || URL == 'login' || URL == 'shop' || URL == 'basket' || PROD == 'product' || URL2 == 'admin' ||URL == 'my-account') {
                     this.text_color = true;
                 }
                 else {
                     this.text_color = false;
                 }
-                if (URL == 'shop' || PROD == 'product' || URL == 'basket' || URL == 'checkout') {
+                if (URL == 'shop' || PROD == 'product' || URL == 'basket' || URL == 'checkout' || URL == 'my-account') {
                     this.shop_head = true;
                 }
                 else {
@@ -47,12 +53,14 @@ export class HeaderComponent implements OnInit {
             }
         })
     }
+    
 
     ngOnInit(): void {
         this.basketProduct();
-
+        this.visiblBlock();
         this.getLocalProducts();
         this.orderService.stream$.next(this.getCount(this.basket));
+        this.LogIn();   
     }
 
     @HostListener("document:scroll")
@@ -60,6 +68,10 @@ export class HeaderComponent implements OnInit {
     basketProduct(): void {
         this.orderService.stream$.subscribe(val => this.countBasket = val);
     }
+    visiblBlock(): void {
+        this.orderService.variables$.subscribe(val => this.entry = val);
+    }
+
 
     scrollfunction() {
         let color: any;
@@ -82,6 +94,25 @@ export class HeaderComponent implements OnInit {
 
     private getCount(products: Array<IProduct>) {
         return products.reduce((total, prod) => total + prod.count, 0);
+    }
+
+
+    LogIn(): void{
+        if (localStorage.getItem('usLog')) {
+            let User;
+            User = JSON.parse(<string>localStorage.getItem('usLog')); 
+            console.log(User[0].usLog,'99');
+            if(User[0].usLog>1){
+                this.entry = false; 
+                this.router.navigate(['/my-account']);
+            }
+            else if(User[0].usLog==1){
+                
+                this.entry = false; 
+                this.router.navigate(['/admin']);
+            }
+            /* User[0].usLog */
+        }
     }
 
 }

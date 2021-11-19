@@ -12,13 +12,6 @@ import { OrderService } from 'src/app/shared/services/order/order.service';
 export class CheckoutComponent implements OnInit {
 
     public basket: Array<IProduct> = [];
-    // public userName!: string;
-    // public userPhone!: string;
-    // public userCity!: string;
-    // public userStreet!: string;
-    // public userHouse!: string;
-    // public userComment!: string;
-
     public totalPayment!: string;
     public totalPrice = 0;
     public countBusket = 0;

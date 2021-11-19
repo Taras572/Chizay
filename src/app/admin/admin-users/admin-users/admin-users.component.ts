@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { IUsers } from 'src/app/shared/models/users/users.model';
 import { UsersService } from 'src/app/shared/services/users/users.service';
 
 @Component({
