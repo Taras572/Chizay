@@ -1,0 +1,104 @@
+<div class="container top_marg">
+    <h1>Оформлення замовлення</h1>
+    <div class="woocommerce-message" role="alert">
+        <i id="color_icon" class="uil uil-check-circle "></i>	Ваша знижка згідно програми лояльності складає 5%	</div>
+    <div class="row">
+        <div class="col-md-7 paySelect">
+            <div class="payForm smallSlideRight">
+                <form [formGroup]="orderForm" id="make-order-form">
+                
+                    <div class="header">
+                        <label class="inputWrapper Name">
+                            <i>Ім'я*</i>
+                            <span>
+                                <input class="simpleInput name" formControlName="userName" type="text" value=""
+                                    maxlength="">
+                            </span>
+                            <span class="firstBorderElement"></span>
+                            <span class="secondBorderElement"></span>
+                        </label>
+                        <label class="inputWrapper Name">
+                            <i>Прізвище*</i>
+                            <span>
+                                <input class="simpleInput name" formControlName="userSecondName" type="text" value=""
+                                    maxlength="">
+                            </span>
+                            <span class="firstBorderElement"></span>
+                            <span class="secondBorderElement"></span>
+                        </label>
+                    </div>
+                    <div class="emptySpace10"></div>
+                    <label class="inputWrapper ">
+                        <i>Телефон*</i>
+                        <span><input class="simpleInput" formControlName="userPhone" type="text" [textMask]="{mask: mask}"
+                            placeholder="+(380)000-000-000"></span>
+                        <span class="firstBorderElement"></span>
+                        <span class="secondBorderElement"></span>
+                    </label>
+                    <div class="emptySpace10"></div>
+                    <label class="inputWrapper ">
+                        <i>Місто*</i>
+                        <span><input class="simpleInput" formControlName="userCity" type="text"></span>
+                        <span class="firstBorderElement"></span>
+                        <span class="secondBorderElement"></span>
+                    </label>
+                    <div class="emptySpace10"></div>
+                    <label class="inputWrapper ">
+                        <i>Вулиця*</i>
+                        <span><input class="simpleInput" formControlName="userStreet" type="text"></span>
+                        <span class="firstBorderElement"></span>
+                        <span class="secondBorderElement"></span>
+                    </label>
+                    <div class="emptySpace10"></div>
+                    <label class="inputWrapper ">
+                        <i>Будинок*</i>
+                        <span><input class="simpleInput" formControlName="userHouse" type="number"></span>
+                        <span class="firstBorderElement"></span>
+                        <span class="secondBorderElement"></span>
+                    </label>
+                    <div class="emptySpace10"></div>
+                    <label class="inputWrapper ">
+                        <i class="textarea">Ваш коментар</i>
+                        <span><textarea class="simpleInput" formControlName="userComment" id="" maxlength="256"
+                                cols="30" rows="10"></textarea></span>
+                        <span class="firstBorderElement"></span>
+                        <span class="secondBorderElement"></span>
+                    </label>
+                    <div class="emptySpace10"></div>
+                    <input type="submit" style="display: none">
+                </form>
+                <div class="emptySpace20 emptySpace-xs15"></div>
+            </div>
+           
+        </div>
+        <div class="col-md-5 ">
+            <!-- ------------------------------------ -->
+            <div class="cart_totals calculated_shipping">
+                <h2>Підсумки кошика </h2>
+                <table cellspacing="0" class="shop_table shop_table_responsive">
+                    <tbody>
+                        <tr *ngFor="let order of basket">
+                            <td class="table_left">{{order.name}} <span class="x">×</span>   {{order.count}}</td>
+                            <td class="table_right">{{order.count * order.price}} ГРН</td>
+                        </tr>
+                        <tr>
+                            <td class="table_left">Підсумок</td>
+                            <td class="table_right">{{totalPrice}} Грн</td>
+                        </tr>
+                        <tr>
+                            <td class="table_left">Знижка 5%</td>
+                            <td class="table_right">-{{discount}} Грн</td>
+                        </tr>
+                        <tr>
+                            <td class="table_left"><strong>Загалом</strong></td>
+                            <td class="table_right"> <strong>{{totalPrice - discount}} Грн</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="wc-proceed-to-checkout">
+                    <button  [disabled]="orderForm.invalid" class="btn-def black" (click)="addOrder()" [routerLink]="[ '/location' ]">Підтвердити замовлення</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

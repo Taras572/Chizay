@@ -1,0 +1,53 @@
+<form [formGroup]="categoryForm" (ngSubmit)="editStatus ? updateCategory() : createCategory()">
+    <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input formControlName="name" id="name" type="text" class="form-control" >
+    </div>
+    <div class="mb-3">
+        <label for="path" class="form-label">Path</label>
+        <input formControlName="path" id="path" type="text" class="form-control" >
+    </div>
+
+    <div class="mb-3">
+
+        <input [(ngModel)]="imgt" type="file" class="form-control" #image id="image" aria-describedby="image"
+            aria-label="Upload" (change)="uploadFile($event)" [ngModelOptions]="{standalone: true}">
+    </div>
+    <!--  <div class="progress mb-3" *ngIf="!imageStatus">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+            [style.width]="(uploadPercent | async) + '%'" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div> -->
+
+    <div class="image-box" *ngIf="!categoryForm.invalid">
+        <img width="100px" height="100px" [src]="image" alt="">
+        <button (click)="deleteFile()" type="button" class="btn btn-danger">Delete</button>
+    </div>
+    <button [disabled]="categoryForm.invalid" type="submit" class="btn btn-primary"
+        [textContent]="editStatus ? 'Save' : 'Add'"></button>
+</form>
+<hr>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Path</th>
+            <th scope="col">Icon</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="align-middle" *ngFor="let category of adminCategories; index as i">
+            <td>{{ i + 1 }}</td>
+            <td>{{ category.name }}</td>
+            <td>{{ category.path }}</td>
+            <td>
+                <img [src]="category.image" width="80px" alt="">
+            </td>
+            <td>
+                <button (click)="editCategory(category)" class="btn btn-warning me-3">edit</button>
+                <button (click)="deleteCategory(category)" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,94 @@
+<div class="content">
+    <div class="row">
+
+        <div class="col-md-6 login-section__item -login">
+
+            <div class="title-block">
+                <h2 class="section-title white">Увійти</h2>
+                <div class="icon icon-tilde">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 4.6" id="tilde">
+                        <path
+                            d="M15.6 3.9h-.9c-1.4-.1-2.8-.6-4.1-.9-.8-.3-1.7-.6-2.6-.8-1.5-.3-4.3-.6-6.1 1.1-.2.2-.5.2-.7 0-.2-.2-.2-.6 0-.7 2.1-2 5.3-1.7 7-1.3.9.1 1.8.4 2.7.7 1.3.4 2.6.8 3.9.9 1.9.2 4.5-.3 5.6-2.2.1-.2.4-.3.7-.2.2.1.3.4.2.7-1.2 2-3.6 2.7-5.7 2.7z"
+                            fill="#c09560"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <form [formGroup]="singForm" class="login-section__form" method="post">
+
+                <div class="login-section__form--item">
+                    <label for="username">E-mail</label>
+                    <input formControlName="email" type="text"
+                        class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username">
+                </div>
+                <div class="login-section__form--item">
+                    <label for="password">Пароль</label>
+                    <span class="password-input"><input formControlName="pass"
+                            class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password"
+                            id="password"></span>
+                </div>
+
+                <button (click)="SingIn()" (mouseenter)="adminLog = true" (mouseleave)="adminLog = false" type="button"
+                    name="login" class="btn-def white">Вхід</button>
+
+                <div *ngIf="adminLog" class="adminLog"><p style="font-size: 12px;">Вхід в адмін панель</p>
+                    <p style="font-size: 10px;">Пошта: admin <br> Пароль: admin</p> </div>
+
+            </form>
+
+
+        </div>
+
+        <div class="col-md-6 login-section__item -register">
+            <div class="title-block">
+                <h2 class="section-title black">Реєстрація</h2>
+                <div class="icon icon-tilde">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 4.6" id="tilde">
+                        <path
+                            d="M15.6 3.9h-.9c-1.4-.1-2.8-.6-4.1-.9-.8-.3-1.7-.6-2.6-.8-1.5-.3-4.3-.6-6.1 1.1-.2.2-.5.2-.7 0-.2-.2-.2-.6 0-.7 2.1-2 5.3-1.7 7-1.3.9.1 1.8.4 2.7.7 1.3.4 2.6.8 3.9.9 1.9.2 4.5-.3 5.6-2.2.1-.2.4-.3.7-.2.2.1.3.4.2.7-1.2 2-3.6 2.7-5.7 2.7z"
+                            fill="#c09560"></path>
+                    </svg>
+                </div>
+            </div>
+
+            <form [formGroup]="usersForm" (ngSubmit)="checkUsers()" method="post" class="login-section__form">
+
+                <div class="login-section__form--item" [class.borderDate]="date_color">
+                    <label for="year_of_birth">Дата народження <span class="required">*</span></label>
+                    <input formControlName="date" type="date" min="1960-01-01" max="2003-12-31"
+                        class="woocommerce-Input woocommerce-Input--text input-text" name="year_of_birth"
+                        id="year_of_birth" value="">
+                </div>
+
+
+
+                <div class="login-section__form--item" [class.borderEmail]="email_color">
+                    <label for="reg_email">Адреса електронної пошти&nbsp;<span class="required">*</span></label>
+                    <input formControlName="email" type="email"
+                        class="woocommerce-Input woocommerce-Input--text input-text" name="email" id="reg_email">
+                    <div *ngIf="email_color" class="email-err">Цей користувач вже зареєстрований!</div>
+                </div>
+
+                <div class="login-section__form--item" [class.borderPass]="password_color">
+                    <label for="reg_password">Пароль&nbsp;<span class="required">*</span></label>
+                    <span class="password-input"><input type="password" formControlName="pass"
+                            class="woocommerce-Input woocommerce-Input--text input-text" name="password"
+                            id="reg_password"></span>
+                </div>
+
+                <div class="login-section__form--item" [class.borderPass]="password_color">
+                    <label for="reg_password_repeat">Повторіть пароль&nbsp;<span class="required">*</span></label>
+                    <span class="password-input"><input type="password" formControlName="second_pass"
+                            class="woocommerce-Input woocommerce-Input--text input-text" name="password-repeat"
+                            id="reg_password_repeat"></span>
+                </div>
+
+                <button [disabled]="usersForm.invalid" type="submit" name="register"
+                    class="btn-def black">Реєстрація</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>

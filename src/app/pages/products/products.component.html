@@ -1,0 +1,144 @@
+<div class="block_container">
+
+    <input [(ngModel)]="searchField" name="searchField" type="text"
+        placeholder="Пошук: за назвою, за типом, за кольором" class="login-section__form--item">
+
+    <div class="block-products row">
+
+        <div class="product col-md-6 col-sm-12 row" *ngFor="let prod of products | products: searchField; index as i">
+
+            <div class="block-product-img col-md-5 col-5">
+                <div class="product-img">
+                    <!-- ----------------- -->
+                   <!--  <div class="container-loading" [class.load_style]="load_style">
+                        <div class="circle-1"></div>
+                        <div class="circle-2"></div>
+                        <div class="circle-3">
+                            <p class="circle-text">Loading<span class="point-1">.</span><span class="point-2">.</span><span class="point-3">.</span></p>
+                        </div>
+                    </div> -->
+                    <!-- ---------------------- -->
+                    <img class="imageProduct" [src]="prod.image" style="max-height: 385px; ">
+                </div>
+
+                <button [disabled]="prod.stock > 0 ? false : true" (click)="loadProductModal(prod.id)" tabindex="0" class="btn-def black" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Додати до кошика</button>
+            </div>
+
+            <div class=" block-product-text col-md-7 col-7 shown-categories__item--description">
+                <p class="shown-categories__item--description-heading">{{prod.name}}</p>
+                <p *ngIf="prodCount" class="shown-categories__item--description-type">{{prod.type}}</p>
+
+                <p class="shown-categories__item--description-text stock" *ngIf="prod.stock == 0">Немає в наявності!</p>
+                
+                <p class="shown-categories__item--description-text">{{prod.description}}</p>
+
+                <ul *ngIf="prodCount">
+                    <!-- *ngIf="prod.category.path != 'gift-certificates'" -->
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>
+                                Об'єм&nbsp;-</strong>{{prod.volume}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>
+                                Алк.&nbsp;-</strong>{{prod.alcohol}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params">
+                            <strong>Колір&nbsp;-</strong>{{prod.color}}
+                        </p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>Сорт
+                                винограду&nbsp;-</strong>{{prod.grape}}</p>
+                    </li>
+                    <li>
+                        <p class="shown-categories__item--description-params">
+                            <strong>Аромат&nbsp;-</strong>{{prod.aroma}}
+                        </p>
+                    </li>
+
+                    <li>
+                        <p class="shown-categories__item--description-params"><strong>Смак&nbsp;-</strong>{{prod.taste}}
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="category-match">
+
+                </div>
+                <!-- <a class="shown-categories__item--description-more">Більше</a> -->
+                <p class="shown-categories__item--description-price"><span
+                        class="woocommerce-Price-amount amount"><bdi>{{prod.price}} грн&nbsp;<span
+                                class="woocommerce-Price-currencySymbol"></span></bdi></span></p>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-0  image_modal">
+                                    <img [src]="productsModal.image" style="max-height: 385px;" alt="">
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-5  text_center">
+                                    <p>{{productsModal.name}}</p>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-5 text_center">
+                                    <p>{{productsModal.price}} грн</p>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 center">
+                                    <div class="count-modal">
+                                        <input class="model-numb" type="text" maxlength="3"
+                                            [value]="productsModal.count">
+                                        <div>
+                                            <div class="modal-plus" (click)="countProduct(productsModal, true)"><i
+                                                    class="uil uil-plus"></i></div>
+                                            <div class="modal-minus" (click)="countProduct(productsModal, false)"><i
+                                                    class="uil uil-minus"></i></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <p class="modal-price">Всього: <strong>{{ productsModal.count * productsModal.price }}
+                                    грн</strong> </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn-def black" data-bs-dismiss="modal"
+                                (click)="addToBasket(productsModal)"><span>Додати до кошика</span></a>
+                            <a class="btn-def btnProd" data-bs-dismiss="modal"><span>Продовжити покупки</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ngIf="recom">
+        <div class="block_shop">
+            <h2 class="section-title black">Рекомендовано</h2>
+            <div class="shop-preview">
+                <div class="row">
+
+                    <a class="col-md-3 col-6 shop-preview__item-wrapper" *ngFor="let prod of homeProd">
+                        <div class="shop-preview__item">
+                            <img [src]="prod.image" style="height: 250px;">
+                            <p class="shop-preview__item--description">{{prod.name}}</p>
+                            <p class="shop-preview__item--price">{{prod.price}} грн</p>
+                        </div>
+                    </a>
+
+                </div>
+                <br>
+
+            </div>
+        </div>
+    </div>
+
+</div>

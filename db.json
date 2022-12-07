@@ -1,0 +1,1243 @@
+{
+    "products": [
+      {
+        "category": {
+          "name": "Chateau Chizay",
+          "path": "chateau-chizay",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+          "id": 1
+        },
+        "name": "GewürzTraminer",
+        "path": "gewürztraminer",
+        "type": "Сухе",
+        "description": "Яскраве вино з винограду сорту ҐевюрцТрамінер, що перекладається з німецької як Трамінер пряний. Елегантні тони екзотичних фруктів, квітів і спецій створюють ароматний букет. Смак вина гармонійний та освіжаючий, з нотами прянощів і троянд. Спробуйте ҐевюрцТрамінер, ягоди якого зібрали на винограднику Мала Гора в Закарпатті.",
+        "volume": "0,75 л",
+        "alcohol": "12,7%",
+        "color": "Біле",
+        "grape": "ҐевюртцТрамінер",
+        "aroma": "екзотичні фрукти, квіти, спеції",
+        "taste": "гармонійний, освіжаючий, ноти прянощів і троянд",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FGEWURZTRAMINER1-193x385.png?alt=media&token=888aa44b-e93b-4038-bba8-7288c676e516",
+        "price": 122,
+        "count": 1,
+        "id": 1,
+        "stock": 0
+      },
+      {
+        "category": {
+          "name": "Carpathian Sekt",
+          "path": "carpathian-sekt",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop2.png?alt=media&token=7e09cca5-ff39-4b1a-8092-fdc47e933b8f",
+          "id": 2
+        },
+        "name": "Carpathian Sekt CHERSEGI",
+        "path": "carpathian-sekt-CHERSEGI",
+        "type": "Ігристе брют",
+        "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+        "volume": "0,75 л",
+        "alcohol": "11.5%",
+        "color": "Біле",
+        "grape": "Черсегі Фюсереш",
+        "aroma": "свіжий, тони квітів і фруктів",
+        "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+        "price": 147,
+        "count": 1,
+        "id": 2,
+        "stock": 5
+      },
+      {
+        "category": {
+          "name": "Витримані сухі вина",
+          "path": "dry-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+          "id": 3
+        },
+        "name": "Cabernet Sauvignon 9 міс.",
+        "path": "cabernet-sauvignon",
+        "type": "Витримане",
+        "description": "Сухе вино інтенсивного гранатового кольору створене з винограду сорту Каберне Совіньйон. Витримка у бариках з французького дуба 9 місяців. Букет вина насичений ароматами стиглої вишні та смородини у поєднанні з нотками паприки, табаку і какао. Смак збалансований, з приємною танінною структурою, у якому відчуваються пряні тони перцю, шоколаду та ожини. Післясмак насичений і тривалий.",
+        "volume": "0,75 л",
+        "alcohol": "14%",
+        "color": "Червоне",
+        "grape": " Каберне Совіньйон",
+        "aroma": "стигла вишня та смородина, ноти паприки, табаку і какао",
+        "taste": "приємна танінна структура, пряні тони перцю, шоколаду, ожини, насичений і тривалий післясмак",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fproduct.png?alt=media&token=431af092-c3c0-4beb-8b9e-531d2bed13dd",
+        "price": 197,
+        "count": 1,
+        "id": 3,
+        "stock": 23
+      },
+      {
+        "category": {
+          "name": "Chateau Chizay",
+          "path": "chateau-chizay",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+          "id": 1
+        },
+        "name": "Chersegi",
+        "path": "Chersegi",
+        "type": "Сухе",
+        "description": "Вино створене з винограду сорту Черсегі Фюсереш, що перекладається з угорської мови, як Черсегі пряний та вирощується в Україні тільки на виноградниках Шато Чизай. Його насичений букет сповнений ароматами квітів та літніх фруктів. Смак вина яскравий, фруктово-пряний, з витонченою гірчинкою, тонами абрикосу та освіжаючою кислотністю. Вино здобуло Срібну медаль London Wine Competition 2021.",
+        "volume": "0.75 л",
+        "alcohol": "12.5",
+        "color": "Біле",
+        "grape": "Черсегі Фюсереш",
+        "aroma": "літні фрукти, квіти, прянощі.",
+        "taste": "фруктово-пряний з витонченою гірчинкою, тони абрикосу, освіжаюча кислотність.",
+        "price": "115",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Ftest.png?alt=media&token=3cb9091e-cc22-4b66-832a-e9da1000da44",
+        "count": 1,
+        "id": 5,
+        "stock": 4
+      },
+      {
+        "category": {
+          "name": "Chateau Chizay",
+          "path": "chateau-chizay",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+          "id": 1
+        },
+        "name": "Furmint",
+        "path": "Furmint",
+        "type": "Витримане",
+        "description": "Вишукане сухе біле вино створене з винограду сорту Фурмінт та витримане у дубових бариках 9 місяців.\nЯскравий букет вина розкривається різномаїттям фруктових ароматів з тонами цитрусів, ванілі, мигдалю та мінеральними нюансами.\nУ смаку вино приємне, збалансоване, з яскравою кислотністю та тривалим післясмаком.\n\nВино здобуло Срібну медаль ",
+        "volume": "0,75 л",
+        "alcohol": "14%",
+        "color": "Біле",
+        "grape": " Фурмінт",
+        "aroma": "різномаїття фруктових ароматів, тони цитрусів, ванілі, мигдалю та мінеральні нюанси.",
+        "taste": "приємний, збалансований, яскрава кислотність, тривалий післясмак",
+        "price": "217.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux1.png?alt=media&token=ac329871-f1ff-4407-b43f-4802db735582",
+        "count": 1,
+        "id": 6,
+        "stock": 33
+      },
+      {
+        "category": {
+          "name": "Витримані сухі вина",
+          "path": "dry-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+          "id": 3
+        },
+        "name": "Merlot 9 міс.",
+        "path": "Merlot9 ",
+        "type": "Витримане",
+        "description": "Витримане сухе Мерло приваблює своєю фруктовістю, яка елегантно огорнута пряними тонами. У смаку відчуваються тони стиглої вишні і ожини, таніни м'які, округлі, кислотність помірна. Витримка в дубових бариках понад 9 місяців збагатила вино приємним шоколадно-вершковим відтінком. Післясмак тривалий, фруктовий.",
+        "volume": "0,75 л",
+        "alcohol": "12.5%",
+        "color": "Червоне",
+        "grape": "Мерло",
+        "aroma": "ноти фруктів та витримки у дубі, елегантні пряні тони",
+        "taste": "стигла вишня, ожина, округлі таніни, приємний шоколадно-вершковий відтінок.",
+        "price": "190.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux2.png?alt=media&token=65b24c6b-44a6-48c5-96c4-8d12dad048be",
+        "count": 1,
+        "id": 7,
+        "stock": 43
+      },
+      {
+        "category": {
+          "name": "Витримані сухі вина",
+          "path": "dry-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+          "id": 3
+        },
+        "name": "Cabernet Franc",
+        "path": "CabernetFranc",
+        "type": "Витримане",
+        "description": "Вишуканий Cabernet Franc з колекції найцінніших вин Chateau Chizay створений із відбірного однойменного винограду, зібраного у 2018 році з власних виноградників на Закарпатті.\nВино витримане 18 місяців у бариках з французького дуба та розлите у пляшки лімітованою партією.",
+        "volume": "0,75 л",
+        "alcohol": "14%",
+        "color": "Біле",
+        "grape": " Каберне Фран",
+        "aroma": "темні ягоди, чорниця, вишня, ваніль, тютюн",
+        "taste": "повний, м’які таніни, пряні тони гострого перцю, темні ягоди, тривалий післясмак",
+        "price": "387.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux3.png?alt=media&token=d9a10cdf-c4e1-4ae0-8a27-8b35011df96b",
+        "count": 1,
+        "id": 8,
+        "stock": 21
+      },
+      {
+        "category": {
+          "name": "GRAPE WHITE BLEND",
+          "path": "grape-white_blend",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop4.png?alt=media&token=d5464227-ca9f-4725-8003-0767ac162c35",
+          "id": 4
+        },
+        "name": "GRAPE WHITE BLEND у тубусі",
+        "path": "GRAPEWHITEBLEND",
+        "type": "Витримане",
+        "description": "Два унікальні закарпатські виногради – один напій!  Наша міцна новинка – Grape White Blend   у фірмовому тубусі (Виноградний Білий Бленд) Chateau Chizay – створена шляхом дистиляції вина з особливих сортів Фурмінт і Черсегі Фюсереш, вирощених на виноградниках Шато Чизай. За 7 місяців відпочинку у спеціальних резервуарах формується оригінальна палітра аромату та смаку.",
+        "volume": "0.5 л",
+        "alcohol": "42%",
+        "color": "без кольору",
+        "grape": " Фурмінт, Черсегі Фюсереш",
+        "aroma": "особливий, елегантний, квіткові тони, ноти соковитої виноградної ягоди",
+        "taste": "м'який, приємний, легкі ноти квітів, фруктів та спецій",
+        "price": "267.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fgarpe1.png?alt=media&token=d2fd1784-5657-49ea-8f66-13dd685803c0",
+        "count": 1,
+        "id": 9,
+        "stock": 4
+      },
+      {
+        "category": {
+          "name": "Країна Мрій",
+          "path": "dream-country",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop5.png?alt=media&token=54b03397-25b8-47c9-84c6-6f90448e8873",
+          "id": 5
+        },
+        "name": "“Країна Мрій” Rosé Pinot Noir",
+        "path": "countryDreams",
+        "type": "Авторське вино Олега Скрипки",
+        "description": "Унікальне рожеве сухе вино \"Країна Мрій\" від відомого музиканта Олега Скрипки та закарпатських виноробів із Шато Чизай. Перше в Україні вино, закорковане \n Елегантна форма, бездоганний захист аромату та смаку. Скляна пробка Vinolok – ознака вин преміум-класу.\n\nКолір вина делікатний рожевий з особливим бликом. Аромат з нотами стиглої полуниці, малини, вишні та відтінками цитрусових. Легке та гармонійне вино, з приємною освіжаючою кислотністю і тонами червоних ягід у смаку.\nЧудове поєднання мистецтва та вина!",
+        "volume": "0,75 л",
+        "alcohol": "12.5%",
+        "color": "Рожеве",
+        "grape": "Піно Нуар",
+        "aroma": "стигла полуниця, малина, вишня, відтінки цитрусових",
+        "taste": "стигла полуниця, малина, вишня, відтінки цитрусових",
+        "price": "249.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fcountry1.png?alt=media&token=dc67126a-e77a-44cf-a6cb-21b0d20ee08a",
+        "count": 1,
+        "id": 10,
+        "stock": 4
+      },
+      {
+        "category": {
+          "name": "Кошерні вина",
+          "path": "kosher-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop6.png?alt=media&token=275afbf5-5033-47ea-8ae3-56f0ecd5a32e",
+          "id": 6
+        },
+        "name": "MOSCATO",
+        "path": "MOSCATO",
+        "type": "Напівсухе",
+        "description": "Напівсолодке біле кошерне вино Chateau Chizay MOSCATO створене з винограду сорту Мускат Оттонель, вирощеного на виноградниках Шато Чизай. Воно має особливий та надзвичайно приємний фруктово-квітковий аромат з легкими нотами прянощів. Дивовижний смак Москато характеризується делікатним поколюванням мініатюрних бульбашок та має чудовий баланс між освіжаючою кислотністю і солодкими фруктовими нотами.",
+        "volume": "0,75 л",
+        "alcohol": "12%",
+        "color": "Біле",
+        "grape": " Мускат Оттонель",
+        "aroma": "приємний, фруктово-квітковий, легкі ноти прянощів",
+        "taste": "вміру солодкий, збалансований, гармонійний, тривалий післясмак мускатного винограду",
+        "price": "149.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fkosher1.jpg?alt=media&token=95431114-e208-4686-acc0-c1695257c65d",
+        "count": 1,
+        "id": 11,
+        "stock": 6
+      },
+      {
+        "category": {
+          "name": "Кошерні вина",
+          "path": "kosher-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop6.png?alt=media&token=275afbf5-5033-47ea-8ae3-56f0ecd5a32e",
+          "id": 6
+        },
+        "name": "CABERNET",
+        "path": "CABERNET",
+        "type": "Сухе",
+        "description": "Кошерне сухе червоне вино виготовляється з винограду найвідомішого у світі сорту Каберне Совіньйон. Аромат вина - тонкий, приємний, з нотами мигдалю та фіалки. Виражена терпкість, що характерна для даного сорту винограду, вдало поєднується з гармонійним та збалансованим смаком.",
+        "volume": "0,75 л",
+        "alcohol": "13.5%",
+        "color": "Червоне",
+        "grape": " Каберне Совіньйон",
+        "aroma": "тонкий, приємний, ноти мигдалю та фіалки.",
+        "taste": "гармонійний, квіткові відтінки, приємна терпкість",
+        "price": "270.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fkosher2.jpg?alt=media&token=84c93e7c-c4f8-407f-90a2-c1e4ca65dbad",
+        "count": 1,
+        "id": 12,
+        "stock": 7
+      },
+      {
+        "category": {
+          "name": "Кошерні вина",
+          "path": "kosher-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop6.png?alt=media&token=275afbf5-5033-47ea-8ae3-56f0ecd5a32e",
+          "id": 6
+        },
+        "name": "MERLOT н/сухе",
+        "path": "MERLOT",
+        "type": "Напівсухе",
+        "description": "М'яке кошерне напівсухе червоне вино виготовляється зі спеціально відібраного винограду сорту Мерло. У його складному та гармонійному букеті яскраво відчутні ноти тертого маку. Смак - приємний, збалансований, з фруктово-пряними відтінками. Якщо ви ще не визначились, яке вино обрати - червоне сухе або напівсолодке, радимо скуштувати саме кошерне Мерло Chateau Chizay.",
+        "volume": "0,75 л",
+        "alcohol": "12%",
+        "color": "Червоне",
+        "grape": "Мерло",
+        "aroma": "приємний, складний, ноти тертого маку",
+        "taste": "збалансований, фруктово-пряні відтінки",
+        "price": "142.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fkosher3.jpg?alt=media&token=896da5d0-ec0b-4040-a248-86568a6d81e0",
+        "count": 1,
+        "id": 13,
+        "stock": 2
+      },
+      {
+        "category": {
+          "name": "Сік виноградний",
+          "path": "grape-juice",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop7.png?alt=media&token=45c051a1-e34d-44da-9993-b3713b8cace7",
+          "id": 7
+        },
+        "name": "Сік 0,5 л",
+        "path": "juice",
+        "type": "---",
+        "description": "Свіжовичавлений виноградний сік вироблено в екологічно чистому регіоні - Закарпатті! Із зібраних вручну свіжих сонячних ягід методом прямого віджиму ми отримуємо ароматний виноградний сік з насиченим гармонійним смаком та приємним фруктовим тоном.\n\nНаш сік виробляється БЕЗ додавання цукру, харчових добавок, ароматизаторів, барвників та води. Щоб забезпечити зберігання соку в закупореній пляшці протягом року, ми застосовуємо метод природньої консервації - пастеризацію. Полягає він у тому, що свіжовичавлений сік без будь-яких домішок нагрівається до певної температури і розливається в ретельно промиту і стерилізовану тару, що зберігає в ньому всі вітаміни і мікроелементи свіжоЇ ягоди.\n\nВиноградний сік має тонізуючий вплив на організм, знижує рівень холестерину в крові, покращує стан кровоносних судин, виводить токсини, сприятливо впливає на серцевий м'яз, усуває головні болі, слабкість, відновлює сили. Корисні властивості виноградного соку впливають комплексно на організм, а для людей з проблемами шлунку вживання соку має більш сприятливу дію на здоров'я, ніж свіжа ягода.",
+        "volume": "0.5 л",
+        "alcohol": "Без алкогольне",
+        "color": "Без кольору",
+        "grape": " Каберне Фран",
+        "aroma": "-----",
+        "taste": "-----",
+        "price": "62.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FSok.png?alt=media&token=d4a3bc61-c41e-4a12-b6ac-fcff53d88c39",
+        "count": 1,
+        "id": 14,
+        "stock": 44
+      },
+      {
+        "category": {
+          "name": "Ice Wine",
+          "path": "ice-wine",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop8.png?alt=media&token=2546e565-34ca-488b-8c5c-4d0d34c7003a",
+          "id": 10
+        },
+        "name": "Ice Wine",
+        "path": "IceWine",
+        "type": "Солодке",
+        "description": "Незвичне, рідкісне і всесвітньо відоме десертне вино, яке виготовляється із винограду, який замерз на лозі під час перших заморозків. Сік в ягодах в цей час концентрований, надзвичайно солодкий і ароматний. Висока цінність цього вина саме через велику кількість замерзлих і збережених ягід, які необхідні щоб вичавити достатню кількість соку.",
+        "volume": "0.37 л",
+        "alcohol": "12%",
+        "color": "Біле",
+        "grape": " Рислінг рейнський",
+        "aroma": "яскравий, тони білих квітів, екзотичних фруктів, айви, персика та цитрусових",
+        "taste": "гармонійний з квітково-фруктовими нотками",
+        "price": "497.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FIceWine.png?alt=media&token=495c0b2e-23b1-403f-be12-44189a54e34b",
+        "count": 1,
+        "id": 15,
+        "stock": 6
+      },
+      {
+        "category": {
+          "name": "Авторські вина",
+          "path": "authors-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop9.png?alt=media&token=06b04ef1-8a5a-45fa-a942-5ab00d581607",
+          "id": 11
+        },
+        "name": "Кагор Закарпатський – Авторський",
+        "path": "Cagor",
+        "type": "Десертне",
+        "description": "Кагор Закарпатський - авторське вино, яке виготовлене за власним рецептом нашого Головного винороба , з винограду, який він особисто відбирав на кращих ділянках виноградників Шато Чизай у місті Берегове.\n\nЦе особливе вино від Головного винороба Шато Чизай подарує Вам насолоду чудовим смаком і ароматом з яскраво вираженими тонами чорної смородини та чорносливу. Авторський Кагор витримано у дубових бариках 6 місяців.",
+        "volume": "0.5 л",
+        "alcohol": "16%",
+        "color": "Червоне",
+        "grape": "----",
+        "aroma": "яскравий, тони чорносливу та джему з чорних ягід",
+        "taste": "насичений, округлий, яскраві тони чорної смородини",
+        "price": "175.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fkagor.png?alt=media&token=7dd9fca9-1e70-4f4d-a007-21d9742d9b39",
+        "count": 1,
+        "id": 16,
+        "stock": 8
+      },
+      {
+        "category": {
+          "name": "Фруктова колекція",
+          "path": "fruit-collection",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop10.png?alt=media&token=b1d1d0ef-ad90-4b02-ad18-518698792c81",
+          "id": 12
+        },
+        "name": "Піно Гріджио",
+        "path": "PinoGridjo",
+        "type": "Напівсолодке",
+        "description": "Легке біле вино з однойменного винограду сорту ПІНО ГРІДЖИО має пікантний смак з нотами фруктів та цитрусових. У поєднанні з соковитим лаймом та ароматною м'ятою вино розкриває всі свої принади, даруючи освіжаючу насолоду, та чудово втамовує спрагу. Найкраще смакує охолодженим до 8-12 ˚С.",
+        "volume": "0,75 л",
+        "alcohol": "10%",
+        "color": "Біле",
+        "grape": "Сорт винограду -",
+        "aroma": "----",
+        "taste": "----",
+        "price": "111.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FPinoGrigio_small.png?alt=media&token=b9054e72-888c-4d84-9612-518ce1cf221b",
+        "count": 1,
+        "id": 17,
+        "stock": 3
+      },
+      {
+        "category": {
+          "name": "Подарункові набори",
+          "path": "gift-sets",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop11.png?alt=media&token=9fcff8f1-a754-4bdf-82ee-4c036d12d7c4",
+          "id": 13
+        },
+        "name": "Подарунковий Набір “Chersegi”",
+        "path": "Chersegi",
+        "type": "---",
+        "description": "Пляшка вина з двома келихами – досконалий презент, доречний для кожної нагоди.\n\nУ подарункових наборах Шато Чизай ідеально поєднані форма і вміст.  Елегантна упаковка та чудове вино всередині  – спосіб висловити вдячність, симпатію й особливу повагу.\n\nВино порадує цінителів ексклюзиву, а фірмові келихи якнайкраще розкриють всі тонкощі аромату та смаку. Унікальне вино Chersegi з лінійки Chateau Chizay здивує неповторністю.\n\nДаруйте радість від Шато Чизай!\n\nНабір:",
+        "volume": "0,75 л",
+        "alcohol": "12%",
+        "color": "Біле",
+        "grape": " Фурмінт",
+        "aroma": "темні ягоди, чорниця, вишня, ваніль, тютюн",
+        "taste": "повний, м’які таніни, пряні тони гострого перцю, темні ягоди, тривалий післясмак",
+        "price": "393.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fchersegi.png?alt=media&token=50b1aef5-0c7e-46b8-b51e-fdfa24dae6d5",
+        "count": 1,
+        "id": 18,
+        "stock": 66
+      },
+      {
+        "category": {
+          "name": "Подарункові Сертифікати",
+          "path": "gift-certificates",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop12.png?alt=media&token=9c6189ab-f64d-44b6-b14d-5b916ab0f10e",
+          "id": 14
+        },
+        "name": "Подарунковий сертифікат “500”",
+        "path": "Giftcertificate",
+        "type": "------",
+        "description": "Подарунковий Сертифікат на суму 500 гривень\nПодаруйте сертифікат, а ми допоможемо обрати подарунок до душі на вказану суму.\nДоставка сертифікату та подарунку Безкоштовна.\nСертифікат одноразовий.\nПеріод дії 6 місяців з моменту придбання.\nДаруйте найкраще!",
+        "volume": "----",
+        "alcohol": "----",
+        "color": "-----",
+        "grape": "-----",
+        "aroma": "-----",
+        "taste": "----",
+        "price": 500,
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fser.png?alt=media&token=3e4cf4d2-d0a6-4d91-b76b-2fcad82140a1",
+        "count": 1,
+        "id": 19,
+        "stock": 100
+      },
+      {
+        "category": {
+          "name": "Limited Edition",
+          "path": "limited-edition",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop13.png?alt=media&token=dfab9545-7ab1-4d7b-ac6f-ffdd9c046fa4",
+          "id": 15
+        },
+        "name": "Трамінер сухе",
+        "path": "Traminer is dry",
+        "type": "Сухе",
+        "description": "Вино сортове сухе біле Трамінер - одне з найвідоміших сортових вин світу, а вишуканий виноград Трамінер рожевий, з якого воно виготовлене, - серед найцінніших сортів Закарпаття. Сяючий, з золотим блиском, колір, вишуканий аромат пелюсток чайної троянди та чарівний, гармонійний смак подарують Вам легкість, весняний настрій та насолоду яскравою плодово-квітковою гамою чудового вина Трамінер.",
+        "volume": "0,75 л",
+        "alcohol": "12.5%",
+        "color": "Біле",
+        "grape": "Сорт винограду -",
+        "aroma": "яскравий, тони пелюсток чайної троянди",
+        "taste": "повний, гармонійний, вишуканий, квіти, тропічні фрукти",
+        "price": "103.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FLimited.png?alt=media&token=86b63e22-900c-45d9-a5c9-c4eacccb46e2",
+        "count": 1,
+        "id": 20,
+        "stock": 14
+      },
+      {
+        "category": {
+          "name": "Домашнє Вино",
+          "path": "homemade-wine",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop14.png?alt=media&token=02bd61e5-445e-4c44-a84b-e9ccf7eca880",
+          "id": 16
+        },
+        "name": "Домашнє біле вино 1л",
+        "path": "HomemadeWhite ",
+        "type": "Напівсолодке",
+        "description": "Біле напівсолодке вино створене за особливою технологією закарпатських виноробів з винограду білих європейських сортів - Черсегі Фюсереш, Мускат Оттонель та Піно Блан, вирощеного на мальовничих схилах виноградників Шато Чизай. Вино дуже ароматне з мускатними нотами у смаку.",
+        "volume": "1.0 л",
+        "alcohol": "11%",
+        "color": "Біле",
+        "grape": " Черсегі Фюсереш, Мускат Оттонель, Піно Блан",
+        "aroma": "виразний, квіти, соковиті фрукти",
+        "taste": "приємний, легкий, мускатні ноти",
+        "price": "157.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FBile.png?alt=media&token=f41947f8-905d-4d88-945d-583f57006cba",
+        "count": 1,
+        "id": 21,
+        "stock": 7
+      },
+      {
+        "category": {
+          "name": "Вино bag-in-box",
+          "path": "bag-in-box",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop15.png?alt=media&token=2209c668-9bd8-48c6-afd4-f77116578f8f",
+          "id": 17
+        },
+        "name": "Домашнє біле вино 3л",
+        "path": "HomemadeWhite2",
+        "type": "Напівсолодке",
+        "description": "Біле напівсолодке вино створене за особливою технологією закарпатських виноробів з винограду білих європейських сортів - Черсегі Фюсереш, Мускат Оттонель та Піно Блан, вирощеного на мальовничих схилах виноградників Шато Чизай. Вино дуже ароматне з мускатними нотами у смаку.\n",
+        "volume": "3.0л",
+        "alcohol": "11%",
+        "color": "Біле",
+        "grape": " Черсегі Фюсереш, Мускат Оттонель, Піно Блан",
+        "aroma": "білі квіти, фрукти, мускатні тони",
+        "taste": "легкий, приємний, мускатні тони",
+        "price": "275.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FBag-zelene.png?alt=media&token=cd9f4a3e-eb2f-44b5-8937-68eed07692eb",
+        "count": 1,
+        "id": 22,
+        "stock": 8
+      },
+      {
+        "category": {
+          "name": "Аксесуари",
+          "path": "accessories",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop16.png?alt=media&token=7347503d-59e6-4d56-8f62-f1ac998bb15b",
+          "id": 18
+        },
+        "name": "Штопор (ніж сомельє)",
+        "path": "Corkscrew ",
+        "type": "----",
+        "description": "Барний ніж-штопор, або як його ще називають «Ніж Сомельє» – це елегантний та компактний інструмент для швидкого й зручного відкоркування пляшки вина. Штопор пасує як для професійного використання, так і в домашніх умовах. Додатково він оснащений ножем, яким можна з легкістю зрізати захисну капсулу з горлечка пляшки.\n\nБарний ніж-штопор Чизай – двоступеневий, завдяки чому сам процес видалення корку здійснюється просто та дуже оперативно - в два рухи. Спочатку відбувається зрушення корку, після чого її витягають. ",
+        "volume": "---",
+        "alcohol": "---",
+        "color": "---",
+        "grape": "---",
+        "aroma": "---",
+        "taste": "---",
+        "price": "89.00",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshtopor.png?alt=media&token=2ffdd655-5b8d-48f0-8220-d10f2fb2ca64",
+        "count": 1,
+        "id": 23,
+        "stock": 3
+      },
+      {
+        "category": {
+          "name": "Авторські вина",
+          "path": "authors-wines",
+          "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop9.png?alt=media&token=06b04ef1-8a5a-45fa-a942-5ab00d581607",
+          "id": 11
+        },
+        "name": "CABERNET",
+        "path": "CABERNET",
+        "type": "Десертне",
+        "description": "М’яке, наче оксамитове – окраса вечора! Смачний компроміс для тих, хто вагається: сухе чи напівсолодке.",
+        "volume": "0,75 л",
+        "alcohol": "13,5%",
+        "color": "Червоне",
+        "grape": "Мерло",
+        "aroma": "приємний, складний, чорнослив, смородиновий джем, легка нота тертого маку",
+        "taste": "гармонійний, багатий та густий, з приємною терпкістю",
+        "price": "215",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2F%D0%9A%D0%B0%D0%B3%D0%BE%D1%80-%D1%81%D0%B0%D0%B9%D1%82-193x385.png?alt=media&token=8b0c473d-49bf-4c77-97f3-a6b868dad7e0",
+        "count": 1,
+        "stock": 4,
+        "id": 24
+      }
+    ],
+    "category": [
+      {
+        "name": "Chateau Chizay",
+        "path": "chateau-chizay",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+        "id": 1
+      },
+      {
+        "name": "Carpathian Sekt",
+        "path": "carpathian-sekt",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop2.png?alt=media&token=7e09cca5-ff39-4b1a-8092-fdc47e933b8f",
+        "id": 2
+      },
+      {
+        "name": "Витримані сухі вина",
+        "path": "dry-wines",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+        "id": 3
+      },
+      {
+        "name": "GRAPE WHITE BLEND",
+        "path": "grape-white_blend",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop4.png?alt=media&token=d5464227-ca9f-4725-8003-0767ac162c35",
+        "id": 4
+      },
+      {
+        "name": "Країна Мрій",
+        "path": "dream-country",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop5.png?alt=media&token=54b03397-25b8-47c9-84c6-6f90448e8873",
+        "id": 5
+      },
+      {
+        "name": "Кошерні вина",
+        "path": "kosher-wines",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop6.png?alt=media&token=275afbf5-5033-47ea-8ae3-56f0ecd5a32e",
+        "id": 6
+      },
+      {
+        "name": "Сік виноградний",
+        "path": "grape-juice",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop7.png?alt=media&token=45c051a1-e34d-44da-9993-b3713b8cace7",
+        "id": 7
+      },
+      {
+        "name": "Ice Wine",
+        "path": "ice-wine",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop8.png?alt=media&token=2546e565-34ca-488b-8c5c-4d0d34c7003a",
+        "id": 10
+      },
+      {
+        "name": "Авторські вина",
+        "path": "authors-wines",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop9.png?alt=media&token=06b04ef1-8a5a-45fa-a942-5ab00d581607",
+        "id": 11
+      },
+      {
+        "name": "Фруктова колекція",
+        "path": "fruit-collection",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop10.png?alt=media&token=b1d1d0ef-ad90-4b02-ad18-518698792c81",
+        "id": 12
+      },
+      {
+        "name": "Подарункові набори",
+        "path": "gift-sets",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop11.png?alt=media&token=9fcff8f1-a754-4bdf-82ee-4c036d12d7c4",
+        "id": 13
+      },
+      {
+        "name": "Подарункові Сертифікати",
+        "path": "gift-certificates",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop12.png?alt=media&token=9c6189ab-f64d-44b6-b14d-5b916ab0f10e",
+        "id": 14
+      },
+      {
+        "name": "Limited Edition",
+        "path": "limited-edition",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop13.png?alt=media&token=dfab9545-7ab1-4d7b-ac6f-ffdd9c046fa4",
+        "id": 15
+      },
+      {
+        "name": "Домашнє Вино",
+        "path": "homemade-wine",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop14.png?alt=media&token=02bd61e5-445e-4c44-a84b-e9ccf7eca880",
+        "id": 16
+      },
+      {
+        "name": "Вино bag-in-box",
+        "path": "bag-in-box",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop15.png?alt=media&token=2209c668-9bd8-48c6-afd4-f77116578f8f",
+        "id": 17
+      },
+      {
+        "name": "Аксесуари",
+        "path": "accessories",
+        "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop16.png?alt=media&token=7347503d-59e6-4d56-8f62-f1ac998bb15b",
+        "id": 18
+      }
+    ],
+    "orders": [
+      {
+        "userName": "Назар",
+        "userSecondName": "Перс",
+        "userPhone": "09348723",
+        "userCity": "Львів",
+        "userStreet": "Дфдвад",
+        "userHouse": "231",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Chateau Chizay",
+              "path": "chateau-chizay",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+              "id": 1
+            },
+            "name": "Chersegi",
+            "path": "Chersegi",
+            "type": "Сухе",
+            "description": "Вино створене з винограду сорту Черсегі Фюсереш, що перекладається з угорської мови, як Черсегі пряний та вирощується в Україні тільки на виноградниках Шато Чизай. Його насичений букет сповнений ароматами квітів та літніх фруктів. Смак вина яскравий, фруктово-пряний, з витонченою гірчинкою, тонами абрикосу та освіжаючою кислотністю. Вино здобуло Срібну медаль London Wine Competition 2021.",
+            "volume": "0.75",
+            "alcohol": "12.5",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "літні фрукти, квіти, прянощі.",
+            "taste": "фруктово-пряний з витонченою гірчинкою, тони абрикосу, освіжаюча кислотність.",
+            "price": "115",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Ftest.png?alt=media&token=3cb9091e-cc22-4b66-832a-e9da1000da44",
+            "count": 5,
+            "id": 5
+          }
+        ],
+        "totalPrice": 575,
+        "id": 2
+      },
+      {
+        "userName": "Павло",
+        "userSecondName": "Павлов",
+        "userPhone": "09378573",
+        "userCity": "Львів",
+        "userStreet": "Дорошенка",
+        "userHouse": "251",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Carpathian Sekt",
+              "path": "carpathian-sekt",
+              "image": "",
+              "id": 2
+            },
+            "name": "Carpathian Sekt CHERSEGI",
+            "path": "carpathian-sekt-CHERSEGI",
+            "type": "Ігристе брют",
+            "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+            "volume": "0,75 л",
+            "alcohol": "11.5%",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "свіжий, тони квітів і фруктів",
+            "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+            "price": 147,
+            "count": 1,
+            "id": 2
+          },
+          {
+            "category": {
+              "name": "Витримані сухі вина",
+              "path": "dry-wines",
+              "image": "",
+              "id": 3
+            },
+            "name": "Cabernet Sauvignon 9 міс.",
+            "path": "cabernet-sauvignon",
+            "type": "Витримане",
+            "description": "Сухе вино інтенсивного гранатового кольору створене з винограду сорту Каберне Совіньйон. Витримка у бариках з французького дуба 9 місяців. Букет вина насичений ароматами стиглої вишні та смородини у поєднанні з нотками паприки, табаку і какао. Смак збалансований, з приємною танінною структурою, у якому відчуваються пряні тони перцю, шоколаду та ожини. Післясмак насичений і тривалий.",
+            "volume": "0,75 л",
+            "alcohol": "14%",
+            "color": "Червоне",
+            "grape": " Каберне Совіньйон",
+            "aroma": "стигла вишня та смородина, ноти паприки, табаку і какао",
+            "taste": "приємна танінна структура, пряні тони перцю, шоколаду, ожини, насичений і тривалий післясмак",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fproduct.png?alt=media&token=431af092-c3c0-4beb-8b9e-531d2bed13dd",
+            "price": 197,
+            "count": 1,
+            "id": 3
+          }
+        ],
+        "totalPrice": 344,
+        "id": 3
+      },
+      {
+        "userName": "Павло",
+        "userSecondName": "Павлов",
+        "userPhone": "0938477612",
+        "userCity": "Львів",
+        "userStreet": "шевченка",
+        "userHouse": "213",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Carpathian Sekt",
+              "path": "carpathian-sekt",
+              "image": "",
+              "id": 2
+            },
+            "name": "Carpathian Sekt CHERSEGI",
+            "path": "carpathian-sekt-CHERSEGI",
+            "type": "Ігристе брют",
+            "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+            "volume": "0,75 л",
+            "alcohol": "11.5%",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "свіжий, тони квітів і фруктів",
+            "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+            "price": 147,
+            "count": 1,
+            "id": 2
+          }
+        ],
+        "totalPrice": 147,
+        "id": 4
+      },
+      {
+        "userName": "Оля",
+        "userSecondName": "Олеська",
+        "userPhone": "096734",
+        "userCity": "Львів",
+        "userStreet": "Дорошенка",
+        "userHouse": "342",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Carpathian Sekt",
+              "path": "carpathian-sekt",
+              "image": "",
+              "id": 2
+            },
+            "name": "Carpathian Sekt CHERSEGI",
+            "path": "carpathian-sekt-CHERSEGI",
+            "type": "Ігристе брют",
+            "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+            "volume": "0,75 л",
+            "alcohol": "11.5%",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "свіжий, тони квітів і фруктів",
+            "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+            "price": 147,
+            "count": 1,
+            "id": 2
+          }
+        ],
+        "totalPrice": 147,
+        "id": 5
+      },
+      {
+        "userName": "Роман",
+        "userSecondName": "Зюганов",
+        "userPhone": "095364222",
+        "userCity": "Львів",
+        "userStreet": "Замарстинівська",
+        "userHouse": "213",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Витримані сухі вина",
+              "path": "dry-wines",
+              "image": "",
+              "id": 3
+            },
+            "name": "Cabernet Sauvignon 9 міс.",
+            "path": "cabernet-sauvignon",
+            "type": "Витримане",
+            "description": "Сухе вино інтенсивного гранатового кольору створене з винограду сорту Каберне Совіньйон. Витримка у бариках з французького дуба 9 місяців. Букет вина насичений ароматами стиглої вишні та смородини у поєднанні з нотками паприки, табаку і какао. Смак збалансований, з приємною танінною структурою, у якому відчуваються пряні тони перцю, шоколаду та ожини. Післясмак насичений і тривалий.",
+            "volume": "0,75 л",
+            "alcohol": "14%",
+            "color": "Червоне",
+            "grape": " Каберне Совіньйон",
+            "aroma": "стигла вишня та смородина, ноти паприки, табаку і какао",
+            "taste": "приємна танінна структура, пряні тони перцю, шоколаду, ожини, насичений і тривалий післясмак",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fproduct.png?alt=media&token=431af092-c3c0-4beb-8b9e-531d2bed13dd",
+            "price": 197,
+            "count": 2,
+            "id": 3
+          },
+          {
+            "category": {
+              "name": "Витримані сухі вина",
+              "path": "dry-wines",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+              "id": 3
+            },
+            "name": "Furmint",
+            "path": "Furmint",
+            "type": "Витримане",
+            "description": "Вишукане сухе біле вино створене з винограду сорту Фурмінт та витримане у дубових бариках 9 місяців.\nЯскравий букет вина розкривається різномаїттям фруктових ароматів з тонами цитрусів, ванілі, мигдалю та мінеральними нюансами.\nУ смаку вино приємне, збалансоване, з яскравою кислотністю та тривалим післясмаком.\n\nВино здобуло Срібну медаль ",
+            "volume": "0,75 л",
+            "alcohol": "14%",
+            "color": "Біле",
+            "grape": " Фурмінт",
+            "aroma": "різномаїття фруктових ароматів, тони цитрусів, ванілі, мигдалю та мінеральні нюанси.",
+            "taste": "приємний, збалансований, яскрава кислотність, тривалий післясмак",
+            "price": "217",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux1.png?alt=media&token=ac329871-f1ff-4407-b43f-4802db735582",
+            "count": 2,
+            "id": 6
+          },
+          {
+            "category": {
+              "name": "Витримані сухі вина",
+              "path": "dry-wines",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+              "id": 3
+            },
+            "name": "Cabernet Franc",
+            "path": "CabernetFranc",
+            "type": "Витримане",
+            "description": "Вишуканий Cabernet Franc з колекції найцінніших вин Chateau Chizay створений із відбірного однойменного винограду, зібраного у 2018 році з власних виноградників на Закарпатті.\nВино витримане 18 місяців у бариках з французького дуба та розлите у пляшки лімітованою партією.",
+            "volume": "0,75 л",
+            "alcohol": "14%",
+            "color": "Біле",
+            "grape": " Каберне Фран",
+            "aroma": "темні ягоди, чорниця, вишня, ваніль, тютюн",
+            "taste": "повний, м’які таніни, пряні тони гострого перцю, темні ягоди, тривалий післясмак",
+            "price": "387.00",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux3.png?alt=media&token=d9a10cdf-c4e1-4ae0-8a27-8b35011df96b",
+            "count": 2,
+            "id": 8
+          }
+        ],
+        "totalPrice": 1602,
+        "id": 6
+      },
+      {
+        "userName": "Taras",
+        "userSecondName": "Raiter",
+        "userPhone": "0937125102",
+        "userCity": "Lviv",
+        "userStreet": "Dragana",
+        "userHouse": "213",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Carpathian Sekt",
+              "path": "carpathian-sekt",
+              "image": "",
+              "id": 2
+            },
+            "name": "Carpathian Sekt CHERSEGI",
+            "path": "carpathian-sekt-CHERSEGI",
+            "type": "Ігристе брют",
+            "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+            "volume": "0,75 л",
+            "alcohol": "11.5%",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "свіжий, тони квітів і фруктів",
+            "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+            "price": 147,
+            "count": 12,
+            "id": 2
+          },
+          {
+            "category": {
+              "name": "Chateau-Chizay",
+              "path": "chateau-chizay",
+              "icon": "",
+              "id": 1
+            },
+            "name": "GewürzTraminer",
+            "path": "gewürztraminer",
+            "type": "Сухе",
+            "description": "Яскраве вино з винограду сорту ҐевюрцТрамінер, що перекладається з німецької як Трамінер пряний. Елегантні тони екзотичних фруктів, квітів і спецій створюють ароматний букет. Смак вина гармонійний та освіжаючий, з нотами прянощів і троянд. Спробуйте ҐевюрцТрамінер, ягоди якого зібрали на винограднику Мала Гора в Закарпатті.",
+            "volume": "0,75 л",
+            "alcohol": "12,7%",
+            "color": "Біле",
+            "grape": "ҐевюртцТрамінер",
+            "aroma": "екзотичні фрукти, квіти, спеції",
+            "taste": "гармонійний, освіжаючий, ноти прянощів і троянд",
+            "image": "../../../assets/images/test.png",
+            "price": 122,
+            "count": 3,
+            "id": 1
+          }
+        ],
+        "totalPrice": 2130,
+        "id": 7
+      },
+      {
+        "userName": "Олег",
+        "userSecondName": "Гриновець",
+        "userPhone": "093717234",
+        "userCity": "Тернопіль",
+        "userStreet": "Тернопільська",
+        "userHouse": "546",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Carpathian Sekt",
+              "path": "carpathian-sekt",
+              "image": "",
+              "id": 2
+            },
+            "name": "Carpathian Sekt CHERSEGI",
+            "path": "carpathian-sekt-CHERSEGI",
+            "type": "Ігристе брют",
+            "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+            "volume": "0,75 л",
+            "alcohol": "11.5%",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "свіжий, тони квітів і фруктів",
+            "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+            "price": 147,
+            "count": 2,
+            "id": 2
+          },
+          {
+            "category": {
+              "name": "Витримані сухі вина",
+              "path": "dry-wines",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+              "id": 3
+            },
+            "name": "Merlot 9 міс.",
+            "path": "Merlot9 ",
+            "type": "Витримане",
+            "description": "Витримане сухе Мерло приваблює своєю фруктовістю, яка елегантно огорнута пряними тонами. У смаку відчуваються тони стиглої вишні і ожини, таніни м'які, округлі, кислотність помірна. Витримка в дубових бариках понад 9 місяців збагатила вино приємним шоколадно-вершковим відтінком. Післясмак тривалий, фруктовий.",
+            "volume": "0,75 л",
+            "alcohol": "12.5%",
+            "color": "Червоне",
+            "grape": "Мерло",
+            "aroma": "ноти фруктів та витримки у дубі, елегантні пряні тони",
+            "taste": "стигла вишня, ожина, округлі таніни, приємний шоколадно-вершковий відтінок.",
+            "price": "190.00",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux2.png?alt=media&token=65b24c6b-44a6-48c5-96c4-8d12dad048be",
+            "count": 1,
+            "id": 7
+          },
+          {
+            "category": {
+              "name": "Витримані сухі вина",
+              "path": "dry-wines",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+              "id": 3
+            },
+            "name": "Cabernet Franc",
+            "path": "CabernetFranc",
+            "type": "Витримане",
+            "description": "Вишуканий Cabernet Franc з колекції найцінніших вин Chateau Chizay створений із відбірного однойменного винограду, зібраного у 2018 році з власних виноградників на Закарпатті.\nВино витримане 18 місяців у бариках з французького дуба та розлите у пляшки лімітованою партією.",
+            "volume": "0,75 л",
+            "alcohol": "14%",
+            "color": "Біле",
+            "grape": " Каберне Фран",
+            "aroma": "темні ягоди, чорниця, вишня, ваніль, тютюн",
+            "taste": "повний, м’які таніни, пряні тони гострого перцю, темні ягоди, тривалий післясмак",
+            "price": "387.00",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux3.png?alt=media&token=d9a10cdf-c4e1-4ae0-8a27-8b35011df96b",
+            "count": 1,
+            "id": 8
+          }
+        ],
+        "totalPrice": 871,
+        "id": 8
+      },
+      {
+        "userName": "Tarik",
+        "userSecondName": "Raiter",
+        "userPhone": "0937125102",
+        "userCity": "Lviv",
+        "userStreet": "shevshenka",
+        "userHouse": "165",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Chateau Chizay",
+              "path": "chateau-chizay",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+              "id": 1
+            },
+            "name": "GewürzTraminer",
+            "path": "gewürztraminer",
+            "type": "Сухе",
+            "description": "Яскраве вино з винограду сорту ҐевюрцТрамінер, що перекладається з німецької як Трамінер пряний. Елегантні тони екзотичних фруктів, квітів і спецій створюють ароматний букет. Смак вина гармонійний та освіжаючий, з нотами прянощів і троянд. Спробуйте ҐевюрцТрамінер, ягоди якого зібрали на винограднику Мала Гора в Закарпатті.",
+            "volume": "0,75 л",
+            "alcohol": "12,7%",
+            "color": "Біле",
+            "grape": "ҐевюртцТрамінер",
+            "aroma": "екзотичні фрукти, квіти, спеції",
+            "taste": "гармонійний, освіжаючий, ноти прянощів і троянд",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FGEWURZTRAMINER1-193x385.png?alt=media&token=888aa44b-e93b-4038-bba8-7288c676e516",
+            "price": 122,
+            "count": 6,
+            "id": 1,
+            "stock": 12
+          }
+        ],
+        "totalPrice": 732,
+        "id": 9
+      },
+      {
+        "userName": "Xhristina",
+        "userSecondName": "Raiter",
+        "userPhone": "0937125102",
+        "userCity": "Lviv",
+        "userStreet": "Shevchenka",
+        "userHouse": "243",
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Chateau Chizay",
+              "path": "chateau-chizay",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+              "id": 1
+            },
+            "name": "GewürzTraminer",
+            "path": "gewürztraminer",
+            "type": "Сухе",
+            "description": "Яскраве вино з винограду сорту ҐевюрцТрамінер, що перекладається з німецької як Трамінер пряний. Елегантні тони екзотичних фруктів, квітів і спецій створюють ароматний букет. Смак вина гармонійний та освіжаючий, з нотами прянощів і троянд. Спробуйте ҐевюрцТрамінер, ягоди якого зібрали на винограднику Мала Гора в Закарпатті.",
+            "volume": "0,75 л",
+            "alcohol": "12,7%",
+            "color": "Біле",
+            "grape": "ҐевюртцТрамінер",
+            "aroma": "екзотичні фрукти, квіти, спеції",
+            "taste": "гармонійний, освіжаючий, ноти прянощів і троянд",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2FGEWURZTRAMINER1-193x385.png?alt=media&token=888aa44b-e93b-4038-bba8-7288c676e516",
+            "price": 122,
+            "count": 6,
+            "id": 1,
+            "stock": 6
+          }
+        ],
+        "totalPrice": 732,
+        "id": 10
+      },
+      {
+        "userName": "Taras",
+        "userSecondName": "Raiter",
+        "userPhone": "+(380) 123-131-122",
+        "userCity": "Lviv",
+        "userStreet": "Шевченка",
+        "userHouse": 123,
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Carpathian Sekt",
+              "path": "carpathian-sekt",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop2.png?alt=media&token=7e09cca5-ff39-4b1a-8092-fdc47e933b8f",
+              "id": 2
+            },
+            "name": "Carpathian Sekt CHERSEGI",
+            "path": "carpathian-sekt-CHERSEGI",
+            "type": "Ігристе брют",
+            "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+            "volume": "0,75 л",
+            "alcohol": "11.5%",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "свіжий, тони квітів і фруктів",
+            "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+            "price": 147,
+            "count": 21,
+            "id": 2,
+            "stock": 22
+          }
+        ],
+        "totalPrice": 3087,
+        "id": 11
+      },
+      {
+        "userName": "tsdf",
+        "userSecondName": "asfasa",
+        "userPhone": "+(380) 342-212-___",
+        "userCity": "sfsaf",
+        "userStreet": "asffas",
+        "userHouse": 123,
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Carpathian Sekt",
+              "path": "carpathian-sekt",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop2.png?alt=media&token=7e09cca5-ff39-4b1a-8092-fdc47e933b8f",
+              "id": 2
+            },
+            "name": "Carpathian Sekt CHERSEGI",
+            "path": "carpathian-sekt-CHERSEGI",
+            "type": "Ігристе брют",
+            "description": "Карпатські Секти - це локальні ігристі вина із Закарпаття. Сект CHERSEGI створений методом подвійного бродіння за європейською технологією Шарма-Мартінотті із унікального для України винограду – Черсегі Фюсереш, що зростає виключно на виноградниках Шато Чизай. Також цей метод виробництва називають резервуарним або акратофорним, оскільки природнє бродіння відбувається у великих ємностях – акратофорах, після чого готове ігристе вино розливається у пляшки. У неперевершеному букеті CHERSEGI Chateau Chizay відчувається багатий розсип фруктових ароматів і квіткових відтінків, а в яскравому смаку – приємна легкість і освіжаюча кислотність.",
+            "volume": "0,75 л",
+            "alcohol": "11.5%",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "свіжий, тони квітів і фруктів",
+            "taste": "яскравий, фруктово-квітковий, освіжаюча кислотність",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fhome_shop1.png?alt=media&token=6fc75d5e-795a-4f37-a694-6cc50bf91822",
+            "price": 147,
+            "count": 1,
+            "id": 2,
+            "stock": 1
+          },
+          {
+            "category": {
+              "name": "Витримані сухі вина",
+              "path": "dry-wines",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop3.png?alt=media&token=f0e14392-9147-438a-a818-46ef79635333",
+              "id": 3
+            },
+            "name": "Merlot 9 міс.",
+            "path": "Merlot9 ",
+            "type": "Витримане",
+            "description": "Витримане сухе Мерло приваблює своєю фруктовістю, яка елегантно огорнута пряними тонами. У смаку відчуваються тони стиглої вишні і ожини, таніни м'які, округлі, кислотність помірна. Витримка в дубових бариках понад 9 місяців збагатила вино приємним шоколадно-вершковим відтінком. Післясмак тривалий, фруктовий.",
+            "volume": "0,75 л",
+            "alcohol": "12.5%",
+            "color": "Червоне",
+            "grape": "Мерло",
+            "aroma": "ноти фруктів та витримки у дубі, елегантні пряні тони",
+            "taste": "стигла вишня, ожина, округлі таніни, приємний шоколадно-вершковий відтінок.",
+            "price": "190.00",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fsux2.png?alt=media&token=65b24c6b-44a6-48c5-96c4-8d12dad048be",
+            "count": 1,
+            "id": 7,
+            "stock": 44
+          }
+        ],
+        "totalPrice": 337,
+        "id": 12
+      },
+      {
+        "userName": "2eew",
+        "userSecondName": "qedqwe",
+        "userPhone": "+(380) 111-111-111",
+        "userCity": "asdsadas",
+        "userStreet": "dasda",
+        "userHouse": 123,
+        "userComment": null,
+        "products": [
+          {
+            "category": {
+              "name": "Chateau Chizay",
+              "path": "chateau-chizay",
+              "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Fshop1.png?alt=media&token=fc9cf554-7c68-46a0-b616-56a085483f0a",
+              "id": 1
+            },
+            "name": "Chersegi",
+            "path": "Chersegi",
+            "type": "Сухе",
+            "description": "Вино створене з винограду сорту Черсегі Фюсереш, що перекладається з угорської мови, як Черсегі пряний та вирощується в Україні тільки на виноградниках Шато Чизай. Його насичений букет сповнений ароматами квітів та літніх фруктів. Смак вина яскравий, фруктово-пряний, з витонченою гірчинкою, тонами абрикосу та освіжаючою кислотністю. Вино здобуло Срібну медаль London Wine Competition 2021.",
+            "volume": "0.75 л",
+            "alcohol": "12.5",
+            "color": "Біле",
+            "grape": "Черсегі Фюсереш",
+            "aroma": "літні фрукти, квіти, прянощі.",
+            "taste": "фруктово-пряний з витонченою гірчинкою, тони абрикосу, освіжаюча кислотність.",
+            "price": "115",
+            "image": "https://firebasestorage.googleapis.com/v0/b/place-c36d0.appspot.com/o/images%2Ftest.png?alt=media&token=3cb9091e-cc22-4b66-832a-e9da1000da44",
+            "count": 1,
+            "id": 5,
+            "stock": 5
+          }
+        ],
+        "totalPrice": 115,
+        "id": 13
+      }
+    ],
+    "users": [
+      {
+        "date": "1997-19-06",
+        "email": "admin",
+        "pass": "admin",
+        "second_pass": "admin",
+        "id": 1
+      },
+      {
+        "date": "2003-12-03",
+        "email": "19Zefir@gmail.com",
+        "pass": "1234567",
+        "second_pass": "1234567",
+        "id": 2
+      },
+      {
+        "date": "2003-12-03",
+        "email": "19Zir@gmail.com",
+        "pass": "123456",
+        "second_pass": "123456",
+        "id": 3
+      },
+      {
+        "date": "2003-12-18",
+        "email": "tarikxarosh@ukr.net",
+        "pass": "12345678",
+        "second_pass": "12345678",
+        "id": 4
+      }
+    ]
+  }

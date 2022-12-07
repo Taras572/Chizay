@@ -1,0 +1,21 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Date</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="align-middle" *ngFor="let users of adminUsers; index as i">
+            <td>{{ i + 1 }}</td>
+            <td>{{ users.date }}</td>
+            <td>{{ users.email }}</td>
+            <td>{{ users.pass }}</td>
+            <td>
+                <button (click)="deleteUsers(users)" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,214 @@
+.content {
+  max-width: 76.875rem;
+  width: 100%;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+  margin-top: 140px;
+  margin-bottom: 50px;
+}
+
+body, input, select, textarea {
+  color: #323232;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+.login-section__item.-login {
+  background-image: url(../../../../assets/images/bg-login.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.title-block {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.category-match__list li img, .login-section__item .section-title {
+  margin-bottom: 0.3125rem;
+}
+
+.section-title.white {
+  color: #fff;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.125rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", sans-serif;
+}
+
+.icon-tilde {
+  font-size: 0.5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 30px;
+}
+
+.icon-tilde {
+  width: 4.82609em;
+}
+
+.login-section__form--item {
+  margin-bottom: 0.9375rem;
+}
+
+.login-section__form--item label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1;
+  display: block;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.login-section__form--item input {
+  width: 100%;
+  background: #fff;
+  border: 0.0625rem solid #c1c1c1;
+  height: 2.5625rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: #323232;
+  padding: 0 0.625rem;
+}
+
+.login-section__form--item-checkbox label {
+  position: relative;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding-left: 1.875rem;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.login-section__form .btn-def {
+  background: 0 0;
+  cursor: pointer;
+  margin: 1.5625rem auto 0.9375rem;
+  display: block;
+}
+
+.btn-def.white {
+  color: #fff;
+  border: 0.0625rem solid #fff;
+}
+
+.btn-def {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  max-width: 13.75rem;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 0.625rem;
+  position: relative;
+  letter-spacing: 0.0625rem;
+  cursor: pointer;
+}
+
+.login-section__item .forgot-pass {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-decoration: underline;
+  display: block;
+  margin: 0 auto 3.75rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.login-section__form p {
+  text-align: center;
+  line-height: 1;
+  font-size: 0.75rem;
+  margin-top: 1.25rem;
+  font-weight: 400;
+}
+
+.login-section__form--item {
+  position: relative;
+}
+
+.borderEmail input {
+  border-color: red;
+}
+
+.borderDate input {
+  border-color: red;
+}
+
+.borderPass input {
+  border-color: red;
+}
+
+.email-err {
+  right: 1%;
+  bottom: 10px;
+  font-size: 10px;
+  color: white;
+  border-radius: 15px;
+  padding: 4px 8px;
+  background-color: red;
+  position: absolute;
+}
+
+.login-section__form {
+  position: relative;
+}
+
+.adminLog {
+  background-color: rgba(211, 211, 211, 0.3);
+  width: 130px;
+  margin: auto;
+  border-radius: 3px;
+  padding: 5px 0;
+  position: absolute;
+  bottom: -50px;
+}
+
+.adminLog p {
+  margin: 0;
+  line-height: 14px;
+}
+
+@media (max-width: 900px) {
+  .email-err {
+    font-size: 8px;
+    bottom: 10px;
+  }
+}
+@media (max-width: 470px) {
+  .email-err {
+    bottom: -23px;
+  }
+}/*# sourceMappingURL=login.component.css.map */

@@ -1,0 +1,33 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Second</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Point</th>
+            <th scope="col">Price</th>
+            <th scope="col">Product</th>
+            <th scope="col">Product Count</th>
+            <th scope="col">Icon</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="align-middle" *ngFor="let orders of adminOrder; index as i">
+            <td>{{ i + 1 }}</td>
+            <td>{{ orders.userName }}</td>
+            <td>{{ orders.userSecondName }}</td>
+            <td>{{ orders.userPhone }}</td>
+            <td>{{ orders.userCity }}/{{ orders.userStreet }}/{{ orders.userHouse }}</td>
+            <td>{{ orders.totalPrice }} Грн</td>
+            <td><li *ngFor="let item of orders.products"> {{ item.name }}</li></td>
+            <td><li *ngFor="let item of orders.products"> {{ item.count }}</li></td>
+            <td><li *ngFor="let item of orders.products"> <img src="{{ item.image }}" height="60px" alt=""></li></td>
+            <td>
+                <button (click)="deleteOrder(orders)" class="btn btn-danger">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

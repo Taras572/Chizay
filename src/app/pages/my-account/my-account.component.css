@@ -1,0 +1,79 @@
+.block_container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  margin-top: 160px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 30px;
+}
+
+.icon-tilde {
+  font-size: 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", sans-serif;
+}
+
+.h1, h1 {
+  font-size: 2.5rem;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: inherit;
+}
+
+dl, h1, h2, h3, h4, h5, h6, ol, p {
+  margin-top: 0;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation {
+  margin-bottom: 2.1875rem;
+  width: 25%;
+}
+
+.slick-dots, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.woocommerce-MyAccount-navigation-link {
+  margin: 0.3125rem 0;
+}
+
+.woocommerce-MyAccount-navigation-link a {
+  color: #323232;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+}
+
+.woocommerce-MyAccount-navigation-link a:hover {
+  cursor: pointer;
+  color: #ae8758;
+}
+
+.woocommerce {
+  display: flex;
+}
+
+.woocommerce-MyAccount-navigation {
+  width: 25%;
+}
+
+.woocommerce-MyAccount-content {
+  width: 75%;
+  border-left: 1px gray solid;
+  padding: 5px 10px;
+}/*# sourceMappingURL=my-account.component.css.map */

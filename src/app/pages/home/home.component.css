@@ -1,0 +1,372 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", sans-serif;
+}
+
+.bg_image {
+  /* background-image: url("../../../assets/images/home.jpg"); */
+  /* background-image: url("../../../assets/images/spring.jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.bg_winter {
+  background-image: url("../../../assets/images/winter.jpg");
+}
+
+.bg_autumn {
+  background-image: url("../../../assets/images/autumn.jpg");
+}
+
+.bg_summer {
+  background-image: url("../../../assets/images/home.jpg");
+}
+
+.bg_spring {
+  background-image: url("../../../assets/images/spring.jpg");
+}
+
+.container_home {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-title.white {
+  color: #fff;
+}
+
+.home-slider__item {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 0.125rem;
+  text-align: center;
+}
+
+.icon-tilde {
+  font-size: 0.5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 30px;
+}
+
+.icon-tilde {
+  width: 4.82609em;
+}
+
+.slider-text {
+  color: #fff;
+  margin: 1.175rem auto;
+  max-width: 18.75rem;
+}
+
+.contact-btn {
+  display: flex;
+}
+
+.btn-def.white {
+  color: #fff;
+  border: 0.0625rem solid #fff;
+}
+
+.btn-def.black {
+  color: #323232;
+  border: 0.0625rem solid #323232;
+}
+
+.btn-def {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  max-width: 13.75rem;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 0.625rem;
+  position: relative;
+  letter-spacing: 0.0625rem;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.btn-def:hover {
+  border-color: #c09560;
+  color: #c09560;
+}
+
+.btn-def.white::after {
+  background: white;
+}
+
+.btn-def.black::after {
+  background: rgb(0, 0, 0);
+}
+
+.btn-def::after {
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-def:hover::after {
+  background: #c09560;
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.home_about {
+  width: 100%;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
+
+.block_news, .block_our_vine {
+  position: relative;
+}
+
+.home-about__block--text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  max-width: 20.625rem;
+  width: 100%;
+}
+
+.block_news {
+  background-image: url("../../../assets/images/H1.jpg");
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 38.4375rem;
+}
+
+.block_our_vine {
+  background-image: url("../../../assets/images/H2.jpg");
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  height: 38.4375rem;
+}
+
+.home-about__block {
+  justify-content: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 38.4375rem;
+}
+
+.home-about__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-about__block.without-img {
+  padding: 5.625rem 0.625rem;
+  height: auto;
+}
+
+.block_reverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.bg_img1 {
+  background-image: url("../../../assets/images/bg-home-about-1.png");
+  background-repeat: no-repeat;
+}
+
+.bg_img2 {
+  background-image: url("../../../assets/images/bg-home-about-2.png");
+  background-repeat: no-repeat;
+}
+
+.block_restouran_hotel {
+  background-image: url("../../../assets/images/image-6.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 320px;
+}
+
+.block_restouran_hotel h2 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.baner-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 31.25rem;
+  z-index: 2;
+}
+
+.block_shop {
+  margin: 50px 0;
+}
+
+.shop-preview__item-wrapper {
+  text-decoration: none;
+}
+
+.shop-preview {
+  margin-top: 3.75rem;
+  text-align: center;
+  position: relative;
+}
+
+.shop-preview__item--description {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0;
+  color: black;
+}
+
+.shop-preview__item--type {
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin: 0 0 1.25rem;
+  color: black;
+}
+
+.hall-preview__image {
+  background-image: url("../../../assets/images/muzeum.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.hall-preview__image2 {
+  background-image: url("../../../assets/images/academi.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.block_muzeum {
+  padding: 0 30px;
+}
+
+.hall-preview__text--description {
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  margin-bottom: 0;
+}
+
+.hall-preview__text {
+  padding: 20px 50px;
+  text-align: center;
+}
+
+.read-more-btn {
+  color: black;
+  text-transform: uppercase;
+  line-height: 70px;
+}
+
+.muzeum_reverse {
+  margin-bottom: 40px;
+}
+
+.icon-tilde {
+  font-size: 0.5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 30px;
+}
+
+.icon-tilde {
+  width: 4.82609em;
+}
+
+/* --------- */
+@media (max-width: 768px) {
+  .block_reverse {
+    display: block;
+  }
+  .hall-preview__image, .hall-preview__image2 {
+    height: 350px;
+  }
+  .muzeum_reverse {
+    flex-direction: column-reverse;
+  }
+  .baner-links {
+    flex-wrap: wrap;
+    width: 100%;
+    min-width: auto;
+    justify-content: center;
+  }
+  .baner-links a {
+    max-width: 100%;
+    margin: 0.3125rem;
+  }
+}
+@media (max-width: 622px) {
+  .hall-preview__image, .hall-preview__image2 {
+    height: 300px;
+  }
+  .block_restouran_hotel h2 {
+    font-size: 30px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .slider-text {
+    font-size: 15px;
+  }
+  .home-slider__item {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .hall-preview__image, .hall-preview__image2 {
+    height: 200px;
+  }
+}/*# sourceMappingURL=home.component.css.map */

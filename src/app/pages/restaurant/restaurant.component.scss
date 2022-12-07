@@ -1,0 +1,333 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Georgia",sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 1rem;
+    letter-spacing: .125rem;
+}
+h2{
+    margin-top: 40px;
+    margin-bottom: 16px;
+    
+} 
+.bg_image{
+    background-image: url("../../../assets/images/restaurant-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 450px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.head{
+    color: white;
+    padding-top: 129px;
+    text-align: center;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
+}
+
+.restouran .image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+//icon line
+.icon-tilde {
+    font-size: .5rem;
+}
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+    margin-bottom: 30px;
+}
+
+
+//icon arrow
+.icon-arrow {
+    font-size: 1.3625rem;
+    width: 1em;
+    
+}
+// block restouran
+.block_container{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    font-family: "Open Sans",sans-serif;
+    overflow: hidden;
+}
+.restouran{
+    display: flex;
+    margin: 0;
+}
+.block{
+    width: 50%;
+    margin: 15px;
+    text-align: center;
+}
+.block img{
+    width: 100%;
+    margin: 12px 0;
+    display: flex;
+    
+}
+.block h2{
+    margin: 30px 0 15px;
+}
+.block p{
+    text-align: left;
+    font-size: 14px;
+    font-family: "Open Sans",sans-serif;
+    margin-bottom: 25px;
+}
+.block .bolt_text{
+    font-weight: bold;
+    font-size: 16px;
+}
+.block ul{
+    text-align: left;
+    padding-left: 0.2rem;
+}
+
+//our menu
+.restaurant-menu-header {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 3.75rem 0;
+    margin-top: 1.875rem;
+}
+.bg_img_menu{
+    background-image: url("../../../assets/images/bg-restaurant-menu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 305px;
+    margin-top: 1.875rem;
+}
+.block_menu{
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 3.75rem 0;
+    color: white;
+}
+.block_menu h2{
+    margin-bottom: 1rem;
+}
+
+//btn pdf menu
+.logo_pdf {
+    font-size: 1.125rem;
+    position: absolute;
+    left: .75rem;
+    top: 40%;
+    -webkit-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    transform: translate(0,-50%);
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+} 
+//btn
+.contact-btn {
+    display: flex;
+}
+.btn-def.white {
+    color: #fff;
+    border: .0625rem solid #fff;
+}
+.btn-def.black {
+    color: #323232;
+    border: .0625rem solid #323232;
+}
+
+.btn-def {
+    font-size: .875rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    border-radius: .25rem;
+    max-width: 13.75rem;
+    text-transform: uppercase;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: .625rem;
+    position: relative;
+    letter-spacing: .0625rem;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.btn-def.white::after {
+    background:white;
+}
+
+.btn-def::after {
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+.btn-def:hover::after {
+    background: #c09560;
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+//block map
+.bg_map{
+    margin-top: 20px;
+}
+.block_map{
+    width: 100%;
+    margin-top: 55px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.winter_img{
+    background-image: url(../../../assets/images/latifundistcomchizay16-101397.jpg);
+}
+.autumn_img{
+    background-image: url(../../../assets/images/osin_u_shato_chizaj.jpg);
+}
+.spring_img{
+    
+}
+.summer_img{
+    
+}
+.winter{
+    background-image: url(../../../assets/images/snowflake.png), url(../../../assets/images/snowflake3.png), url(../../../assets/images/snowflake2.png);
+}
+.autumn{
+    background-image: url(../../../assets/images/autumn_bg.png), url(../../../assets/images/autumn_bg2.png);
+    background-size: contain, contain;
+}
+.spring{
+    
+}
+.summer{
+
+}
+//animation
+.snow-container {
+    height: 100%;
+    animation: snow 20s linear infinite;
+}
+
+@keyframes snow {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+}
+
+
+
+.icon-tilde {
+    width: 4.82609em;
+}
+//block recipe
+.menu{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.recipe_img img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.recipe_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+.news-archive__subtitle {
+    font-family: "Georgia",sans-serif;
+    font-size: 1rem;
+    margin: 1.5625rem 0 .5rem;
+    font-weight: 700;
+    color: #323232;
+    line-height: 1.375;
+    display: inline-block;
+    text-decoration: none;
+}
+.read-more-btn {
+    margin-top: auto;
+    justify-self: flex-end;
+}
+.read-more-btn {
+    font-size: .75rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #323232;
+    text-transform: uppercase;
+    letter-spacing: .0625rem;
+    display: inline-block;
+    text-underline-position: under;
+} 
+
+
+
+@media(max-width: 767px){
+    .restouran{
+        flex-direction: column;
+        
+    }
+    .block{
+        width: 100%;
+        margin: 0;
+        padding: 0 15px;
+    }
+    .news-archive__subtitle {
+        font-family: "Georgia",sans-serif;
+        font-size: 1.5rem;
+        margin: 1.5625rem 0 .5rem;
+        font-weight: 700;
+        color: #323232;
+        line-height: 1.375;
+        display: inline-block;
+    } 
+    .recipe_img{
+        margin-top: 20px;
+    }
+    .block_map{
+        height: 250px; 
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 2rem;
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+    }
+    .block_map{
+        margin-top: 20px;
+    }
+}
+@media( max-width: 350px){
+    .block_map{
+        height: 200px; 
+    }
+}

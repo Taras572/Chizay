@@ -1,0 +1,12 @@
+<div class="block_container ">
+    <div class="btn-group m-4" role="group" aria-label="Basic example">
+        <button [routerLink]="[ '/admin', 'product' ]" type="button" class="btn btn-danger">Product</button>
+        <button [routerLink]="[ '/admin', 'category' ]" type="button" class="btn btn-danger">Category</button>
+        <button [routerLink]="[ '/admin', 'order' ]" type="button" class="btn btn-danger">Order</button>
+        <button [routerLink]="[ '/admin', 'users' ]" type="button" class="btn btn-danger">Users</button>
+        <button (click)="Exit()" type="button" class="btn btn-danger">Exit</button>
+      </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</div>

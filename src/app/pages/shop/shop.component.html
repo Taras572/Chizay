@@ -1,0 +1,69 @@
+<div class="top-product">
+    <div class="block_container">
+        <div class="row">
+            <div class="col-md-6 justify-content-center">
+                <div class="title-block">
+                    <h2 class="section-title black">Chersegi</h2>
+                    <h6 class="title-category">Сухе</h6>
+                    <div class="icon icon-tilde">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 4.6" id="tilde">
+                            <path
+                                d="M15.6 3.9h-.9c-1.4-.1-2.8-.6-4.1-.9-.8-.3-1.7-.6-2.6-.8-1.5-.3-4.3-.6-6.1 1.1-.2.2-.5.2-.7 0-.2-.2-.2-.6 0-.7 2.1-2 5.3-1.7 7-1.3.9.1 1.8.4 2.7.7 1.3.4 2.6.8 3.9.9 1.9.2 4.5-.3 5.6-2.2.1-.2.4-.3.7-.2.2.1.3.4.2.7-1.2 2-3.6 2.7-5.7 2.7z"
+                                fill="#c09560"></path>
+                        </svg>
+                    </div>
+                    <p class="title-description">Вино створене з винограду сорту <a>Черсегі Фюсереш</a>, що
+                        перекладається з
+                        угорської мови, як Черсегі пряний та вирощується в Україні тільки на виноградниках Шато
+                        Чизай.
+                        Його насичений букет сповнений ароматами квітів та літніх фруктів. Смак вина яскравий,
+                        фруктово-пряний, з витонченою гірчинкою, тонами абрикосу та освіжаючою кислотністю.
+
+                        Вино здобуло Срібну медаль <a>London Wine Competition</a>
+                        2021.</p>
+                    <p class="title-price"><span class="woocommerce-Price-amount amount"><bdi>115.00&nbsp;<span
+                                    class="woocommerce-Price-currencySymbol">Грн</span></bdi></span></p>
+                    <a class="btn-def black dataForGA" style="margin-left: 2%;margin-bottom: 10px;"
+                        [routerLink]="[ '/product/chateau-chizay' ]">купити</a>
+                    <a [routerLink]="[ '/product/all-vine' ]" class="btn-def black"
+                        style="margin-left: 2%; margin-bottom: 10px;">Всі вина</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="block_container">
+    <h2 class="section-title black">Колекції</h2>
+    <div class="shop_preview row">
+        <div class="col-md-3 col-6" *ngFor="let item of adminCategories">
+            <a [routerLink]="['/product/', item.path]" class=" shop-preview__item-wrapper">
+                <div class="collections-slider__item">
+                    <div>
+                        <img src="{{item.image}}">
+                    </div>
+
+                    <div class="icon icon-tilde">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.2 4.6" id="tilde">
+                            <path
+                                d="M15.6 3.9h-.9c-1.4-.1-2.8-.6-4.1-.9-.8-.3-1.7-.6-2.6-.8-1.5-.3-4.3-.6-6.1 1.1-.2.2-.5.2-.7 0-.2-.2-.2-.6 0-.7 2.1-2 5.3-1.7 7-1.3.9.1 1.8.4 2.7.7 1.3.4 2.6.8 3.9.9 1.9.2 4.5-.3 5.6-2.2.1-.2.4-.3.7-.2.2.1.3.4.2.7-1.2 2-3.6 2.7-5.7 2.7z"
+                                fill="#c09560"></path>
+                        </svg>
+                    </div>
+                    <p class="collections-slider__item--description">{{item.name}}</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<div class="block_restouran_hotel">
+    <div class="block_container content">
+        <h2>Купляй онлайн зі знижкою до 10%</h2>
+        <div class="baner-links">
+            <a class="btn-def white">Програма лояльності</a>
+        </div>
+    </div>
+</div>

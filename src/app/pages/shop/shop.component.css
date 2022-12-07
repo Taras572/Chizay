@@ -1,0 +1,235 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Georgia", sans-serif;
+}
+
+.block_container {
+  width: 100%;
+  max-width: 1230px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top-product {
+  margin-top: 149px;
+  height: 530px;
+  background-image: url("../../../assets/images/chersegi.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.icon-tilde {
+  font-size: 0.5rem;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  margin-bottom: 30px;
+}
+
+.icon-tilde {
+  width: 4.82609em;
+}
+
+.section-title.black {
+  color: #323232;
+}
+
+.section-title {
+  margin-top: 10px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1rem;
+  letter-spacing: 0.125rem;
+}
+
+.title-block {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.title-category {
+  color: #505050;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.title-description {
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.25rem;
+  margin: 0 auto 0;
+  max-width: 26.875rem;
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title-description a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.title-description, .title-price {
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title-price {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 1.375rem 0;
+}
+
+.btn-def.white {
+  color: #fff;
+  border: 0.0625rem solid #fff;
+}
+
+.btn-def.black {
+  color: #323232;
+  border: 0.0625rem solid #323232;
+}
+
+.btn-def {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  border-radius: 0.25rem;
+  max-width: 13.75rem;
+  text-transform: uppercase;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 0.625rem;
+  position: relative;
+  letter-spacing: 0.0625rem;
+  cursor: pointer;
+  text-decoration: none;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.btn-def:hover {
+  border-color: #c09560;
+  color: #c09560;
+}
+
+.btn-def.white::after {
+  background: white;
+}
+
+.btn-def.black::after {
+  background: rgb(0, 0, 0);
+}
+
+.btn-def::after {
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+.btn-def:hover::after {
+  background: #c09560;
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.shop_preview {
+  margin-right: 3.0625rem;
+  margin-left: 3.0625rem;
+  background-image: url("../../../assets/images/bg-shop-1.png"), url("../../../assets/images/bg-shop-2.png");
+  background-position: left top, right 37%;
+  background-repeat: no-repeat;
+}
+
+.collections-slider__item {
+  text-align: center;
+  color: #323232;
+}
+
+a {
+  text-decoration: none;
+}
+
+.collections-slider__item:hover {
+  color: #ae8758;
+  cursor: pointer;
+}
+
+.collections-slider__item--description {
+  color: inherit;
+  font-size: 1.3125rem;
+  font-weight: 600;
+  margin: 10px 0 30px;
+  padding: 0 5px;
+}
+
+.collections-slider__item img {
+  width: 100%;
+  max-height: 238px;
+}
+
+.collections-slider__item .icon {
+  margin-bottom: 0;
+}
+
+.block_restouran_hotel {
+  background-image: url("../../../assets/images/bg-shop-discovery.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 320px;
+}
+
+.block_restouran_hotel h2 {
+  font-size: 48px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.btn-def.white {
+  color: #fff;
+  border: 0.0625rem solid #fff;
+}
+
+@media (max-width: 768px) {
+  .block_restouran_hotel h2 {
+    font-size: 30px;
+  }
+  .section-title {
+    font-size: 30px;
+  }
+  .title-category {
+    font-size: 18px;
+  }
+  .collections-slider__item--description {
+    font-size: 0.9rem;
+  }
+  .title-price {
+    margin: 1rem 0;
+  }
+}/*# sourceMappingURL=shop.component.css.map */

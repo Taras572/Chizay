@@ -1,0 +1,153 @@
+<form [formGroup]="productsForm" (ngSubmit)="editStatus ? updateProduct() : createProduct()">
+    <table style="width:100%">
+        <tbody>
+            <tr>
+                <td>Category</td>
+                <td>
+                    <select formControlName="category" id="category" class="form-select">
+                        <option selected disabled>Select category</option>
+                        <option [ngValue]="cat" *ngFor="let cat of adminCategories">{{cat.name}}</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Назва:</td>
+                <td>
+                    <input formControlName="name" id="name" type="text" class="form-control" placeholder="Name">
+                </td>
+            </tr>
+            <tr>
+                <td>Path:</td>
+                <td>
+                    <input formControlName="path" id="path" type="text" class="form-control" placeholder="Path">
+                </td>
+            </tr>
+            <tr>
+                <td>Тип вина:</td>
+                <td>
+                    <input formControlName="type" id="type" type="text" class="form-control" placeholder="Type of wine">
+                </td>
+            </tr>
+            <tr>
+                <td>Опис:</td>
+                <td>
+                    <textarea formControlName="description" id="description" class="form-control" id="exampleFormControlTextarea1"
+                        rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Об'єм:</td>
+                <td>
+                    <input formControlName="volume" id="volume" type="text" class="form-control" placeholder="Bottle volume">
+                </td>
+            </tr>
+            <tr>
+                <td>Алкоголю:</td>
+                <td>
+                    <input formControlName="alcohol" id="alcohol" type="text" class="form-control" placeholder="Alcohol %">
+                </td>
+            </tr>
+            <tr>
+                <td>Колір:</td>
+                <td>
+                    <input formControlName="color" id="color" type="text" class="form-control" placeholder="Color">
+                </td>
+            </tr>
+            <tr>
+                <td>Сорт винограду:</td>
+                <td>
+                    <input formControlName="grape" id="grape" type="text" class="form-control" placeholder="Grape variety">
+                </td>
+            </tr>
+            <tr>
+                <td>Аромат:</td>
+                <td>
+                    <input formControlName="aroma" id="aroma" type="text" class="form-control" placeholder="Aroma">
+                </td>
+            </tr>
+            <tr>
+                <td>Смак:</td>
+                <td>
+                    <input formControlName="taste" id="taste" type="text" class="form-control" placeholder="Taste">
+                </td>
+            </tr>
+            <tr>
+                <td>Ціна:</td>
+                <td>
+                    <input formControlName="price" id="price" type="number" class="form-control" placeholder="Price">
+                </td>
+            </tr>
+            <tr>
+                <td>Кількість на складі:</td>
+                <td>
+                    <input formControlName="stock" id="stock" type="number" class="form-control" placeholder="Stock">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="mb-3" *ngIf="!imageStatus">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input (change)="uploadFile($event)" class="form-control" type="file" id="formFile">
+                    </div>
+                    <div class="image-box" *ngIf="!productsForm.invalid" >
+                        <img width="100px" [src]="image" alt="">
+                        <button (click)="deleteFile()" type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button [disabled]="productsForm.invalid"  type="submit" class="btn btn-success m-4" [textContent]="editStatus ? 'Save' : 'Add'">ADD</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+    <!-- ---------------------- -->
+
+    <table class="table" style="width:100%">
+        <thead style="width:100%">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Type</th>
+                <!-- <th scope="col">Description</th>
+                <th scope="col">Volume</th>
+                <th scope="col">Alcohol</th>
+                <th scope="col">Color</th>
+                <th scope="col">Variety</th>
+                <th scope="col">Aroma</th>
+                <th scope="col">Taste</th> -->
+                <th scope="col">Price</th>
+                <th scope="col">Stock</th>
+                <th scope="col">image</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody style="width:100%">
+            <tr class="align-middle" *ngFor="let prod of adminProducts; index as i">
+                <td>{{ i + 1 }})</td>
+                <td>{{ prod.name }}</td>
+                <td>{{ prod.type }}</td>
+               <!--  <td>{{ prod.description | slice:0:30 }}...</td>
+                <td>{{ prod.volume }}</td>
+                <td>{{ prod.alcohol }}</td>
+                <td>{{ prod.color }}</td>
+                <td>{{ prod.grape }}</td>
+                <td>{{ prod.aroma | slice:0:30 }}...</td>
+                <td>{{ prod.taste | slice:0:30 }}...</td> -->
+                <td>{{ prod.price }} UAH</td>
+                <td>{{ prod.stock }}</td>
+                <td>
+                    <img [src]="prod.image" width="80px" alt="">
+                </td>
+                <td>
+                    <button (click)="editProduct(prod)" class="btn btn-success" type="button">edit</button>
+                    <button (click)="deleteProduct(prod)" class="btn btn-danger" type="button">delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</form>

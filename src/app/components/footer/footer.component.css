@@ -1,0 +1,112 @@
+footer {
+  background: #1a1a1a;
+  width: 100%;
+  color: white;
+}
+
+.container {
+  max-width: 1230px;
+  min-height: 361px;
+  padding-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.subscribe-form {
+  border-radius: 0.25rem;
+  overflow: hidden;
+  position: relative;
+  height: 46px;
+}
+
+.subscribe-form .mail-input {
+  height: 2.875rem;
+  background-color: transparent;
+  border: 0.0625rem solid #fff;
+  border-radius: 0.25rem;
+  padding-left: 1.25rem;
+  font-size: 0.75rem;
+  width: 100%;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.subscribe-form .submit-form-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: #1a1a1a;
+  font-weight: 700;
+  background: #fff;
+  -webkit-appearance: none;
+  border: 0;
+  width: 3.125rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #ae8758;
+}
+
+.block_center {
+  line-height: 35px;
+}
+
+#home, #envelope, #facebook, #instagram {
+  width: 20px;
+}
+
+.icon svg {
+  fill: #ae8758;
+  text-align: center;
+}
+
+.list {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translate(-50%, -50%);
+}
+
+ol, ul {
+  padding-left: 4rem;
+  padding-right: 1rem;
+}
+
+.line {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .line {
+    display: block;
+  }
+  .text {
+    text-align: center;
+  }
+  .row {
+    padding: 0 15px;
+  }
+  .list p {
+    width: 250px;
+  }
+}/*# sourceMappingURL=footer.component.css.map */
